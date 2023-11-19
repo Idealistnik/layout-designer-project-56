@@ -29,7 +29,6 @@
   line-height: 1.5;
   font-size: 16px;
   color: #CACACA;
-  background-color: #08020D;
   margin: 0;
 }
 
@@ -194,6 +193,7 @@
 
 .button-green {
   flex-grow: 1;
+  height: 57px;
   background-color: #34C176;
   border: none;
 }
@@ -205,7 +205,7 @@
     padding: 20px;
   }
   .content-container {
-    padding: 230px 0 80px 0;
+    padding: 230px 0 181px 0;
   }
   .header-main {
     justify-content: flex-start;
@@ -257,6 +257,9 @@
   }
   .banner-form {
     justify-content: center;
+  }
+  .input-banner {
+    min-width: 100%;
   }
 }
 

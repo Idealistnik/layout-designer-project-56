@@ -6,27 +6,27 @@
     @include pg-section($pg-200, 0, $pg-200, 0);
 }
 
-.h1 {
+.fz-h1 {
     @include title-font($fz-title-h1);
 }
 
-.h2 {
+.fz-h2 {
     @include title-font($fz-title-h2);
 }
 
-@media (max-width: 415px) {
-    .h1 {
+@media (max-width: 650px) {
+    .fz-h1 {
         @include title-font($fx-title-mob-h1);
     }
 
-    .h2 {
+    .fz-h2 {
         @include title-font($fx-title-mob-h2);
     }
 }
 
 .header {
     position: absolute;
-    // display: block;
+    
     justify-content: space-between;
     width: 100%;
     top: 25px;
@@ -46,7 +46,11 @@
 
 .header-main {
     justify-content: space-between;
-    flex-basis: 500px;
+    flex-basis: 501px;
+}
+
+.menu-list {
+    flex-wrap: wrap;
 }
 
 // .main-menu {
@@ -99,6 +103,7 @@
     margin-bottom: 1.5rem;
     background-color: transparent;
     color: $color-white;
+    
 
     &:focus::placeholder {
         color: transparent;
@@ -124,7 +129,7 @@
 
 
 
-@media (max-width: 415px) {
+@media (max-width: 650px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;

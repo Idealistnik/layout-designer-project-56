@@ -23,14 +23,13 @@
     display: grid;
     grid-template-columns: 8.333% 83.333% 8.333%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1440px;
+    background-color: $bg-black;
     & .content-container {
         grid-column: 2 / 3;
         position: relative;
     }
 }
-
-
 
 @mixin bg-wrapper($bg-name) {
     background: url("../images/#{$bg-name}.png");

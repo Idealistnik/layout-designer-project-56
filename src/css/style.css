@@ -17,7 +17,8 @@
   display: grid;
   grid-template-columns: 8.333% 83.333% 8.333%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1440px;
+  background-color: #08020D;
 }
 .grid-container .content-container {
   grid-column: 2/3;
@@ -75,7 +76,7 @@
   padding: 200px 0 200px 0;
 }
 
-.h1 {
+.fz-h1 {
   font-size: 60px;
   line-height: 90px;
   color: #FFFFFF;
@@ -85,7 +86,7 @@
   margin: 0;
 }
 
-.h2 {
+.fz-h2 {
   font-size: 38px;
   line-height: 57px;
   color: #FFFFFF;
@@ -95,8 +96,8 @@
   margin: 0;
 }
 
-@media (max-width: 415px) {
-  .h1 {
+@media (max-width: 650px) {
+  .fz-h1 {
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
@@ -105,7 +106,7 @@
     text-align: center;
     margin: 0;
   }
-  .h2 {
+  .fz-h2 {
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
@@ -136,7 +137,11 @@
 
 .header-main {
   justify-content: space-between;
-  flex-basis: 500px;
+  flex-basis: 501px;
+}
+
+.menu-list {
+  flex-wrap: wrap;
 }
 
 .menu-item {
@@ -198,7 +203,7 @@
   border: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 650px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;

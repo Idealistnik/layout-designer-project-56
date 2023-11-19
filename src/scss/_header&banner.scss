@@ -1,0 +1,185 @@
+#page-description {
+    @include bg-wrapper($bg-banner);
+}
+
+.content-container {
+    @include pg-section($pg-200, 0, $pg-200, 0);
+}
+
+.h1 {
+    @include title-font($fz-title-h1);
+}
+
+.h2 {
+    @include title-font($fz-title-h2);
+}
+
+@media (max-width: 415px) {
+    .h1 {
+        @include title-font($fx-title-mob-h1);
+    }
+
+    .h2 {
+        @include title-font($fx-title-mob-h2);
+    }
+}
+
+.header {
+    position: absolute;
+    // display: block;
+    justify-content: space-between;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.header-main,
+.main-logo {
+    align-items: center;
+}
+
+.logo-img {
+    margin-right: 16px;
+}
+
+.header-main {
+    justify-content: space-between;
+    flex-basis: 500px;
+}
+
+// .main-menu {
+//     margin-left: 90px;
+// }
+
+.menu-item {
+    margin-right: $mg-24;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.header-search {
+    flex: 0 1 248px;
+    margin-left: 24px;
+}
+
+
+
+
+.input-header {
+    border-radius: 50px;
+    background-color: $bg-gray;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+
+    &:focus::placeholder {
+        color: transparent;
+    }
+}
+
+
+.banner-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.input-banner {
+    min-width: 270px;
+    min-height: 50px;
+    padding: 0 0 0 20px;
+    border: 2px solid $color-gray-light;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    color: $color-white;
+
+    &:focus::placeholder {
+        color: transparent;
+    }
+
+    &::placeholder {
+        color: $color-white;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+
+    }
+}
+
+.button-green {
+    flex-grow: 1;
+    background-color: $bg-green;
+    border: none;
+}
+
+
+
+
+
+@media (max-width: 415px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .content-container {
+        @include pg-section(230px, 0, 80px, 0);
+    }
+
+    .header-main {
+        justify-content: flex-start;
+    }
+
+    .header {
+        top: 5px;
+        height: 20%; // костыль
+    }
+
+    .header,
+    .header-main,
+    .menu-list {
+        align-items: start;
+        flex-direction: column;
+        font-size: 11px;
+
+        .main-logo {
+            margin: 0 0 17px 0;
+        }
+
+        .header-search {
+            width: 100%;
+            margin: 0;
+        }
+
+        .menu-list {
+            margin: 0 0 18px 0;
+
+            .menu-item {
+                margin-right: 0;
+
+                &:first-child {
+                    color: $color-white-light;
+                }
+
+                &:nth-child(3) {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .p {
+        margin-top: 16px;
+    }
+    .banner-form {
+        justify-content: center;
+    }
+
+}

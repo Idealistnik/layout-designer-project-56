@@ -1,0 +1,97 @@
+@import "./variables.scss";
+
+@font-face {
+    font-weight: 400;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Arial";
+    src: url("../fonts/arial-narrow.woff2");
+}
+
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: 8.333% 83.333% 8.333%;
+    margin: 0 auto;
+    max-width: 1200px;
+    & .content-container {
+        grid-column: 2 / 3;
+        position: relative;
+    }
+}
+
+
+
+@mixin bg-wrapper($bg-name) {
+    background: url("../images/#{$bg-name}.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin pg-section($pg-top, $pg-right, $pg-bottom, $pg-left) {
+    padding: $pg-top $pg-right $pg-bottom $pg-left;
+}
+
+.main-font {
+    font-family: "Roboto", sans-serif;
+    line-height: $lh;
+    font-size: $fz;
+    color: $color-gray-light;
+    background-color: $bg-black;
+    margin: 0;
+}
+
+@mixin title-font($fz-title) {
+    font-size: $fz-title;
+    line-height: $fz-title * 1.5;
+    color: $color-white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.p {
+    text-align: center;
+    margin-top: 31px;
+    color: $color-white;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.input {
+    box-sizing: border-box;
+}
+
+    

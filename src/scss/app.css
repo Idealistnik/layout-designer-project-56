@@ -1,0 +1,128 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Arial";
+  src: url("../fonts/arial-black.woff2");
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(600px, 1200px) 1fr;
+}
+.grid-container .content-container {
+  grid-column: 2/3;
+}
+
+.main-font, body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #CACACA;
+  background-color: #08020D;
+  margin: 0;
+}
+
+.p {
+  text-align: center;
+  margin-top: 31px;
+  color: #FFFFFF;
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  color: inherit;
+}
+
+#page-description {
+  background: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.content-container {
+  padding: 200px 0;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  top: 25px;
+  left: 0;
+}
+
+.h1 {
+  font-size: 60px;
+  line-height: 90px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 38px;
+  line-height: 57px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.banner-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.input {
+  box-sizing: border-box;
+  min-width: 270px;
+  min-height: 50px;
+  padding: 0 0 0 20px;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.input:focus::-moz-placeholder {
+  color: transparent;
+}
+.input:focus::placeholder {
+  color: transparent;
+}
+.input::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.input::placeholder {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.button-green {
+  flex-grow: 1;
+  font-size: 13.3px;
+  padding: 20px 30px;
+  background-color: #34C176;
+  border: none;
+  font-family: "Arial", sans-serif;
+}/*# sourceMappingURL=app.css.map */

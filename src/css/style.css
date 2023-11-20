@@ -326,15 +326,18 @@
     margin-top: 18px;
     width: 100%;
   }
-  .bg-wrapper .p-text {
-    margin-top: 16px;
-  }
-  .bg-wrapper .banner-form {
-    justify-content: center;
-  }
-  .bg-wrapper .input-banner {
-    flex: 0 1 100%;
-  }
+}
+.content-container {
+  padding: 250px 0 201px 0;
+}
+.content-container .p-text {
+  margin-top: 16px;
+}
+.content-container .banner-form {
+  justify-content: center;
+}
+.content-container .input-banner {
+  flex: 0 1 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

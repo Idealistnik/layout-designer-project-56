@@ -181,6 +181,14 @@
 
         }
     }
+    
+}
+}
+
+
+.content-container {
+    @include pg-section($pg-250, 0, $pg-201, 0);
+
     .p-text {
         margin-top: 16px;
     }
@@ -196,13 +204,6 @@
 
 }
 
-
-
-
-
-
-
-}
 
 
 

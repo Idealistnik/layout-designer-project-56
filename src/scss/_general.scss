@@ -31,18 +31,34 @@
     font-family: "Arial";
     src: url("../fonts/arial-narrow.woff2");
 }
- 
-.grid-container {
-    display: grid;
-    grid-template-columns: 119 / 1440 * 100% 1200 / 1440 * 100%  121 / 1440 * 100% ;
-    margin: 0 auto;
-    max-width: 1440px;
-    background-color: $bg-black;
-    & .content-container {
-        grid-column: 2 / 3;
-        position: relative;
-    }
+
+.fz-11 {
+    font-size: 11px;
 }
+.mg-top-31 {
+    margin-top: 31px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+// .grid-container {
+//     display: grid;
+//     grid-template-columns: 119 / 1440 * 100% 1200 / 1440 * 100%  121 / 1440 * 100% ;
+//     margin: 0 auto;
+//     max-width: 1440px;
+//     background-color: $bg-black;
+//     & .content-container {
+//         grid-column: 2 / 3;
+//         position: relative;
+//     }
+// }
 
 @mixin bg-wrapper($bg-name) {
     background: url("../images/#{$bg-name}.png");
@@ -72,12 +88,9 @@
     text-align: center;
     margin: 0;
 }
-.fz-11 {
-    font-size: 11px;
-}
-.p {
-    text-align: center;
-    margin-top: 31px;
+
+.p-text {
+    text-align: center;   
     color: $color-white;
 }
 .button {
@@ -99,12 +112,19 @@
 .flex {
     display: flex;
 }
+
+
 .flex-between {
     display: flex;
     justify-content: space-between;
 }
+
 .input {
     box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
 }
 
     

@@ -1,19 +1,15 @@
 #page-description {
     @include bg-wrapper($bg-banner);
 }
-
 .content-container {
     @include pg-section($pg-200, 0, $pg-200, 0);
 }
-
 .fz-h1 {
     @include title-font($fz-title-h1);
 }
-
 .fz-h2 {
     @include title-font($fz-title-h2);
 }
-
 @media (max-width: 650px) {
     .fz-h1 {
         @include title-font($fx-title-mob-h1);
@@ -23,11 +19,9 @@
         @include title-font($fx-title-mob-h2);
     }
 }
-
 .header {
     position: absolute;
     
-    justify-content: space-between;
     width: 100%;
     top: 25px;
     left: 0;
@@ -45,21 +39,31 @@
 }
 
 .header-main {
-    justify-content: space-between;
-    flex-basis: 501px;
+    flex: 0 1 501px;
+}
+
+.main-logo {
+    flex: 0 1 98px;
+}
+.main-menu {
+    flex: 0 1 313px;
 }
 
 .menu-list {
     flex-wrap: wrap;
 }
-
-.menu-item {
-    margin-right: $mg-24;
+.header-search {
+    flex: 0 1 248px;
+    margin-left: 24px;
 }
 
-.menu-item:last-child {
-    margin-right: 0;
-}
+// .menu-item {
+//     margin-right: $mg-24;
+// }
+
+// .menu-item:last-child {
+//     margin-right: 0;
+// }
 
 .menu-link:hover,
 .logo-link:hover {
@@ -67,10 +71,7 @@
 }
 
 
-.header-search {
-    flex: 0 1 248px;
-    margin-left: 24px;
-}
+
 
 
 
@@ -136,7 +137,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 20px;       
     }
 
     .content-container {
@@ -146,10 +147,14 @@
     .header-main {
         justify-content: flex-start;
     }
+    #page-description {
+        position: relative;
+    }
 
-    .header {
+    #page-description .header {
         top: 5px;
         height: 20%; // костыль
+        position: absolute;
     }
 
     .header,

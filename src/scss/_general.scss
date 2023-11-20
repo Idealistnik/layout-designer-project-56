@@ -5,19 +5,16 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.woff2");
 }
-
 @font-face {
     font-weight: 700;
     font-family: "Roboto";
     src: url("../fonts/Roboto-Bold.woff2");
 }
-
 @font-face {
     font-weight: 400;
     font-family: "Arial";
     src: url("../fonts/arial-narrow.woff2");
 }
-
  
 .grid-container {
     display: grid;
@@ -93,6 +90,10 @@
     display: flex;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
 .input {
     box-sizing: border-box;
 }

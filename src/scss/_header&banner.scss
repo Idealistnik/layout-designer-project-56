@@ -31,13 +31,14 @@
     .header-content {
         margin: 0 auto;
         max-width: 1200px;
+        // width: 83.333%;
 
         .header-main {
             flex: 0 1 501px;
         }
 
         .header-search {
-            flex: 0 1 248px;
+            flex: 0 1 248px; 
         }
     }
 }
@@ -48,15 +49,17 @@
     .main-logo {
         align-items: center;
         flex: 0 1 98px;
+        margin-right: 10px; //доп
     }
 
     .main-menu {
-        flex: 0 0 313px;
-        // margin: 0 24px;
-        flex-wrap: wrap;
+        flex: 0 1 313px;        
 
         .menu-list {
             flex-wrap: wrap;
+            .menu-item {
+                margin-right: 10px;  // Доп
+            }
         }
     }
 }
@@ -77,6 +80,8 @@
         color: transparent;
     }
 }
+
+
 
 .banner-form {
     flex-wrap: wrap;
@@ -115,6 +120,22 @@
 
 }
 
+@media (max-width: 545px) {
+    .p-text {
+        margin: 0 10px 10px 10px; //доп
+    }
+    .banner-form {
+        // flex-direction: column;
+        .input-banner,
+        .button-green {
+            flex: 0 1 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+    }
+}
+
 @media (max-width: 415px) {
     .fz-h1 {
         @include title-font($fx-title-mob-h1);
@@ -125,104 +146,79 @@
     }
 }
 
+
+
+
 @media (max-width: 415px) {
 
     .bg-wrapper {
         padding: $pg-20;
-    
 
-    .header-position {
-        // top: 27px;
-        // left: 20px;
-        // margin: 0 20px 0 20px;
-        // width: 80%;
-        // max-width: 374px;
-      
-        max-height: 145px;
-    
-        .header-content {
-            flex-direction: column;
-            align-items: flex-start;
-            font-weight: bold;
 
-            // margin: 0 20px 0 0;
-            // max-width: 100%;
-            // height: 100%;
+        .header-position {
+            max-height: 145px;
 
-            margin: 0 auto;
-        max-width: 374px;
-            
-            min-height: 145px;            
-    
-            .header-main {
+            .header-content {
                 flex-direction: column;
-                flex: 0 1 102px;
-                align-items: start;
-                .main-logo {       
-                    min-width: 98px;             
-                    flex: 0 0 24px; 
-                }
-                .main-menu {
-                    flex: 0 0 61px;
-                    
-                    .menu-list {
-                        flex-direction: column;
-                        
+                align-items: flex-start;
+                font-weight: bold;
+                margin: 0 auto;
+                width: 90.338%;
+                min-height: 145px;
+
+                .header-main {
+                    flex-direction: column;
+                    flex: 0 1 102px;
+                    align-items: start;
+
+                    .main-logo {
+                        min-width: 98px;
+                        flex: 0 0 24px;
                     }
-            }
-            
-    
-          
-            }
-            .header-search {
-                flex: 0 0 25px;    
-                margin-top: 18px;   
-                width: 100%;
-            }
 
+                    .main-menu {
+                        flex: 0 0 61px;
+
+                        .menu-list {
+                            flex-direction: column;
+
+                        }
+                    }
+
+                }
+
+                .header-search {
+                    flex: 0 0 25px;
+                    margin-top: 18px;
+                    width: 100%;
+                }
+
+            }
         }
+
     }
-    
+
+
+    .content-container {
+        @include pg-section($pg-230, 0, $pg-181, 0);
+
+        .p-text {
+            margin: 16px 0 0 0; 
+        }
+
+        .banner-form {
+            justify-content: center;
+            .input-banner,
+        .button-green {
+            min-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        }
+
+        .input-banner {
+            flex: 0 1 100%;
+        }
+
+    }
 }
-
-
-.content-container {
-    @include pg-section($pg-230, 0, $pg-181, 0);
-
-    .p-text {
-        margin-top: 16px;
-    }
-    
-    .banner-form {
-        justify-content: center;
-    }
-    
-    .input-banner {
-        // min-width: 100%;
-        flex: 0 1 100%;
-    }
-
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    

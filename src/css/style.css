@@ -215,13 +215,16 @@
 .header-main .main-logo {
   align-items: center;
   flex: 0 1 98px;
+  margin-right: 10px;
 }
 .header-main .main-menu {
-  flex: 0 0 313px;
-  flex-wrap: wrap;
+  flex: 0 1 313px;
 }
 .header-main .main-menu .menu-list {
   flex-wrap: wrap;
+}
+.header-main .main-menu .menu-list .menu-item {
+  margin-right: 10px;
 }
 
 .menu-link:hover,
@@ -271,6 +274,17 @@
   border: none;
 }
 
+@media (max-width: 545px) {
+  .p-text {
+    margin: 0 10px 10px 10px;
+  }
+  .banner-form .input-banner,
+  .banner-form .button-green {
+    flex: 0 1 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 @media (max-width: 415px) {
   .fz-h1 {
     font-size: 30px;
@@ -303,7 +317,7 @@
     align-items: flex-start;
     font-weight: bold;
     margin: 0 auto;
-    max-width: 374px;
+    width: 90.338%;
     min-height: 145px;
   }
   .bg-wrapper .header-position .header-content .header-main {
@@ -330,10 +344,16 @@
     padding: 230px 0 181px 0;
   }
   .content-container .p-text {
-    margin-top: 16px;
+    margin: 16px 0 0 0;
   }
   .content-container .banner-form {
     justify-content: center;
+  }
+  .content-container .banner-form .input-banner,
+  .content-container .banner-form .button-green {
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .content-container .input-banner {
     flex: 0 1 100%;

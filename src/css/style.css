@@ -305,7 +305,7 @@
     flex-direction: column;
     top: 7px;
     font-weight: bold;
-    flex: 0 1 200px;
+    min-height: 145px;
   }
   .header .header-main {
     flex-direction: column;
@@ -325,7 +325,6 @@
   .header .header-search {
     flex: 0 1 25px;
     margin-left: 0;
-    margin-top: 18px;
     width: 100%;
   }
   .p {

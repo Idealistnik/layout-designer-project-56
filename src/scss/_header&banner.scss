@@ -154,7 +154,7 @@
         // 145 / 813 *100%
         top: 7px;
         font-weight: bold;
-        flex: 0 1 200px;
+        min-height: 145px;
         .header-main {
             flex-direction: column;
             align-items: start;
@@ -164,7 +164,6 @@
                 // align-items: center;
                 width: 98px;                
                 flex: 0 1 24px;
-               
             }
             .main-menu {                
                 flex: 0 1 61px;
@@ -177,7 +176,7 @@
         .header-search {
             flex: 0 1 25px;
             margin-left: 0;
-            margin-top: 18px;
+            // margin-top: 18px;
             width: 100%;
         }   
     }

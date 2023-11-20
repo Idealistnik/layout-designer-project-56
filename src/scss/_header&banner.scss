@@ -34,9 +34,9 @@
     align-items: center;
 }
 
-.logo-img {
-    margin-right: 16px;
-}
+// .logo-img {
+//     margin-right: 16px;
+// }
 
 .header-main {
     flex: 0 1 501px;
@@ -70,12 +70,6 @@
     color: $color-white;
 }
 
-
-
-
-
-
-
 .input-header {
     border-radius: 50px;
     background-color: $bg-gray;
@@ -87,7 +81,6 @@
         color: transparent;
     }
 }
-
 
 .banner-form {
     display: flex;
@@ -144,43 +137,80 @@
         @include pg-section(230px, 0, 181px, 0);
     }
 
-    .header-main {
-        justify-content: flex-start;
-    }
-    #page-description {
-        position: relative;
-    }
 
-    #page-description .header {
-        top: 5px;
-        height: 20%; // костыль
-        position: absolute;
-    }
-
-    .header,
-    .header-main,
-    .menu-list {
-        align-items: start;
+    .header {
         flex-direction: column;
+        // align-items: flex-start;
+        // justify-content: space-between;
+    
+        // 145 / 813 *100%
+        top: 5px;
         font-weight: bold;
-
-        .main-logo {
-            margin: 0 0 17px 0;
-        }
-
-        .header-search {
-            width: 100%;
-            margin: 0;
-        }
-
-        .menu-list {
-            margin: 0 0 18px 0;
-
-            .menu-item {
-                margin-right: 0;    
+        flex: 0 1 200px;
+        .header-main {
+            flex-direction: column;
+            align-items: start;
+            // justify-content: flex-start;
+            flex: 0 1 102px;
+            .main-logo {
+                // align-items: center;
+                width: 98px;                
+                flex: 0 1 24px;
+               
+            }
+            .main-menu {                
+                flex: 0 1 61px;
+                .menu-list {
+                    flex-direction: column;
+                }
+                
             }
         }
+        .header-search {
+            flex: 0 1 25px;
+            margin-left: 0;
+            margin-top: 18px;
+            width: 100%;
+        }
+        
+
+
+
+
     }
+
+    
+
+    // #page-description .header {
+    //     top: 5px;
+    //     height: 20%; // костыль
+    //     position: absolute;
+    // }
+
+    // .header,
+    // .header-main,
+    // .menu-list {
+    //     align-items: start;
+    //     flex-direction: column;
+    //     font-weight: bold;
+
+    //     .main-logo {
+    //         margin: 0 0 17px 0;
+    //     }
+
+    //     .header-search {
+    //         width: 100%;
+    //         margin: 0;
+    //     }
+
+    //     .menu-list {
+    //         margin: 0 0 18px 0;
+
+    //         .menu-item {
+    //             margin-right: 0;    
+    //         }
+    //     }
+    // }
     .p {
         margin-top: 16px;
     }

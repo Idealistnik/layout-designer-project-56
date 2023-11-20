@@ -1,5 +1,21 @@
 @import "./variables.scss";
 
+// .fz-h1 {
+//     @include title-font($fz-title-h1);
+// }
+// .fz-h2 {
+//     @include title-font($fz-title-h2);
+// }
+// @media (max-width: 650px) {
+//     .fz-h1 {
+//         @include title-font($fx-title-mob-h1);
+//     }
+
+//     .fz-h2 {
+//         @include title-font($fx-title-mob-h2);
+//     }
+// }
+
 @font-face {
     font-weight: 400;
     font-family: "Roboto";
@@ -18,7 +34,7 @@
  
 .grid-container {
     display: grid;
-    grid-template-columns: 8.333% 83.333% 8.333%;
+    grid-template-columns: 119 / 1440 * 100% 1200 / 1440 * 100%  121 / 1440 * 100% ;
     margin: 0 auto;
     max-width: 1440px;
     background-color: $bg-black;
@@ -56,8 +72,6 @@
     text-align: center;
     margin: 0;
 }
-
-
 .fz-11 {
     font-size: 11px;
 }
@@ -66,7 +80,6 @@
     margin-top: 31px;
     color: $color-white;
 }
-
 .button {
     border-radius: 5px;
     padding: 20px 30px;
@@ -74,22 +87,18 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-
 .link {
     text-decoration: none;
     color: inherit;
 }
-
 .list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .flex {
     display: flex;
 }
-
 .flex-between {
     display: flex;
     justify-content: space-between;

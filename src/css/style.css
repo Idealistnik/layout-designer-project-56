@@ -30,11 +30,12 @@
   margin: 0 auto;
 }
 
-.main-font, body {
+.main-font, body, .main-styles {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
   color: #CACACA;
+  background-color: #08020D;
   margin: 0;
 }
 
@@ -111,11 +112,12 @@
   margin: 0 auto;
 }
 
-.main-font, body {
+.main-font, body, .main-styles {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
   color: #CACACA;
+  background-color: #08020D;
   margin: 0;
 }
 
@@ -216,6 +218,7 @@
 }
 .header-main .main-menu {
   flex: 0 0 313px;
+  flex-wrap: wrap;
 }
 .header-main .main-menu .menu-list {
   flex-wrap: wrap;
@@ -268,7 +271,7 @@
   border: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 415px) {
   .fz-h1 {
     font-size: 30px;
     line-height: 45px;
@@ -288,48 +291,48 @@
     margin: 0;
   }
 }
-@media (max-width: 650px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
+@media (max-width: 415px) {
+  .bg-wrapper {
     padding: 20px;
   }
-  .content-container {
-    padding: 230px 0 181px 0;
+  .bg-wrapper .header-position {
+    max-height: 145px;
   }
-  .header {
+  .bg-wrapper .header-position .header-content {
     flex-direction: column;
-    top: 7px;
+    align-items: flex-start;
     font-weight: bold;
+    margin: 0 auto;
+    max-width: 374px;
     min-height: 145px;
   }
-  .header .header-main {
+  .bg-wrapper .header-position .header-content .header-main {
     flex-direction: column;
-    align-items: start;
     flex: 0 1 102px;
+    align-items: start;
   }
-  .header .header-main .main-logo {
-    width: 98px;
-    flex: 0 1 24px;
+  .bg-wrapper .header-position .header-content .header-main .main-logo {
+    min-width: 98px;
+    flex: 0 0 24px;
   }
-  .header .header-main .main-menu {
-    flex: 0 1 61px;
+  .bg-wrapper .header-position .header-content .header-main .main-menu {
+    flex: 0 0 61px;
   }
-  .header .header-main .main-menu .menu-list {
+  .bg-wrapper .header-position .header-content .header-main .main-menu .menu-list {
     flex-direction: column;
   }
-  .header .header-search {
-    flex: 0 1 25px;
-    margin-left: 0;
+  .bg-wrapper .header-position .header-content .header-search {
+    flex: 0 0 25px;
+    margin-top: 18px;
     width: 100%;
   }
-  .p {
+  .bg-wrapper .p-text {
     margin-top: 16px;
   }
-  .banner-form {
+  .bg-wrapper .banner-form {
     justify-content: center;
   }
-  .input-banner {
+  .bg-wrapper .input-banner {
     flex: 0 1 100%;
   }
 }

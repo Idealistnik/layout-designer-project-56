@@ -8,6 +8,10 @@
     @include pg-section($pg-200, 0, $pg-200, 0);
 }
 
+.main-styles {
+    @extend .main-font;
+}
+
 .fz-h1 {
     @include title-font($fz-title-h1);
 }
@@ -48,6 +52,8 @@
 
     .main-menu {
         flex: 0 0 313px;
+        // margin: 0 24px;
+        flex-wrap: wrap;
 
         .menu-list {
             flex-wrap: wrap;
@@ -109,7 +115,7 @@
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 415px) {
     .fz-h1 {
         @include title-font($fx-title-mob-h1);
     }
@@ -119,72 +125,102 @@
     }
 }
 
-@media (max-width: 650px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
+@media (max-width: 415px) {
 
-    .content-container {
-        @include pg-section(230px, 0, 181px, 0);
-    }
+    .bg-wrapper {
+        padding: $pg-20;
+    
 
-
-
-
-    .header {
-        flex-direction: column;
-        // align-items: flex-start;
-        // justify-content: space-between;
-
-        // 145 / 813 *100%
-        top: 7px;
-        font-weight: bold;
-        min-height: 145px;
-
-        .header-main {
+    .header-position {
+        // top: 27px;
+        // left: 20px;
+        // margin: 0 20px 0 20px;
+        // width: 80%;
+        // max-width: 374px;
+        max-height: 145px;
+    
+        .header-content {
             flex-direction: column;
-            align-items: start;
-            // justify-content: flex-start;
-            flex: 0 1 102px;
+            align-items: flex-start;
+            font-weight: bold;
 
-            .main-logo {
-                // align-items: center;
-                width: 98px;
-                flex: 0 1 24px;
-            }
+            // margin: 0 20px 0 0;
+            // max-width: 100%;
+            // height: 100%;
 
-            .main-menu {
-                flex: 0 1 61px;
-
-                .menu-list {
-                    flex-direction: column;
+            margin: 0 auto;
+        max-width: 374px;
+            
+            min-height: 145px;            
+    
+            .header-main {
+                flex-direction: column;
+                flex: 0 1 102px;
+                align-items: start;
+                .main-logo {       
+                    min-width: 98px;             
+                    flex: 0 0 24px; 
                 }
-
+                .main-menu {
+                    flex: 0 0 61px;
+                    
+                    .menu-list {
+                        flex-direction: column;
+                        
+                    }
             }
-        }
+            
+    
+          
+            }
+            .header-search {
+                flex: 0 0 25px;    
+                margin-top: 18px;   
+                width: 100%;
+            }
 
-        .header-search {
-            flex: 0 1 25px;
-            margin-left: 0;
-            // margin-top: 18px;
-            width: 100%;
         }
     }
-
-
-    .p {
+    .p-text {
         margin-top: 16px;
     }
-
+    
     .banner-form {
         justify-content: center;
     }
-
+    
     .input-banner {
         // min-width: 100%;
         flex: 0 1 100%;
     }
 
 }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    

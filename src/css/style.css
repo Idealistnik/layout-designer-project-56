@@ -222,7 +222,7 @@
   }
   .header {
     flex-direction: column;
-    top: 5px;
+    top: 7px;
     font-weight: bold;
     flex: 0 1 200px;
   }

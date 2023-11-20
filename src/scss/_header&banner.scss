@@ -137,6 +137,7 @@
         // margin: 0 20px 0 20px;
         // width: 80%;
         // max-width: 374px;
+      
         max-height: 145px;
     
         .header-content {
@@ -187,7 +188,7 @@
 
 
 .content-container {
-    @include pg-section($pg-250, 0, $pg-201, 0);
+    @include pg-section($pg-230, 0, $pg-181, 0);
 
     .p-text {
         margin-top: 16px;

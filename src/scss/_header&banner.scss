@@ -110,8 +110,10 @@
     .button-green {
         flex-grow: 1;
         max-height: 57px;
-        background-color: $bg-green;
+        background-color: $bg-green;   
         border: none;
+        padding: 21px 30px;
+        font-family: "Arial", sans-serif; //нужно будет проверить шрифт arial тк в общем поменял
     }
 
 }

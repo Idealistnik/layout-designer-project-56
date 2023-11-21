@@ -44,20 +44,21 @@
   color: #FFFFFF;
 }
 
+.p-text-artist {
+  text-align: left;
+  color: #FFFFFF;
+}
+
 .text-left {
   text-align: left;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .button {
   border-radius: 5px;
-  padding: 20px 30px;
   color: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -134,20 +135,21 @@
   color: #FFFFFF;
 }
 
+.p-text-artist {
+  text-align: left;
+  color: #FFFFFF;
+}
+
 .text-left {
   text-align: left;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .button {
   border-radius: 5px;
-  padding: 20px 30px;
   color: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -286,6 +288,8 @@
   max-height: 57px;
   background-color: #34C176;
   border: none;
+  padding: 21px 30px;
+  font-family: "Arial", sans-serif;
 }
 
 @media (max-width: 545px) {
@@ -422,20 +426,21 @@
   color: #FFFFFF;
 }
 
+.p-text-artist {
+  text-align: left;
+  color: #FFFFFF;
+}
+
 .text-left {
   text-align: left;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .button {
   border-radius: 5px;
-  padding: 20px 30px;
   color: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -490,20 +495,24 @@
 }
 
 .button-atist {
-  border-radius: 5px;
-  padding: 21px 96px 22px 67px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 12.8px;
-  border: none;
   width: 200px;
   height: 62px;
-  text-align: center;
+  color: #FFFFFF;
+  font-size: 12.8px;
+  border: none;
+}
+
+.button-atist.bg-blue {
+  padding: 21px 96px 22px 67px;
+}
+
+.button-atist.bg-orange {
+  padding: 21px 47px 22px 67px;
 }
 
 .button-atist.bg-blue:before {
   content: " ";
-  background: url("../images/play-button.svg") no-repeat;
+  background: url("../images/play-button.svg"), no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -513,12 +522,16 @@
 
 .button-atist.bg-orange:before {
   content: " ";
-  background: url("../images/heart.svg") no-repeat;
+  background: url("../images/heart.svg"), no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;
   top: 21px;
   left: 31px;
+}
+
+.button-atist:first-of-type {
+  margin: 0 24px 0 0;
 }
 
 .bg-blue {
@@ -527,10 +540,6 @@
 
 .bg-orange {
   background-color: #95390C;
-}
-
-.mg-right-24 {
-  margin-right: 24px;
 }
 
 @media (max-width: 415px) {
@@ -548,7 +557,7 @@
 }
 @media (max-width: 415px) {
   .bg-wrapper-artist {
-    padding: 20px;
+    padding: 0 20px;
   }
   .bg-wrapper-artist .header-position {
     max-height: 145px;
@@ -580,6 +589,9 @@
     flex: 0 0 25px;
     margin-top: 18px;
     width: 100%;
+  }
+  .bg-wrapper-artist .button-atist:first-of-type {
+    margin: 0 0 24px 0;
   }
   .fz-h1 {
     font-size: 30px;

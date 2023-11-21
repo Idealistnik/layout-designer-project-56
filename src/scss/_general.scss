@@ -66,20 +66,33 @@
     text-align: center;   
     color: $color-white;
 }
+
+.p-text-artist {
+    text-align: left;
+    color: $color-white;
+}
+
+
 .text-left {
     text-align: left;
 }
-.text-center {
-    text-align: center;
-}
+
+
+// .text-center {
+//     text-align: center;
+// }
+
+
 
 .button {
     border-radius: 5px;
-    padding: 20px 30px;
     color: inherit;
     text-transform: uppercase;
     cursor: pointer;
-}
+    font-family: "Roboto", sans-serif;
+    // text-align: center;
+}     
+    
 .link {
     text-decoration: none;
     color: inherit;

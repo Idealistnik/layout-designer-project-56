@@ -18,22 +18,29 @@
 }
 
 
+
 .button-atist {
-    border-radius: 5px;
-    padding: 21px 96px 22px 67px;
-    color: $color-white;
-    cursor: pointer;
-    font-size: 12.8px;
-    // line-height: 19.2px;
-    border: none;
     width: 200px;
-    height: 62px;
-    text-align: center;
+    height: 62px;        
+
+    color: $color-white;    
+    font-size: 12.8px;    
+    border: none;
 }
+
+.button-atist.bg-blue {
+    padding: 21px 96px 22px 67px;  
+}
+
+.button-atist.bg-orange {
+    padding: 21px 47px 22px 67px;  
+}
+
+
 
 .button-atist.bg-blue:before {
     content: " ";
-    background: url("../images/play-button.svg") no-repeat;
+    background: url("../images/play-button.svg"), no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -45,12 +52,16 @@
 
 .button-atist.bg-orange:before {
     content: " ";
-    background: url("../images/heart.svg") no-repeat;
+    background: url("../images/heart.svg"), no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
     top: 21px;
     left: 31px;    
+}
+
+.button-atist:first-of-type {
+    margin: 0 $mg-24 0 0;
 }
 
 
@@ -62,18 +73,14 @@
     background-color: $bg-orange;
 }
 
-.mg-right-24 {
-    margin-right: $mg-24;
-}
-
-
-
-
-
-
-// .content-container-artist {
-//     @include pg-section($pg-250, 0, $pg-223, 0);
+// .mg-right-24 {
+//     margin-right: $mg-24;   убрал класс
 // }
+
+
+
+
+
 
 @media (max-width: 415px) {
     .fz-h1 {
@@ -92,7 +99,7 @@
 @media (max-width: 415px) {
 
     .bg-wrapper-artist {
-        padding: $pg-20;
+        padding: 0 $pg-20;
 
 
         .header-position {
@@ -135,7 +142,10 @@
 
             }
         }
-
+        .button-atist:first-of-type {
+            margin: 0 0 $mg-24 0;
+        }
+        
     }
     .fz-h1 {
         @include title-font($fx-title-mob-h1);
@@ -143,5 +153,6 @@
     .content-container-artist {
         @include pg-section($pg-225, 0, $pg-224, 0);
     }
+    
     
 }

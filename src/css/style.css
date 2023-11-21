@@ -53,6 +53,10 @@
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .button {
   border-radius: 5px;
   color: inherit;
@@ -142,6 +146,10 @@
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .button {
@@ -433,6 +441,10 @@
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .button {

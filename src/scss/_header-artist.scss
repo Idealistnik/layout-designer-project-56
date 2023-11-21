@@ -4,8 +4,10 @@
     @include bg-wrapper($bg-artist);
 }
 
-.content-container {
-    @include pg-section($pg-200, 0, $pg-200, 0);
+.content-container-artist {
+    @extend %content-container;
+    // @include pg-section($pg-200, 0, $pg-200, 0);
+    @include pg-section($pg-250, 0, $pg-223, 0);
 }
 
 .fz-h1 {
@@ -53,15 +55,15 @@
 
 
 
-.content-container {
-    @include pg-section($pg-250, 0, $pg-223, 0);
-}
+// .content-container-artist {
+//     @include pg-section($pg-250, 0, $pg-223, 0);
+// }
 
 @media (max-width: 415px) {
     .fz-h1 {
         @include title-font($fx-title-mob-h1);
     }
-    .content-container {
+    .content-container-artist {
         @include pg-section($pg-225, 0, $pg-224, 0);
     }
 

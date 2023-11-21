@@ -29,7 +29,7 @@
   text-transform: uppercase;
 }
 
-.content-container {
+.content-container-artist {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -135,7 +135,7 @@
   text-transform: uppercase;
 }
 
-.content-container {
+.content-container-artist {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -434,7 +434,7 @@
   text-transform: uppercase;
 }
 
-.content-container {
+.content-container-artist {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -515,8 +515,8 @@
   background-size: cover;
 }
 
-.content-container {
-  padding: 200px 0 200px 0;
+.content-container-artist {
+  padding: 250px 0 223px 0;
 }
 
 .fz-h1 {
@@ -560,10 +560,6 @@
   left: 31px;
 }
 
-.content-container {
-  padding: 250px 0 223px 0;
-}
-
 @media (max-width: 415px) {
   .fz-h1 {
     font-size: 30px;
@@ -573,7 +569,7 @@
     text-transform: uppercase;
     margin: 0;
   }
-  .content-container {
+  .content-container-artist {
     padding: 225px 0 224px 0;
   }
 }

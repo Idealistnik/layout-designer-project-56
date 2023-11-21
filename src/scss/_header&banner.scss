@@ -1,6 +1,6 @@
 @import "./general.scss";
 
-.bg-wrapper {
+.bg-wrapper-index {
     @include bg-wrapper($bg-banner);
 }
 
@@ -147,7 +147,7 @@
 
 @media (max-width: 415px) {
 
-    .bg-wrapper {
+    .bg-wrapper-index {
         padding: $pg-20;
 
 

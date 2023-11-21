@@ -210,7 +210,7 @@
   margin-right: 24px;
 }
 
-.bg-wrapper {
+.bg-wrapper-index {
   background: url("../images/banner.png");
   background-position: center;
   background-size: cover;
@@ -350,13 +350,13 @@
   }
 }
 @media (max-width: 415px) {
-  .bg-wrapper {
+  .bg-wrapper-index {
     padding: 20px;
   }
-  .bg-wrapper .header-position {
+  .bg-wrapper-index .header-position {
     max-height: 145px;
   }
-  .bg-wrapper .header-position .header-content {
+  .bg-wrapper-index .header-position .header-content {
     flex-direction: column;
     align-items: flex-start;
     font-weight: bold;
@@ -364,22 +364,22 @@
     width: 90.338%;
     min-height: 145px;
   }
-  .bg-wrapper .header-position .header-content .header-main {
+  .bg-wrapper-index .header-position .header-content .header-main {
     flex-direction: column;
     flex: 0 1 102px;
     align-items: start;
   }
-  .bg-wrapper .header-position .header-content .header-main .main-logo {
+  .bg-wrapper-index .header-position .header-content .header-main .main-logo {
     min-width: 98px;
     flex: 0 0 24px;
   }
-  .bg-wrapper .header-position .header-content .header-main .main-menu {
+  .bg-wrapper-index .header-position .header-content .header-main .main-menu {
     flex: 0 0 61px;
   }
-  .bg-wrapper .header-position .header-content .header-main .main-menu .menu-list {
+  .bg-wrapper-index .header-position .header-content .header-main .main-menu .menu-list {
     flex-direction: column;
   }
-  .bg-wrapper .header-position .header-content .header-search {
+  .bg-wrapper-index .header-position .header-content .header-search {
     flex: 0 0 25px;
     margin-top: 18px;
     width: 100%;
@@ -509,7 +509,7 @@
   margin-right: 24px;
 }
 
-.bg-wrapper {
+.bg-wrapper-artist {
   background: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;

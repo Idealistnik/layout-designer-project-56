@@ -510,6 +510,18 @@
   padding: 21px 47px 22px 67px;
 }
 
+.buttons {
+  max-width: 424px;
+}
+
+.bg-blue {
+  background-color: #5328A1;
+}
+
+.bg-orange {
+  background-color: #95390C;
+}
+
 .button-atist.bg-blue:before {
   content: " ";
   background: url("../images/play-button.svg"), no-repeat;
@@ -528,18 +540,6 @@
   position: absolute;
   top: 21px;
   left: 31px;
-}
-
-.button-atist:first-of-type {
-  margin: 0 24px 0 0;
-}
-
-.bg-blue {
-  background-color: #5328A1;
-}
-
-.bg-orange {
-  background-color: #95390C;
 }
 
 @media (max-width: 415px) {
@@ -590,8 +590,11 @@
     margin-top: 18px;
     width: 100%;
   }
-  .bg-wrapper-artist .button-atist:first-of-type {
-    margin: 0 0 24px 0;
+  .bg-wrapper-artist .buttons {
+    max-width: 200px;
+    min-height: 148px;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
   .fz-h1 {
     font-size: 30px;

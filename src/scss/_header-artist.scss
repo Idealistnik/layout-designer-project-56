@@ -35,6 +35,22 @@
 .button-atist.bg-orange {
     padding: 21px 47px 22px 67px;  
 }
+// .button-atist:first-of-type {
+//     margin: 0 $mg-24 0 0;
+// }
+
+.buttons {
+    max-width: 424px;
+}
+
+.bg-blue {
+    background-color: $bg-blue;
+}
+
+.bg-orange {
+    background-color: $bg-orange;
+}
+
 
 
 
@@ -60,18 +76,9 @@
     left: 31px;    
 }
 
-.button-atist:first-of-type {
-    margin: 0 $mg-24 0 0;
-}
 
 
-.bg-blue {
-    background-color: $bg-blue;
-}
 
-.bg-orange {
-    background-color: $bg-orange;
-}
 
 // .mg-right-24 {
 //     margin-right: $mg-24;   убрал класс
@@ -142,8 +149,15 @@
 
             }
         }
-        .button-atist:first-of-type {
-            margin: 0 0 $mg-24 0;
+        // .button-atist:first-of-type {
+        //     margin: 0 0 $mg-24 0;
+        // }
+        .buttons {
+            max-width: 200px;
+            min-height: 148px;
+            flex-wrap: wrap;
+            align-content: space-between;
+
         }
         
     }

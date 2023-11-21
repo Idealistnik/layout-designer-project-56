@@ -324,6 +324,7 @@
   }
   .bg-wrapper-index .header-position {
     max-height: 145px;
+    top: 27px;
   }
   .bg-wrapper-index .header-position .header-content {
     flex-direction: column;
@@ -367,6 +368,9 @@
     min-width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .content-container .banner-form .button-green {
+    padding: 21px 30px;
   }
   .content-container .input-banner {
     flex: 0 1 100%;

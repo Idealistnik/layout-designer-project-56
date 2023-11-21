@@ -87,7 +87,7 @@
     .input-banner {
         flex: 0 1 270px;
         min-height: 50px;
-        padding: 0 0 0 $pg-20;
+        padding: 0 0 0 $pg-20;   
         border: 2px solid $color-gray-light;
         border-radius: 3px;
         margin-bottom: 1.5rem;
@@ -154,6 +154,8 @@
 
         .header-position {
             max-height: 145px;
+            top: 27px;
+
 
             .header-content {
                 flex-direction: column;
@@ -210,6 +212,10 @@
             min-width: 100%;
             margin-left: 0;
             margin-right: 0;
+            
+        }
+        .button-green {
+            padding: 21px 30px;  // в макете 21 в задании 22 попробовал поменять
         }
         }
 

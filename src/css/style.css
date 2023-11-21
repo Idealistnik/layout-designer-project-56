@@ -21,10 +21,6 @@
   margin-top: 31px;
 }
 
-.mg-bot-47 {
-  margin-bottom: 47px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -43,7 +39,7 @@
   margin: 0;
 }
 
-.p-text {
+.p-text-index {
   text-align: center;
   color: #FFFFFF;
 }
@@ -90,18 +86,6 @@
 
 .relative {
   position: relative;
-}
-
-.bg-blue {
-  background-color: #5328A1;
-}
-
-.bg-orange {
-  background-color: #95390C;
-}
-
-.mg-right-24 {
-  margin-right: 24px;
 }
 
 @font-face {
@@ -127,10 +111,6 @@
   margin-top: 31px;
 }
 
-.mg-bot-47 {
-  margin-bottom: 47px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -149,7 +129,7 @@
   margin: 0;
 }
 
-.p-text {
+.p-text-index {
   text-align: center;
   color: #FFFFFF;
 }
@@ -196,18 +176,6 @@
 
 .relative {
   position: relative;
-}
-
-.bg-blue {
-  background-color: #5328A1;
-}
-
-.bg-orange {
-  background-color: #95390C;
-}
-
-.mg-right-24 {
-  margin-right: 24px;
 }
 
 .bg-wrapper-index {
@@ -321,8 +289,9 @@
 }
 
 @media (max-width: 545px) {
-  .p-text {
-    margin: 0 10px 10px 10px;
+  .p-text-index {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .banner-form .input-banner,
   .banner-form .button-green {
@@ -387,8 +356,8 @@
   .content-container {
     padding: 230px 0 181px 0;
   }
-  .content-container .p-text {
-    margin: 16px 0 0 0;
+  .content-container .p-text-index {
+    margin: 16px 0 16px 0;
   }
   .content-container .banner-form {
     justify-content: center;
@@ -426,10 +395,6 @@
   margin-top: 31px;
 }
 
-.mg-bot-47 {
-  margin-bottom: 47px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -448,7 +413,7 @@
   margin: 0;
 }
 
-.p-text {
+.p-text-index {
   text-align: center;
   color: #FFFFFF;
 }
@@ -497,18 +462,6 @@
   position: relative;
 }
 
-.bg-blue {
-  background-color: #5328A1;
-}
-
-.bg-orange {
-  background-color: #95390C;
-}
-
-.mg-right-24 {
-  margin-right: 24px;
-}
-
 .bg-wrapper-artist {
   background: url("../images/Morten Harket.png");
   background-position: center;
@@ -526,6 +479,10 @@
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+}
+
+.p-text-artist {
+  margin-bottom: 48px;
 }
 
 .button-atist {
@@ -560,7 +517,66 @@
   left: 31px;
 }
 
+.bg-blue {
+  background-color: #5328A1;
+}
+
+.bg-orange {
+  background-color: #95390C;
+}
+
+.mg-right-24 {
+  margin-right: 24px;
+}
+
 @media (max-width: 415px) {
+  .fz-h1 {
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .content-container-artist {
+    padding: 225px 0 224px 0;
+  }
+}
+@media (max-width: 415px) {
+  .bg-wrapper-artist {
+    padding: 20px;
+  }
+  .bg-wrapper-artist .header-position {
+    max-height: 145px;
+  }
+  .bg-wrapper-artist .header-position .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 90.338%;
+    min-height: 145px;
+  }
+  .bg-wrapper-artist .header-position .header-content .header-main {
+    flex-direction: column;
+    flex: 0 1 102px;
+    align-items: start;
+  }
+  .bg-wrapper-artist .header-position .header-content .header-main .main-logo {
+    min-width: 98px;
+    flex: 0 0 24px;
+  }
+  .bg-wrapper-artist .header-position .header-content .header-main .main-menu {
+    flex: 0 0 61px;
+  }
+  .bg-wrapper-artist .header-position .header-content .header-main .main-menu .menu-list {
+    flex-direction: column;
+  }
+  .bg-wrapper-artist .header-position .header-content .header-search {
+    flex: 0 0 25px;
+    margin-top: 18px;
+    width: 100%;
+  }
   .fz-h1 {
     font-size: 30px;
     line-height: 45px;

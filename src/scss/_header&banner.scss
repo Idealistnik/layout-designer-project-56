@@ -117,8 +117,9 @@
 }
 
 @media (max-width: 545px) {
-    .p-text {
-        margin: 0 10px 10px 10px; //доп
+    .p-text-index {
+        margin-left: 10px; //доп
+        margin-right: 10px;//доп
     }
     .banner-form {
         // flex-direction: column;
@@ -198,8 +199,8 @@
     .content-container {
         @include pg-section($pg-230, 0, $pg-181, 0);
 
-        .p-text {
-            margin: 16px 0 0 0; 
+        .p-text-index {
+            margin: 16px 0 16px 0; 
         }
 
         .banner-form {

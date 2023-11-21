@@ -8,10 +8,6 @@
     @include pg-section($pg-200, 0, $pg-200, 0);
 }
 
-.main-styles {
-    @extend .main-font;
-}
-
 .fz-h1 {
     @include title-font($fz-title-h1);
 }

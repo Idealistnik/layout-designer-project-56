@@ -1,8 +1,9 @@
 @import "./general.scss";
 @import "./variables.scss";
 @import "./header&banner";
+@import "./header-artist";
 
 
-body {
-    @extend .main-font;
-}
+// body {
+//     @extend .main-font;
+// }

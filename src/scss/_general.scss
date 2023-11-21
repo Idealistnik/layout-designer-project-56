@@ -22,7 +22,9 @@
 .mg-top-31 {
     margin-top: 31px;
 }
-
+.mg-bot-47 {
+    margin-bottom: 47px;
+}
 .uppercase {
     text-transform: uppercase;
 }
@@ -42,7 +44,7 @@
     padding: $pg-top $pg-right $pg-bottom $pg-left;
 }
 
-.main-font {
+.main-styles {
     font-family: "Roboto", sans-serif;
     line-height: $lh;
     font-size: $fz;
@@ -57,7 +59,6 @@
     color: $color-white;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     margin: 0;
 }
 
@@ -65,6 +66,13 @@
     text-align: center;   
     color: $color-white;
 }
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
 .button {
     border-radius: 5px;
     padding: 20px 30px;
@@ -100,3 +108,17 @@
 }
 
     
+
+
+.bg-blue {
+    background-color: $bg-blue;
+}
+
+.bg-orange {
+    background-color: $bg-orange;
+}
+
+.mg-right-24 {
+    margin-right: $mg-24;
+}
+

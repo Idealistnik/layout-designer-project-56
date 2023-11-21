@@ -1,0 +1,70 @@
+@import "./general.scss";
+
+.bg-wrapper {
+    @include bg-wrapper($bg-artist);
+}
+
+.content-container {
+    @include pg-section($pg-200, 0, $pg-200, 0);
+}
+
+.fz-h1 {
+    @include title-font($fz-title-h1);
+}
+
+
+.button-atist {
+    border-radius: 5px;
+    padding: 21px 96px 22px 67px;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 12.8px;
+    // line-height: 19.2px;
+    border: none;
+    width: 200px;
+    height: 62px;
+    text-align: center;
+}
+
+.button-atist.bg-blue:before {
+    content: " ";
+    background: url("../images/play-button.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    left: 31px;
+   
+    
+}
+
+.button-atist.bg-orange:before {
+    content: " ";
+    background: url("../images/heart.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    left: 31px;
+    
+}
+
+
+
+
+
+.content-container {
+    @include pg-section($pg-250, 0, $pg-223, 0);
+}
+
+@media (max-width: 415px) {
+    .fz-h1 {
+        @include title-font($fx-title-mob-h1);
+    }
+    .content-container {
+        @include pg-section($pg-225, 0, $pg-224, 0);
+    }
+
+
+
+}

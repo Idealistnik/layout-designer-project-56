@@ -2,16 +2,23 @@
     @extend %content-container;
     @include pg-section($pg-101, 0, 0, 0);
 }
-
 h3 {
     @include title-font($fz-title-h3);
     font-weight: 400;
     margin-top: 24px;
 }
 
+
+.pricing {
+    // max-width: 100%;
+    margin: 45px 0 43px 0;
+}
+
+// Карточка
+
 .p-text-pricing {
     margin: 43px 0 0 0;
-    font-size: 16px!important;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -20,23 +27,21 @@ h3 {
 }
 
 .p-pricing-footer {
-    margin: 64px 27px 64px 23px;
+    margin: 64px 0;
 }
 
-.pricing {
-    width: 100%;
-    margin: 45px 0 43px 0;
-
-}
 
 .pricing-item {
-    max-width: 369px;
+    max-width: 30.75%;
+    // flex: 0 1 369px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1.5rem;
 
     
-    border-radius: 20px;
+    border-radius: 1rem;
 
 }
 
@@ -63,6 +68,7 @@ h3 {
 .pricing-value {
     margin: 198px 0 40px 0;
     font-size: 12.8px;
+    line-height: 1em;
     display: flex;
 
     align-items: start;
@@ -82,12 +88,6 @@ h3 {
     font-weight: 400;
 }
 
-
-
-
-
-
-
 .list {
     list-style-type: none;
     margin: 0;
@@ -97,24 +97,26 @@ h3 {
 .link-price {
     display: block;
     padding: 21px auto;
-    width: 319px;
+    // max-width: 319px;
+    width: 86.358%;
     height: 66px;
-    text-decoration: none;
-
-    border-radius: 5px;
-    border: 1px solid var(--White, #FFF);
-    color: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
+    text-decoration: none;    
+    border: 1px solid var(--White, #FFF);    
     display: flex;
     justify-content: center;
     align-items: center;
-   
+ 
 }
 
+
+
+
+
+
+
+
 .p-pricing-footer {
-    font-size: 12.8px;
+    font-size: 12.8px;  // не меняется шфрит почему-то
     font-weight: 400;
 
 }

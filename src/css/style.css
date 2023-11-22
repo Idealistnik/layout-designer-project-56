@@ -710,13 +710,18 @@ h3 {
 .link-price {
   display: block;
   padding: 21px auto;
-  width: 86.358%;
+  width: 100%;
   height: 66px;
   text-decoration: none;
   border: 1px solid var(--White, #FFF);
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-wrapper-price {
+  background-color: #08020D;
 }
 
 .p-pricing-footer {

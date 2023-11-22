@@ -98,14 +98,21 @@ h3 {
     display: block;
     padding: 21px auto;
     // max-width: 319px;
-    width: 86.358%;
+    // width: 86.358%;
+    width: 100%;
     height: 66px;
     text-decoration: none;    
-    border: 1px solid var(--White, #FFF);    
+    border: 1px solid var(--White, #FFF); 
+    color: $color-white;   
     display: flex;
     justify-content: center;
     align-items: center;
  
+}
+
+
+.bg-wrapper-price {
+    background-color: $bg-black;
 }
 
 

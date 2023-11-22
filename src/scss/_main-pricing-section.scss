@@ -1,6 +1,6 @@
 .content-container-pricing {
-    @extend %content-container;
-    @include pg-section($pg-101, 0, 0, 0);
+    @extend %content-container; 
+    @include pg-section($pg-100, 0, 0, 0);  //  в макете 101
 }
 
 .bg-wrapper-pricing {
@@ -8,12 +8,6 @@
 }
 
 
-
-.fz-h3 {
-    @include title-font($fz-title-h3);
-    font-weight: 400;
-    margin-top: 24px;
-}
 
 
 .pricing {
@@ -23,6 +17,57 @@
 
 // Карточка
 
+.bg-free {
+    background: url("../images/subscribe_1.png");
+    background-position: center;
+    background-size: cover;
+}
+.bg-standart {
+    background: url("../images/subscribe_2.png");
+    background-position: center;
+    background-size: cover;
+}
+.bg-premium {
+    background: url("../images/subscribe_3.png");
+    background-position: center;
+    background-size: cover;
+}
+.pricing-item {
+    max-width: 30.75%;
+    // flex: 0 1 369px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;   
+
+    border-radius: 1rem;
+}
+.fz-h3 {
+    @include title-font($fz-title-h3);
+    font-weight: 400;
+    margin: 24px 0 200px 0;
+}
+.pricing-value {
+    margin: 0 0 40px 0;
+    line-height: 1em;
+    display: flex;
+    align-items: start;
+
+    text-transform: uppercase;
+    color: $color-white;    
+}
+.pricing-value span:first-child {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+.pricing-value span:last-child {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+}
 .p-text-pricing {
     margin: 43px 0 0 0;
     font-size: 16px;
@@ -32,73 +77,6 @@
 
     text-align: center;
 }
-
-.p-pricing-footer {
-    margin: 64px 0;
-}
-
-
-.pricing-item {
-    max-width: 30.75%;
-    // flex: 0 1 369px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1.5rem;
-
-    
-    border-radius: 1rem;
-
-}
-
-.bg-free {
-    background: url("../images/subscribe_1.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.bg-standart {
-    background: url("../images/subscribe_2.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.bg-premium {
-    background: url("../images/subscribe_3.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.pricing-value {
-    margin: 198px 0 40px 0;
-    // font-size: 12.8px;
-    line-height: 1em;
-    display: flex;
-
-    align-items: start;
-
-}
-
-.pricing-value span:first-child {
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 400;
-    margin-right: 16px;
-}
-
-.pricing-value span:last-child {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 400;
-}
-
-.list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .link-price {
     display: flex;
     justify-content: center;
@@ -106,16 +84,18 @@
 
     width: 100%;
     height: 66px; 
-    padding: 21px auto;
-    
+        
     text-decoration: none;    
     border: 1px solid var(--White, #FFF); 
     color: $color-white;   
 }
+.p-pricing-footer {
+    margin: 64px 0;
+}
 
 
 .p-pricing-footer {
-    font-size: 12.8px;  // не меняется шфрит почему-то
+    font-size: 12.8px;
     font-weight: 400;
 
 }
@@ -147,7 +127,7 @@
     }
     .fz-h3 {
         @include title-font($fx-title-mob-h3);
-        margin-top: 16px;
+        margin: 16px 0 200px 0;
     }
 
     .bg-wrapper-pricing {

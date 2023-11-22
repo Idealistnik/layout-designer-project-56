@@ -621,49 +621,15 @@
   }
 }
 .content-container-pricing {
-  padding: 101px 0 0 0;
+  padding: 100px 0 0 0;
 }
 
 .bg-wrapper-pricing {
   background-color: #08020D;
 }
 
-.fz-h3 {
-  font-size: 24px;
-  line-height: 36px;
-  color: #FFFFFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 400;
-  margin-top: 24px;
-}
-
 .pricing {
   margin: 45px 0 43px 0;
-}
-
-.p-text-pricing {
-  margin: 43px 0 0 0;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  text-align: center;
-}
-
-.p-pricing-footer {
-  margin: 64px 0;
-}
-
-.pricing-item {
-  max-width: 30.75%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1.5rem;
-  border-radius: 1rem;
 }
 
 .bg-free {
@@ -684,11 +650,34 @@
   background-size: cover;
 }
 
+.pricing-item {
+  max-width: 30.75%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+.fz-h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  margin: 24px 0 200px 0;
+}
+
 .pricing-value {
-  margin: 198px 0 40px 0;
+  margin: 0 0 40px 0;
   line-height: 1em;
   display: flex;
   align-items: start;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .pricing-value span:first-child {
@@ -704,10 +693,13 @@
   font-weight: 400;
 }
 
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.p-text-pricing {
+  margin: 43px 0 0 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
 }
 
 .link-price {
@@ -716,10 +708,13 @@
   align-items: center;
   width: 100%;
   height: 66px;
-  padding: 21px auto;
   text-decoration: none;
   border: 1px solid var(--White, #FFF);
   color: #FFFFFF;
+}
+
+.p-pricing-footer {
+  margin: 64px 0;
 }
 
 .p-pricing-footer {
@@ -760,7 +755,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 200px 0;
   }
   .bg-wrapper-pricing {
     padding: 0 20px;

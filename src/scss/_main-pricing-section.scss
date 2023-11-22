@@ -2,7 +2,14 @@
     @extend %content-container;
     @include pg-section($pg-101, 0, 0, 0);
 }
-h3 {
+
+.bg-wrapper-pricing {
+    background-color: $bg-black;  // надо ли указывать ??
+}
+
+
+
+.fz-h3 {
     @include title-font($fz-title-h3);
     font-weight: 400;
     margin-top: 24px;
@@ -63,11 +70,9 @@ h3 {
     background-size: cover;
 }
 
-
-
 .pricing-value {
     margin: 198px 0 40px 0;
-    font-size: 12.8px;
+    // font-size: 12.8px;
     line-height: 1em;
     display: flex;
 
@@ -95,35 +100,86 @@ h3 {
 }
 
 .link-price {
-    display: block;
-    padding: 21px auto;
-    // max-width: 319px;
-    // width: 86.358%;
-    width: 100%;
-    height: 66px;
-    text-decoration: none;    
-    border: 1px solid var(--White, #FFF); 
-    color: $color-white;   
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
+    width: 100%;
+    height: 66px; 
+    padding: 21px auto;
+    
+    text-decoration: none;    
+    border: 1px solid var(--White, #FFF); 
+    color: $color-white;   
 }
-
-
-.bg-wrapper-price {
-    background-color: $bg-black;
-}
-
-
-
-
-
-
 
 
 .p-pricing-footer {
     font-size: 12.8px;  // не меняется шфрит почему-то
     font-weight: 400;
+
+}
+
+@media (max-width: 610px) {
+    .fz-h3 {
+        @include title-font($fx-title-mob-h3);
+        margin-top: 16px;
+    }
+    .pricing-value span:first-child {
+        font-size: 48px;
+       
+    }
+    
+    .pricing-value span:last-child {
+        font-size: 24px;
+      
+    }
+
+
+
+}
+
+
+@media (max-width: 480px) {
+    
+    .fz-h2 {
+        @include title-font($fx-title-mob-h2);
+    }
+    .fz-h3 {
+        @include title-font($fx-title-mob-h3);
+        margin-top: 16px;
+    }
+
+    .bg-wrapper-pricing {
+        padding: 0 $pg-20;
+    }
+
+    .pricing {
+        flex-direction: column;
+
+    }
+
+    .pricing-item {
+        max-width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .p-text-pricing {
+        margin: 40px 0 0 0;
+    }
+
+    .pricing-value span:first-child {
+        font-size: 64px;
+       
+    }
+    
+    .pricing-value span:last-child {
+        font-size: 32px;
+      
+    }
+
 
 }

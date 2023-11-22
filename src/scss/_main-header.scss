@@ -71,6 +71,7 @@
     width: 100%;
     border: none;
     padding: 5px 10px;
+    // font-family: "Arial", sans-serif; // пытался поменять шрифт если вдруг не такой браузер  arial делает но не помогло
 
     &:focus::placeholder {
         color: transparent;

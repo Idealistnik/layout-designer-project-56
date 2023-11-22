@@ -57,12 +57,12 @@
     font-size: $fz-title;
     line-height: $fz-title * 1.5;
     color: $color-white;
-    font-weight: bold;
+    font-weight: bold;   // убрать потом ? чтобы ставить отдельно болд если нужно?
     text-transform: uppercase;
     margin: 0;
 }
 
-.p-text-index {
+.p-text {
     text-align: center;   
     color: $color-white;
 }

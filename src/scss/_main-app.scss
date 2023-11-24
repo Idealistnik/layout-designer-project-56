@@ -1,0 +1,46 @@
+.content-container-app {
+    @extend %content-container;
+    @include pg-section($pg-100, 0, $pg-100, 0);
+}
+
+.bg-wrapper-app {
+    background-color: $bg-black; // надо ли указывать ??
+}
+
+.app-title {
+    margin-bottom: 48px;
+}
+
+.col-app {
+    flex: 0 1 50%;
+}
+
+.text-app:last-of-type{
+    margin-bottom: 0;
+}
+
+.button-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 131px;
+    height: 53px;
+
+    border: none;
+    border-radius: 32px;
+    background-color: $bg-orange;
+    color: $color-white;
+    cursor: pointer;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 12.8px;
+    text-decoration: none;    
+
+    margin-top: 16px;
+}
+
+.img-app {
+    position: relative;
+   right: -123px;
+}

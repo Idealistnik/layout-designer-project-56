@@ -1,12 +1,13 @@
 .content-container-footer-top {
     @extend %content-container;
 }
+
 .content-container-footer-bottom {
     @extend %content-container;
 }
 
 .bg-wrapper-footer {
-    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%); 
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
 .footer-top {
@@ -24,7 +25,7 @@
 }
 
 .mg-b-20 {
-    margin-bottom: 20px;   // не получилось с помощью комбинирования селекторов обратиться
+    margin-bottom: 20px; // не получилось с помощью комбинирования селекторов обратиться
 }
 
 .footer-list {
@@ -55,16 +56,16 @@
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .help-add .footer-list {
@@ -74,4 +75,50 @@
 .help-add {
     // padding: 2rem 0; 2rem дает 32px
     padding: 42px 0 49px 0;
+}
+
+
+@media (max-width: 640px) {
+    .bg-wrapper-footer {
+        padding: 0 20px;
+    }
+
+
+    .footer-top {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr auto-fill; // послденаяя на 2 пикселя не идет
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 62px 0 75px 0;
+
+    }
+
+    .bg-wrapper-footer::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $color-gray-light;
+        position: absolute;
+        top: 686px;
+        left: 0;
+    }
+
+    .fz-h2-footer {
+        margin-bottom: 16px; //.footer-list.list-item 
+    }
+
+    .help-add {
+        padding: 42px 0 47px 0;
+
+        .footer-list {
+            flex-direction: column;
+            justify-content: space-between;            
+            height: 184px;
+            .list-item {
+                flex-grow: 1;
+            }
+
+        }
+    }
+
 }

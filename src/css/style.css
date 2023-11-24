@@ -924,7 +924,7 @@
   background-color: #08020D;
 }
 
-.app-title {
+.title-app {
   margin-bottom: 48px;
 }
 
@@ -955,7 +955,37 @@
 
 .img-app {
   position: relative;
+  top: 0;
   right: -123px;
+}
+
+@media (max-width: 729px) {
+  .bg-wrapper-app {
+    padding: 0 20px;
+  }
+  .fz-h2 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .wrapper-app {
+    flex-direction: column-reverse;
+  }
+  .title-app {
+    margin-bottom: 48px;
+  }
+  .col-app {
+    margin: 0 auto;
+  }
+  .img-app {
+    position: static;
+  }
+  .button-app {
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@
     background-color: $bg-black; // надо ли указывать ??
 }
 
-.app-title {
+.title-app {
     margin-bottom: 48px;
 }
 
@@ -42,5 +42,42 @@
 
 .img-app {
     position: relative;
-   right: -123px;
+    top: 0;
+   right: -123px;     // 6 пикселей не идет по общей высоте - наверное картинка
 }
+
+
+@media (max-width: 729px) {
+    .bg-wrapper-app {
+        padding: 0 20px;
+    }
+
+    .fz-h2 {
+        @include title-font($fx-title-mob-h2);
+    }
+    .wrapper-app {
+        flex-direction: column-reverse;
+    }
+
+    .title-app {
+        margin-bottom: 48px;
+    }
+
+    .col-app {
+        margin: 0 auto;
+
+    }
+
+    .img-app {
+        position: static;
+    }
+
+    .button-app {
+        margin-top: 15px;
+    }
+
+
+}
+    
+
+   

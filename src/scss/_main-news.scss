@@ -1,0 +1,88 @@
+.content-container-news {
+    @extend %content-container;
+    @include pg-section($pg-100, 0, 0, 0);
+}
+
+.bg-wrapper-pricing {
+    background-color: $bg-black; // надо ли указывать ??
+}
+
+.news-title {
+    margin-bottom: 48px;
+}
+
+.fz-h3-news {
+    @include title-font($fz-title-h3-news);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.news-item {
+    color: $color-gray-light;
+    margin-bottom: 65px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .col {
+        flex: 0 1 50%;
+        margin-right: 50px;
+    }
+    .col:last-child {
+        margin-right: 0;
+    }
+}
+
+.news-img {
+    width: 100%;
+}
+
+
+.news-text {
+    margin: 30px 0 24px 0;
+    font-size: 16px;
+    &:last-child {
+        margin: 30px 0 15px 0;
+    }
+}
+
+
+
+
+.news-author {
+    max-width: 187px;
+    font-size: 12.8px;
+}
+
+.news-author {
+    & span:first-of-type {
+        color: $color-orange;
+    }
+}
+
+.link-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 135px;
+    height: 53px;
+
+    border: 1px solid $color-gray-light; 
+    text-decoration: none;  
+    font-size: 12.8px;
+    padding: 16px 30px;
+
+    box-sizing: border-box;
+
+    margin-top: 48px;
+}
+
+.news-img-bottom {
+    margin-top: 83px;
+}
+
+
+        
+//      
+//     border: 1px solid var(--White, #FFF); 
+//     color: $color-white;

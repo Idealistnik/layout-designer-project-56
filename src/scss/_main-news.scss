@@ -46,10 +46,13 @@
 .news-text {
     margin: 30px 0 24px 0;
     font-size: 16px;
+}
 
-    &:last-child {
-        margin: 30px 0 15px 0;
-    }
+// .news-text ~ .news-text {
+//     margin: 30px 0 15px 0;    // не работает  - может потому в первом блоке вналаче картинка а во втором наоброт
+//     }
+.news-item:last-child .news-text {
+    margin: 30px 0 15px 0;
 }
 
 .news-author {
@@ -105,6 +108,7 @@
     .fz-h3-news {
         @include title-font($fx-title-mob-h3);
         font-weight: 400;
+        text-transform: capitalize;
     }
 
     .news-item {

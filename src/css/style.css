@@ -829,7 +829,8 @@
   margin: 30px 0 24px 0;
   font-size: 16px;
 }
-.news-text:last-child {
+
+.news-item:last-child .news-text {
   margin: 30px 0 15px 0;
 }
 
@@ -883,6 +884,7 @@
     text-transform: uppercase;
     margin: 0;
     font-weight: 400;
+    text-transform: capitalize;
   }
   .news-item {
     flex-wrap: wrap;

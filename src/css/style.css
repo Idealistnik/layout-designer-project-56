@@ -886,6 +886,9 @@
     font-weight: 400;
     text-transform: capitalize;
   }
+  .news-wrapper .news-item:last-child .news-text {
+    margin: 16px 0 16px 0;
+  }
   .news-item {
     flex-wrap: wrap;
   }

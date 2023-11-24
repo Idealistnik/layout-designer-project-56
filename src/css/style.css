@@ -814,6 +814,7 @@
 }
 .news-item .col {
   flex: 0 1 50%;
+  max-height: 286px;
   margin-right: 50px;
 }
 .news-item .col:last-child {
@@ -861,7 +862,7 @@
   margin-top: 83px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 729px) {
   .bg-wrapper-news {
     padding: 0 20px;
   }

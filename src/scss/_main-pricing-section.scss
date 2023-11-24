@@ -127,6 +127,8 @@
     }
     .fz-h3 {
         @include title-font($fx-title-mob-h3);
+    }
+    .pricing-title {
         margin: 16px 0 200px 0;
     }
 

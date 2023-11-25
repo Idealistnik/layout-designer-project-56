@@ -3,9 +3,10 @@
 //     @include pg-section($pg-100, 0, 0, 0);
 // }
 
-.bg-wrapper-pop {
-    @extend %content-container;
-    @include pg-section($pg-100, 0, 0, 0);
+.bg-wrapper-mob {
+    padding: 100px 0 0 0;
+    margin: 0 120px;
+
 }
 
 

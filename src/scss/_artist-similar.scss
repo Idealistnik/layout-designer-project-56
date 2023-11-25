@@ -1,71 +1,9 @@
 .content-container-similar {
     @extend %content-container;
     @include pg-section($pg-100, 0, $pg-100, 0);
-}
-
-.bg-wrapper-similar {
-    background-color: $bg-black; // надо ли указывать ??
-}
-
-// .discography-item {
-//     height: 319px;    если не ставил высоту то в карточке была общая высота на 6 пикселей больше
-// }
+}   
 
 
-.fz-h2-similar {
-    @include title-font($fz-title-h2);
-}
-
-.title-similar {
-    margin-bottom: 48px;
-}
-
-.similar-item {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.img-disc {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 18px;   //можно сделать 18 т.к. 2 пикселя не идут
-}
-
-
-.title-similar-item {
-    @include title-font($fz-title-h3-artist);
-    text-transform: capitalize;
-}
-
-.text-similar-item {
-    margin: 0;
-}
-
-
-
-@media (max-width: 729px) {
-    .bg-wrapper-similar {
-        padding: 0 20px;
-    }
-
-    .fz-h2-similar {
-        @include title-font($fx-title-mob-h2);
-    }
-
-    .title-similar {
-        margin-bottom: 48px;
-    }
-
-    .similar-content-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);       
-
-      
-        .img-disc {
-            width: 137px;
-            height: 137px;
-        }       
-    
-    }  
-}
+// .similar-item {
+//     align-items: center;
+// }  выравниание 

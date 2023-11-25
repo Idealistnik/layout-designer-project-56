@@ -3,12 +3,10 @@
     @include pg-section($pg-100, 0, 0, 0);
 }
 
-.bg-wrapper-pop {
-    background-color: $bg-black; // надо ли указывать ??
-}
-
-.title-pop {
-    margin-bottom: 48px;
+.img-pop {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
 }
 
 .track-info {
@@ -17,54 +15,34 @@
     align-items: center;
     font-size: 12.8px;
 }
-
-.title-pop-track {
-    margin: 0;
+.title-pop-track {   
     font-size: 12.8px;
     text-transform: uppercase;
-    color: $color-white;
 }
-// .img-pop {
-//     max-width: 100%;
-//     object-fit: contain;
-// }
 .popular-track {
     max-width: 551px;
-}
-
-.img-pop {
-    margin-right: 15px;
 }
 
 .pop-content-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 25px;
     column-gap: 50px;
+    row-gap: 25px;    
     margin-right: 50px;
 }
 
-
-
-@media (max-width: 729px) {
+@media (max-width: 650px) {
     .bg-wrapper-pop {
-        padding: 0 20px;
-    }
-
-    .fz-h2-pop {
-        @include title-font($fx-title-mob-h2);
+        @include padding-mobile;
     }
 
     .pop-content-wrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        // row-gap: 25px;
-        // column-gap: 50px;
         margin-right: 0;
         .popular-track {
-            // width: 90.338%;
             width: 100%;
             .track-info {
                 width: 81.283%;
@@ -72,13 +50,4 @@
         }
     }
 
-    .title-pop {
-        margin-bottom: 48px;
-    }
-
-    .fz-h3-news {
-        @include title-font($fx-title-mob-h3);
-        font-weight: 400;
-        text-transform: capitalize;
-    }
 }

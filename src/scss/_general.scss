@@ -5,15 +5,21 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.woff2");
 }
+
 @font-face {
     font-weight: 700;
     font-family: "Roboto";
     src: url("../fonts/Roboto-Bold.woff2");
 }
+
 @font-face {
     font-weight: 400;
     font-family: "Arial";
     src: url("../fonts/arial-narrow.woff2");
+}
+
+.mg-0 {
+    margin: 0;
 }
 
 
@@ -21,6 +27,7 @@
 .fz-11 {
     font-size: 11px;
 }
+
 .mg-top-31 {
     margin-top: 31px;
 }
@@ -59,13 +66,13 @@
     font-size: $fz-title;
     line-height: $fz-title * 1.5;
     color: $color-white;
-    font-weight: bold;   // убрать потом ? чтобы ставить отдельно болд если нужно?
+    font-weight: bold; // убрать потом ? чтобы ставить отдельно болд если нужно?
     text-transform: uppercase;
     margin: 0;
 }
 
 .p-text {
-    text-align: center;   
+    text-align: center;
     color: $color-white;
 }
 
@@ -93,19 +100,26 @@
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     // text-align: center;
-}     
-    
+}
+
 .link {
     text-decoration: none;
     color: inherit;
 }
+
 .list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .flex {
     display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -122,14 +136,66 @@
     position: relative;
 }
 
+// For mobile===================================
 
-
-.grid-content-artist {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 50px;
-    row-gap: 25px;
-    margin-right: 49px;   // при 50 не помещался заголовок
+@mixin padding-mobile {
+    padding: 0 20px;
 }
 
 
+// ARTIST desktop======================================
+
+.title-h2-artist {
+    @include title-font($fz-title-h2);
+    margin-bottom: 48px;
+}
+
+.title-h3-artist {
+    @include title-font($fz-title-h3-artist);
+    text-transform: capitalize;
+}
+
+.img-artist-big {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 18px;
+    // object-fit: none;
+}
+
+
+
+.grid-content-artist-4col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(137px, 250px));   // ???
+    column-gap: 50px;
+    row-gap: 25px;
+    margin-right: 49px; // при 50 не помещался заголовок
+    justify-content: space-between;
+    justify-items: center;
+}
+
+// ARTIST mobile ======================================
+
+
+@media (max-width: 450px) {
+
+    .bg-wrapper-4col {
+        @include padding-mobile;
+    }
+
+    .title-h2-artist {
+        @include title-font($fx-title-mob-h2);
+        margin-bottom: 48px;
+    }
+
+    .grid-content-artist-4col {
+        grid-template-columns: repeat(2, 1fr);
+
+        .img-artist-big {
+            width: 137px;
+            height: 137px;
+        }
+
+    }
+
+}

@@ -135,10 +135,10 @@
 }
 
 @media (max-width: 450px) {
-  .bg-wrapper-mob {
-    padding: 0 20px;
+  #page-popular-track.bg-wrapper-mob {
+    padding: 100px 10px 0 10px;
   }
-  .bg-wrapper-mob .title-h1 {
+  #page-popular-track.bg-wrapper-mob .title-h1 {
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
@@ -318,10 +318,10 @@
 }
 
 @media (max-width: 450px) {
-  .bg-wrapper-mob {
-    padding: 0 20px;
+  #page-popular-track.bg-wrapper-mob {
+    padding: 100px 10px 0 10px;
   }
-  .bg-wrapper-mob .title-h1 {
+  #page-popular-track.bg-wrapper-mob .title-h1 {
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
@@ -1098,8 +1098,7 @@
   }
 }
 .bg-wrapper-mob {
-  padding: 100px 0 0 0;
-  margin: 0 120px;
+  padding: 100px 120px 0 120px;
 }
 
 .img-pop {

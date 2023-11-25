@@ -197,8 +197,9 @@
 
 @media (max-width: 450px) {
 
-    .bg-wrapper-mob {
-        @include padding-mobile;
+    #page-popular-track.bg-wrapper-mob {
+        // @include padding-mobile;
+        padding: 100px 10px 0 10px;
         .title-h1 {
             @include title-font($fx-title-mob-h1);
         }

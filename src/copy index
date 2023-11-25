@@ -103,10 +103,10 @@
                 <div class="news-wrapper">
 
                     <section class="news-item flex-between">
-                        
+                        <div class="col">
 
-                            <img src="./images/Music to Be Murdered By.png" class="news-img col" alt="Фото артиста Eminem">
-                        
+                            <img src="./images/Music to Be Murdered By.png" class="news-img" alt="Фото артиста Eminem">
+                        </div>
                         <div class="col">
                             <div class="news-body">
                                 <h3 class="fz-h3-news">Music to Be Murdered By</h3>
@@ -143,9 +143,9 @@
                             </div>
                         </div>
 
-                        
-                            <img src="./images/Ordinary Man.png" class="news-img col" alt="Фото Оззи Озборна">
-                        
+                        <div class="col">
+                            <img src="./images/Ordinary Man.png" class="news-img" alt="Фото Оззи Озборна">
+                        </div>
                     </section>
 
                 </div>

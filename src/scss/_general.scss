@@ -122,6 +122,14 @@
     position: relative;
 }
 
-    
+
+
+.grid-content-artist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 25px;
+    margin-right: 49px;   // при 50 не помещался заголовок
+}
 
 

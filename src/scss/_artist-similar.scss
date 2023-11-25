@@ -1,24 +1,26 @@
-.content-container-disc {
+.content-container-similar {
     @extend %content-container;
-    @include pg-section($pg-100, 0, 0, 0);
+    @include pg-section($pg-100, 0, $pg-100, 0);
 }
 
-.bg-wrapper-disc {
+.bg-wrapper-similar {
     background-color: $bg-black; // надо ли указывать ??
 }
 
 // .discography-item {
 //     height: 319px;    если не ставил высоту то в карточке была общая высота на 6 пикселей больше
 // }
-.fz-h2-disc {
+
+
+.fz-h2-similar {
     @include title-font($fz-title-h2);
 }
 
-.title-disc {
+.title-similar {
     margin-bottom: 48px;
 }
 
-.discography-item {
+.similar-item {
     display: flex;
     flex-direction: column;
 }
@@ -27,37 +29,35 @@
 .img-disc {
     width: 250px;
     height: 250px;
-    margin-bottom: 18px;
+    margin-bottom: 18px;   //можно сделать 18 т.к. 2 пикселя не идут
 }
 
-.title-disc-item {
+
+.title-similar-item {
     @include title-font($fz-title-h3-artist);
     text-transform: capitalize;
 }
 
-// .disc-content-wrapper {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     column-gap: 50px;
-//     row-gap: 25px;
-//     margin-right: 49px;   // при 50 не помещался заголовок
-// }
+.text-similar-item {
+    margin: 0;
+}
+
 
 
 @media (max-width: 729px) {
-    .bg-wrapper-disc {
+    .bg-wrapper-similar {
         padding: 0 20px;
     }
 
-    .fz-h2-disc {
+    .fz-h2-similar {
         @include title-font($fx-title-mob-h2);
     }
 
-    .title-disc {
+    .title-similar {
         margin-bottom: 48px;
     }
 
-    .disc-content-wrapper {
+    .similar-content-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);       
 

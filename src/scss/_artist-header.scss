@@ -3,7 +3,7 @@
 }
 .content-container-description {
     @extend %content-container;
-    @include pg-section($pg-250, 0, $pg-223, 0); // в задании указано по 200
+    @include pg-section ($pg-250, 0, $pg-223, 0); // в задании указано по 200
 }
 .buttons {
     margin-top: $mg-48;
@@ -109,8 +109,10 @@
             .button-artist:first-child {
                 margin-bottom: 1.5rem;
             }
-        }  
+        }
+        .content-container-description {
+            @include pg-section($pg-225, 0, $pg-224, 0);
+        }
+
     }
-    .content-container-description {
-        @include pg-section($pg-225, 0, $pg-224, 0);
-    }
+    

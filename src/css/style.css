@@ -622,11 +622,10 @@
   .buttons .button-artist:first-child {
     margin-bottom: 1.5rem;
   }
+  .content-container-description {
+    padding: 225px 0 224px 0;
+  }
 }
-.content-container-description {
-  padding: 225px 0 224px 0;
-}
-
 .content-container-pricing {
   padding: 100px 0 0 0;
 }

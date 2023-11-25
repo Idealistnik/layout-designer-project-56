@@ -1131,6 +1131,7 @@
   grid-template-rows: repeat(3, 1fr);
   row-gap: 25px;
   column-gap: 50px;
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

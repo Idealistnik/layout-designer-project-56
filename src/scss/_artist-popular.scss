@@ -1,7 +1,13 @@
-.content-container-pop {
+// .content-container-pop {
+//     @extend %content-container;
+//     @include pg-section($pg-100, 0, 0, 0);
+// }
+
+.bg-wrapper-pop {
     @extend %content-container;
     @include pg-section($pg-100, 0, 0, 0);
 }
+
 
 .img-pop {
     width: 55px;

@@ -22,6 +22,10 @@
     margin: 0;
 }
 
+.mg-top-48 {
+    margin-top: 48px;
+}
+
 
 
 .fz-11 {
@@ -89,17 +93,6 @@
 
 .text-center {
     text-align: center;
-}
-
-
-
-.button {
-    border-radius: 5px;
-    color: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    // text-align: center;
 }
 
 .link {
@@ -176,16 +169,46 @@
 
 // ARTIST mobile ======================================
 
+// @mixin button-artist-icon ($icon-name) {
+//     content: " ";
+//     background: url("../images/#{$icon-name}"), no-repeat;
+//     width: 20px;
+//     height: 20px;
+//     position: absolute;
+//     top: 21px;
+//     left: 31px;
+//     filter: invert(1);
+// }
+
+@mixin button-artist-icon ($icon-name) {
+    content: " ";
+    background: url("../images/#{$icon-name}"), no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    left: 31px;
+    filter: invert(1);
+}
+
+
+
+// сетка для artist-discography + artist-similar
 
 @media (max-width: 450px) {
 
-    .bg-wrapper-4col {
+    .bg-wrapper-mob {
         @include padding-mobile;
+        .title-h1 {
+            @include title-font($fx-title-mob-h1);
+        }
     }
+
+    
 
     .title-h2-artist {
         @include title-font($fx-title-mob-h2);
-        margin-bottom: 48px;
+        margin-bottom: $mg-48;
     }
 
     .grid-content-artist-4col {
@@ -198,4 +221,20 @@
 
     }
 
+}
+
+// Общее для двух страниц
+
+.title-h1 {
+    @include title-font($fz-title-h1);
+}
+
+
+.button {
+    border-radius: 5px;
+    color: inherit; 
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    border: none;
 }

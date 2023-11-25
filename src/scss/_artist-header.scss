@@ -1,113 +1,68 @@
-@import "./general.scss";
-
-.bg-wrapper-artist {
+.bg-wrapper-description {
     @include bg-wrapper($bg-artist);
 }
-
-.content-container-artist {
+.content-container-description {
     @extend %content-container;
-    // @include pg-section($pg-200, 0, $pg-200, 0);
-    @include pg-section($pg-250, 0, $pg-223, 0);
+    @include pg-section($pg-250, 0, $pg-223, 0); // в задании указано по 200
 }
-
-.fz-h1 {
-    @include title-font($fz-title-h1);
-}
-.p-text-artist {
-    margin-bottom: 48px;
-}
-
-
-
-.button-atist {
-    width: 200px;
-    height: 62px;        
-
-    color: $color-white;    
-    font-size: 12.8px;    
-    border: none;
-}
-
-.button-atist.bg-blue {
-    padding: 21px 96px 22px 67px;  
-}
-
-.button-atist.bg-orange {
-    padding: 21px 47px 22px 67px;  
-}
-// .button-atist:first-of-type {
-//     margin: 0 $mg-24 0 0;
-// }
-
 .buttons {
-    max-width: 424px;
+    margin-top: $mg-48;
 }
+.button-artist {
+    width: 200px;
+    padding: 20px 30px; 
 
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+    font-size: 12.8px;
+    color: $color-white;
+}
+.button-artist:hover {
+    outline: 1px solid $color-white; // просто добавил
+}
+.button-artist:first-child {
+    margin-right: 1.5rem;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-right: 16px;
+}
 .bg-blue {
     background-color: $bg-blue;
 }
-
 .bg-orange {
     background-color: $bg-orange;
 }
 
+// если псевдоэлементом
+// .button-artist.bg-blue {
+//     padding: 21px 96px 22px 67px;  
+// }
 
+// .button-artist.bg-orange {
+//     padding: 21px 47px 22px 67px;  
+// }
+// .button-artist.bg-blue:before {
+//     @include button-artist-icon ($button-icon-play);
+// }
 
+// .button-artist.bg-orange:before {
+//     @include button-artist-icon ($button-icon-heart);
+// }
 
-.button-atist.bg-blue:before {
-    content: " ";
-    background: url("../images/play-button.svg"), no-repeat;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 21px;
-    left: 31px;
-   
-    
-}
-
-.button-atist.bg-orange:before {
-    content: " ";
-    background: url("../images/heart.svg"), no-repeat;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 21px;
-    left: 31px;    
-}
-
-
-
-
+// .icon {
+//     @include button-artist-icon ($button-icon-play);
+// }
 
 // .mg-right-24 {
 //     margin-right: $mg-24;   убрал класс
 // }
 
-
-
-
-
-
-@media (max-width: 415px) {
-    .fz-h1 {
-        @include title-font($fx-title-mob-h1);
-    }
-    .content-container-artist {
-        @include pg-section($pg-225, 0, $pg-224, 0);
-    }
-
-
-
-}
-
-
-
-@media (max-width: 415px) {
-
-    .bg-wrapper-artist {
-        padding: 0 $pg-20;
-
+@media (max-width: 415px) {    
 
         .header-position {
             max-height: 145px;
@@ -149,24 +104,13 @@
 
             }
         }
-        // .button-atist:first-of-type {
-        //     margin: 0 0 $mg-24 0;
-        // }
         .buttons {
-            max-width: 200px;
-            min-height: 148px;
-            flex-wrap: wrap;
-            align-content: space-between;
-
-        }
-        
+            flex-direction: column;
+            .button-artist:first-child {
+                margin-bottom: 1.5rem;
+            }
+        }  
     }
-    .fz-h1 {
-        @include title-font($fx-title-mob-h1);
-    }
-    .content-container-artist {
+    .content-container-description {
         @include pg-section($pg-225, 0, $pg-224, 0);
     }
-    
-    
-}

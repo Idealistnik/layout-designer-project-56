@@ -10,7 +10,6 @@
 }
 
 .track-info {
-    // width: 481px;
     flex: 0 1 481px;
     align-items: center;
     font-size: 12.8px;
@@ -33,9 +32,6 @@
 }
 
 @media (max-width: 650px) {
-    .bg-wrapper-pop {
-        @include padding-mobile;
-    }
 
     .pop-content-wrapper {
         display: grid;

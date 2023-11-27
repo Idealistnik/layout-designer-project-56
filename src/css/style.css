@@ -34,8 +34,9 @@
 }
 
 .content-container-similar, .content-container-disc, .content-container-pop, .content-container-footer-bottom, .content-container-footer-top, .content-container-app, .content-container-news, .content-container-pricing, .content-container-description {
-  max-width: 1240px;
+  width: 1240px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .main-styles {
@@ -217,8 +218,9 @@
 }
 
 .content-container-similar, .content-container-disc, .content-container-pop, .content-container-footer-bottom, .content-container-footer-top, .content-container-app, .content-container-news, .content-container-pricing, .content-container-description {
-  max-width: 1240px;
+  width: 1240px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .main-styles {
@@ -549,7 +551,7 @@
 }
 
 .content-container-description {
-  padding: 250px 0 223px 0;
+  padding: 250px 20px 223px 20px;
 }
 
 .buttons {
@@ -640,7 +642,7 @@
 }
 
 .pricing {
-  margin: 45px 0 43px 0;
+  margin: 48px 0 43px 0;
 }
 
 .bg-free {
@@ -1068,9 +1070,6 @@
 }
 
 @media (max-width: 650px) {
-  .bg-wrapper-footer {
-    padding: 0 20px;
-  }
   .footer-top {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr auto-fill;
@@ -1103,7 +1102,7 @@
   }
 }
 .content-container-pop {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 
 .img-pop {
@@ -1151,11 +1150,11 @@
   }
 }
 .content-container-disc {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 
 .content-container-similar {
-  padding: 100px 0 100px 0;
+  padding: 100px 20px 100px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

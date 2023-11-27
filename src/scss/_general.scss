@@ -43,6 +43,7 @@
 %content-container {
     width: 1240px;  // было max
     margin: 0 auto;
+    box-sizing: border-box;
     // padding: 0 20px;
 }
 

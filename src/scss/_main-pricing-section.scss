@@ -81,6 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 
     width: 100%;
     height: 66px; 
@@ -121,7 +122,8 @@
 
 
 @media (max-width: 480px) {
-    
+
+       
     .fz-h2 {
         @include title-font($fx-title-mob-h2);
     }
@@ -138,7 +140,7 @@
 
     .pricing {
         flex-direction: column;
-        margin: 46px 0 40px 0;
+        margin: 48px 0 40px 0;
 
     }
 

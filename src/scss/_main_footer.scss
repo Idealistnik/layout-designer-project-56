@@ -1,6 +1,6 @@
 .content-container-footer-top {
     @extend %content-container;
-    @include pg-section(0, 20px, 0, 20px);  // Добавил
+    @include pg-section(0, 20px, 0, 20px);  
 }
 
 .content-container-footer-bottom {
@@ -82,9 +82,9 @@
 
 
 @media (max-width: 650px) {
-    .bg-wrapper-footer {
-        padding: 0 20px;
-    }
+    // .bg-wrapper-footer {
+    //     padding: 0 20px;
+    // }
 
 
     .footer-top {

@@ -44,11 +44,66 @@
 .img-app {
     position: relative;
     top: 0;
-   right: -123px;     // 6 пикселей не идет по общей высоте - наверное картинка
+    right: -123px;     // 6 пикселей не идет по общей высоте - наверное картинка
+    vertical-align: middle;
 }
 
 
-@media (max-width: 729px) {
+
+
+
+@media (max-width: 913px) {
+    .content-container-app {
+        max-width: 873px;
+    }
+
+
+    // .bg-wrapper-app {
+    //     padding: 0 20px;
+    // }
+
+    .wrapper-app {
+        flex-direction: column-reverse;
+    }
+
+    .title-app {
+        margin-bottom: 48px;
+    }
+
+    .col-app {
+        margin: 0 auto;
+        max-width: 100%;
+
+    }
+
+    .img-app {
+        position: static;
+        vertical-align: middle;
+        // max-width: 100%;
+        // display: block;
+    }
+
+    // .button-app {
+    //     margin-top: 15px;
+    // }
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
     .content-container-app {
         max-width: 414px;
     }
@@ -71,12 +126,15 @@
 
     .col-app {
         margin: 0 auto;
+        max-width: 100%;
 
     }
 
     .img-app {
         position: static;
         vertical-align: middle;
+        // max-width: 100%;
+        // display: block;
     }
 
     // .button-app {

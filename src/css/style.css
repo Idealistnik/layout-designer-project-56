@@ -224,6 +224,9 @@
   flex: 0 1 98px;
   margin-right: 10px;
 }
+.header-main .main-logo .logo-link {
+  color: #FFFFFF;
+}
 .header-main .main-menu {
   flex: 0 1 313px;
 }
@@ -234,8 +237,7 @@
   margin-right: 10px;
 }
 
-.menu-link:hover,
-.logo-link:hover {
+.menu-link:hover {
   color: #FFFFFF;
 }
 
@@ -295,7 +297,7 @@
     margin-right: 10px;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 584px) {
   .bg-wrapper-index {
     padding: 20px;
   }
@@ -407,8 +409,7 @@
   margin-right: 10px;
 }
 
-.menu-link-artist:hover,
-.logo-link-artist:hover {
+.menu-link-artist:hover {
   color: #FFFFFF;
 }
 
@@ -603,7 +604,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .content-container-pricing {
     max-width: 414px;
   }
@@ -684,7 +685,7 @@
 }
 
 .news-img {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -724,7 +725,40 @@
   margin-top: 83px;
 }
 
-@media (max-width: 729px) {
+@media (max-width: 1000px) {
+  .content-container-news {
+    max-width: 960px;
+  }
+  .news-wrapper .news-item:last-child .news-text {
+    margin: 16px 0 16px 0;
+  }
+  .news-item {
+    flex-wrap: wrap;
+  }
+  .news-item:last-child {
+    flex-direction: column-reverse;
+  }
+  .news-item:last-child .col {
+    margin: 0;
+  }
+  .news-item:last-child .col:last-child {
+    margin: 0 0 50px 0;
+  }
+  .news-item .col {
+    flex: 0 1 100%;
+    margin: 0 0 50px 0;
+  }
+  .news-item .col:last-child {
+    margin-bottom: 0;
+  }
+  .news-item .col .news-text {
+    margin: 16px 0 24px 0;
+  }
+  .news-item .col .news-text .news-text:last-child {
+    margin: 16px 0 16px 0;
+  }
+}
+@media (max-width: 550px) {
   .content-container-news {
     max-width: 414px;
   }
@@ -815,9 +849,29 @@
   position: relative;
   top: 0;
   right: -123px;
+  vertical-align: middle;
 }
 
-@media (max-width: 729px) {
+@media (max-width: 913px) {
+  .content-container-app {
+    max-width: 873px;
+  }
+  .wrapper-app {
+    flex-direction: column-reverse;
+  }
+  .title-app {
+    margin-bottom: 48px;
+  }
+  .col-app {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .img-app {
+    position: static;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 550px) {
   .content-container-app {
     max-width: 414px;
   }
@@ -837,6 +891,7 @@
   }
   .col-app {
     margin: 0 auto;
+    max-width: 100%;
   }
   .img-app {
     position: static;

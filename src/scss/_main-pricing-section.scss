@@ -98,24 +98,24 @@
 
 }
 
-@media (max-width: 610px) {
-    .fz-h3 {
-        @include title-font($fx-title-mob-h3);
-        margin-top: 16px;
-    }
-    .pricing-value span:first-child {
-        font-size: 48px;
+// @media (max-width: 610px) {
+//     .fz-h3 {
+//         @include title-font($fx-title-mob-h3);
+//         margin-top: 16px;
+//     }
+//     .pricing-value span:first-child {
+//         font-size: 48px;
        
-    }
+//     }
     
-    .pricing-value span:last-child {
-        font-size: 24px;
+//     .pricing-value span:last-child {
+//         font-size: 24px;
       
-    }
+//     }
 
 
 
-}
+// }
 
 
 @media (max-width: 480px) {
@@ -130,7 +130,7 @@
 
 
     .content-container-pricing {
-       width: 414px;
+        max-width: 414px;
     }
       
     .fz-h2 {

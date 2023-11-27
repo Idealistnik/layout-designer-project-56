@@ -41,7 +41,7 @@
 }
 
 %content-container {
-    width: 1240px;  // было max
+    max-width: 1240px;  // было max
     margin: 0 auto;
     box-sizing: border-box;
     // padding: 0 20px;
@@ -169,7 +169,7 @@
 
 .grid-content-artist-4col {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(137px, 250px));   // ???
+    grid-template-columns: repeat(auto-fill, minmax(100px, 250px));   // ???
     column-gap: 50px;
     row-gap: 25px;
     margin-right: 49px; // при 50 не помещался заголовок
@@ -223,8 +223,10 @@
         grid-template-columns: repeat(2, 1fr);
 
         .img-artist-big {
-            width: 137px;
-            height: 137px;
+            max-width: 100%;
+            // max-width: 137px;
+            // max-height: 137px;
+            
         }
 
     }

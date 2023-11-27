@@ -87,6 +87,11 @@
     // }
 
 
+    .content-container-footer-top,
+    .content-container-footer-bottom {
+        max-width: 414px;
+    }
+
     .footer-top {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr auto-fill; // послденаяя на 2 пикселя не идет

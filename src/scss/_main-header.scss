@@ -157,20 +157,21 @@
 
         .header-position {
             max-height: 145px;
-            top: 27px;
+            top: 25px;
 
 
             .header-content {
                 flex-direction: column;
                 align-items: flex-start;
                 font-weight: bold;
-                margin: 0 auto;
-                width: 90.338%;
+                // margin: 0 auto;
+                // width: 90.338%;
+                padding: 0 20px;
                 min-height: 145px;
 
                 .header-main {
                     flex-direction: column;
-                    flex: 0 1 102px;
+                    flex: 0 1 106px;   // ширину поменял
                     align-items: start;
 
                     .main-logo {
@@ -191,7 +192,7 @@
 
                 .header-search {
                     flex: 0 0 25px;
-                    margin-top: 18px;
+                    margin-top: 16px;  // изменили
                     width: 100%;
                 }
 
@@ -200,9 +201,17 @@
 
     }
 
+    .logo-link {
+        color: $color-white;
+    }
+
+
+    .bg-wrapper-mob .h1-mg {
+        margin-top: 48px;
+    }
 
     .content-container {
-        @include pg-section($pg-230, 0, $pg-181, 0);
+        @include pg-section(180px, 0, $pg-181, 0);
 
         .p-text-index {
             margin: 16px 0 16px 0; 

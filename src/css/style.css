@@ -485,19 +485,18 @@
   }
   .bg-wrapper-index .header-position {
     max-height: 145px;
-    top: 27px;
+    top: 25px;
   }
   .bg-wrapper-index .header-position .header-content {
     flex-direction: column;
     align-items: flex-start;
     font-weight: bold;
-    margin: 0 auto;
-    width: 90.338%;
+    padding: 0 20px;
     min-height: 145px;
   }
   .bg-wrapper-index .header-position .header-content .header-main {
     flex-direction: column;
-    flex: 0 1 102px;
+    flex: 0 1 106px;
     align-items: start;
   }
   .bg-wrapper-index .header-position .header-content .header-main .main-logo {
@@ -512,11 +511,17 @@
   }
   .bg-wrapper-index .header-position .header-content .header-search {
     flex: 0 0 25px;
-    margin-top: 18px;
+    margin-top: 16px;
     width: 100%;
   }
+  .logo-link {
+    color: #FFFFFF;
+  }
+  .bg-wrapper-mob .h1-mg {
+    margin-top: 48px;
+  }
   .content-container {
-    padding: 230px 0 181px 0;
+    padding: 180px 0 181px 0;
   }
   .content-container .p-text-index {
     margin: 16px 0 16px 0;

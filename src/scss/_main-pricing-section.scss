@@ -1,6 +1,6 @@
 .content-container-pricing {
     @extend %content-container; 
-    @include pg-section($pg-100, 0, 0, 0);  //  в макете 101
+    @include pg-section($pg-100, 20px, 0, 20px);  //  в макете 101
 }
 
 .bg-wrapper-pricing {

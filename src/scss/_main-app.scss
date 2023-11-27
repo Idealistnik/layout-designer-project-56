@@ -1,6 +1,6 @@
 .content-container-app {
     @extend %content-container;
-    @include pg-section($pg-100, 0, 0, 0);
+    @include pg-section($pg-100, 20px, 0, 20px);
     margin-bottom: 100px;
 }
 

@@ -5,7 +5,7 @@
 }
 
 .content-container {
-    @include pg-section($pg-200, 0, $pg-200, 0);
+    @include pg-section($pg-200, 20px, $pg-200, 20px);
 }
 
 // .fz-h1 {

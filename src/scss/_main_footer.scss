@@ -1,9 +1,12 @@
 .content-container-footer-top {
     @extend %content-container;
+    @include pg-section(0, 20px, 0, 20px);  // Добавил
 }
 
 .content-container-footer-bottom {
     @extend %content-container;
+    @include pg-section(0, 20px, 0, 20px);
+
 }
 
 .bg-wrapper-footer {

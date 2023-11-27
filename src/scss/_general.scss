@@ -41,8 +41,9 @@
 }
 
 %content-container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
+    // padding: 0 20px;
 }
 
 @mixin bg-wrapper($bg-name) {

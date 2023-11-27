@@ -32,6 +32,7 @@
 }
 
 @media (max-width: 650px) {
+    
 
     .pop-content-wrapper {
         display: grid;
@@ -46,4 +47,10 @@
         }
     }
 
+}
+
+@media (max-width: 414px) {
+    .content-container-pop {
+        width: 414px;
+    }
 }

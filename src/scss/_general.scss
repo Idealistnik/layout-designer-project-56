@@ -47,12 +47,12 @@
     // padding: 0 20px;
 }
 
-%content-container-mob {
-    width: 414px;  // было max
-    margin: 0 auto;
-    box-sizing: border-box;
-    // padding: 0 20px;
-}
+// %content-container-mob {
+//     width: 414px;  // было max
+//     margin: 0 auto;
+//     box-sizing: border-box;
+//     // padding: 0 20px;
+// }
 
 
 @mixin bg-wrapper($bg-name) {
@@ -141,9 +141,9 @@
 
 // For mobile===================================
 
-@mixin padding-mobile {
-    padding: 0 20px;
-}
+// @mixin padding-mobile {   // в общем задаем теперь падинг
+//     padding: 0 20px;
+// }
 
 
 // ARTIST desktop======================================
@@ -206,7 +206,7 @@
 @media (max-width: 450px) {
 
     .bg-wrapper-mob {
-        @include padding-mobile;
+        // @include padding-mobile;
         .title-h1 {
             @include title-font($fx-title-mob-h1);
         }

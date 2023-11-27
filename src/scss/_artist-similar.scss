@@ -3,7 +3,11 @@
     @include pg-section($pg-100, 20px, $pg-100, 20px);
 }   
 
-
+@media (max-width: 550px) {
+    .content-container-similar {
+        width: 414px;
+    }
+}
 // .similar-item {
 //     align-items: center;
 // }  выравниание 

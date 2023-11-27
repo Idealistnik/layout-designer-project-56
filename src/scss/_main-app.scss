@@ -49,9 +49,14 @@
 
 
 @media (max-width: 729px) {
-    .bg-wrapper-app {
-        padding: 0 20px;
+    .content-container-app {
+        width: 414px;
     }
+
+
+    // .bg-wrapper-app {
+    //     padding: 0 20px;
+    // }
 
     .fz-h2 {
         @include title-font($fx-title-mob-h2);

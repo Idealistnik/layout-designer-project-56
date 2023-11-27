@@ -95,9 +95,14 @@
 //     color: $color-white;
 
 @media (max-width: 729px) {
-    .bg-wrapper-news {
-        padding: 0 20px;
+
+    .content-container-news {
+        width: 414px;
     }
+
+    // .bg-wrapper-news {
+    //     padding: 0 20px;
+    // }
 
     .fz-h2-news {
         @include title-font($fx-title-mob-h2);

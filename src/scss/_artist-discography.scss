@@ -2,3 +2,9 @@
     @extend %content-container;
     @include pg-section($pg-100, 20px, 0, 20px);
 }
+@media (max-width: 550px) {
+    .content-container-disc {
+        width: 414px;
+    }
+}
+

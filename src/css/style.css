@@ -925,7 +925,8 @@
   }
 }
 .content-container-app {
-  padding: 100px 0 100px 0;
+  padding: 100px 0 0 0;
+  margin-bottom: 100px;
 }
 
 .bg-wrapper-app {
@@ -938,10 +939,6 @@
 
 .col-app {
   flex: 0 1 50%;
-}
-
-.text-app:last-of-type {
-  margin-bottom: 0;
 }
 
 .button-app {
@@ -958,7 +955,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 12.8px;
   text-decoration: none;
-  margin-top: 16px;
 }
 
 .img-app {
@@ -990,9 +986,7 @@
   }
   .img-app {
     position: static;
-  }
-  .button-app {
-    margin-top: 15px;
+    vertical-align: middle;
   }
 }
 .bg-wrapper-footer {

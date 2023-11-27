@@ -1,6 +1,7 @@
 .content-container-app {
     @extend %content-container;
-    @include pg-section($pg-100, 0, $pg-100, 0);
+    @include pg-section($pg-100, 0, 0, 0);
+    margin-bottom: 100px;
 }
 
 .bg-wrapper-app {
@@ -15,9 +16,9 @@
     flex: 0 1 50%;
 }
 
-.text-app:last-of-type{
-    margin-bottom: 0;
-}
+// .text-app:last-of-type{
+//     margin-bottom: 0;
+// }
 
 .button-app {
     display: flex;
@@ -37,7 +38,7 @@
     font-size: 12.8px;
     text-decoration: none;    
 
-    margin-top: 16px;
+    // margin-top: 16px;
 }
 
 .img-app {
@@ -70,11 +71,12 @@
 
     .img-app {
         position: static;
+        vertical-align: middle;
     }
 
-    .button-app {
-        margin-top: 15px;
-    }
+    // .button-app {
+    //     margin-top: 15px;
+    // }
 
 
 }

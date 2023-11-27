@@ -3,7 +3,7 @@
 }
 .content-container-description {
     @extend %content-container;
-    @include pg-section ($pg-250, 0, $pg-223, 0); // в задании указано по 200
+    @include pg-section ($pg-250, 20px, $pg-223, 20px); // в задании указано по 200
 }
 .buttons {
     margin-top: $mg-48;

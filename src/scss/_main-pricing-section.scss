@@ -7,9 +7,6 @@
     background-color: $bg-black;  // надо ли указывать ??
 }
 
-
-
-
 .pricing {
     // max-width: 100%;
     margin: 48px 0 43px 0;
@@ -123,7 +120,20 @@
 
 @media (max-width: 480px) {
 
-       
+
+    // %content-container-mob {
+    //     width: 414px;  // было max
+    //     margin: 0 auto;
+    //     box-sizing: border-box;
+    //     // padding: 0 20px;
+    // }
+
+
+    .content-container-pricing {
+       width: 414px;
+       padding: 100px 0 0 0;
+    }
+      
     .fz-h2 {
         @include title-font($fx-title-mob-h2);
     }
@@ -134,9 +144,9 @@
         margin: 16px 0 200px 0;
     }
 
-    .bg-wrapper-pricing {
-        padding: 0 $pg-20;
-    }
+    // .bg-wrapper-pricing {
+    //     padding: 0 $pg-20;
+    // }
 
     .pricing {
         flex-direction: column;

@@ -47,6 +47,14 @@
     // padding: 0 20px;
 }
 
+%content-container-mob {
+    width: 414px;  // было max
+    margin: 0 auto;
+    box-sizing: border-box;
+    // padding: 0 20px;
+}
+
+
 @mixin bg-wrapper($bg-name) {
     background: url("../images/#{$bg-name}.png");
     background-position: center;
@@ -192,8 +200,6 @@
     left: 31px;
     filter: invert(1);
 }
-
-
 
 // сетка для artist-discography + artist-similar
 

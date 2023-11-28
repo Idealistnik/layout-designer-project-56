@@ -47,7 +47,7 @@
         max-width: 1240px;
         padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
         box-sizing: border-box; // новое
-        
+
         .header-main {
             flex: 0 1 501px;
         }
@@ -120,6 +120,7 @@
     }
 
     .banner-form {
+
         .input-banner,
         .button-green {
             flex: 0 1 100%;
@@ -142,7 +143,7 @@
             .header-content {
                 flex-direction: column;
                 align-items: flex-start;
-                font-weight: bold;              
+                font-weight: bold;
                 min-height: 145px;
 
                 .header-main {
@@ -192,6 +193,10 @@
             margin: 16px 0;
         }
 
+        .input-banner {
+            flex: 0 1 100%;
+        }
+
         .banner-form {
             justify-content: center;
 
@@ -206,10 +211,5 @@
                 padding: 21px 30px;
             }
         }
-
-        .input-banner {
-            flex: 0 1 100%;
-        }
-
     }
 }

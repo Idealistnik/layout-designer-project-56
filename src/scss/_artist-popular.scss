@@ -13,8 +13,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 50px;
-    row-gap: 25px;
+    gap: 25px 50px;
     margin-right: 50px;
 
     .popular-track {
@@ -33,9 +32,7 @@
     }
 }
 
-@media (max-width: 650px) {
-
-
+@media (width <=650px) {
     .pop-content-wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -53,7 +50,7 @@
 
 }
 
-@media (max-width: 414px) {
+@media (width <=414px) {
     .content-container-pop {
         max-width: 414px;
     }

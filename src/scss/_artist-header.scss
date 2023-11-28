@@ -7,30 +7,6 @@
     @include pg-section ($pg-250, 20px, $pg-223, 20px); // в задании указано по 200
 }
 
-
-.header-position-artist {
-    position: absolute;
-    width: 100%;
-    top: 25px;
-    left: 0;
-
-    .header-content-artist {
-        max-width: 1240px;
-
-        box-sizing: border-box;
-        margin: 0 auto;
-        padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
-
-        .header-main-artist {
-            flex: 0 1 501px;
-        }
-
-        .header-search-artist {
-            flex: 0 1 248px;
-        }
-    }
-}
-
 .header-main-artist {
     align-items: center;
 
@@ -58,6 +34,29 @@
             .menu-item-artist {
                 margin-right: 10px; // допом чтобы был отступ при уменьшении
             }
+        }
+    }
+}
+
+.header-position-artist {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    left: 0;
+
+    .header-content-artist {
+        max-width: 1240px;
+
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+
+        .header-main-artist {
+            flex: 0 1 501px;
+        }
+
+        .header-search-artist {
+            flex: 0 1 248px;
         }
     }
 }
@@ -134,7 +133,7 @@
 //     margin-right: $mg-24;   убрал класс
 // }
 
-@media (max-width: 415px) {
+@media (width <= 415px) {
     .content-container-description {
         @include pg-section($pg-225, 20px, $pg-224, 20px);
 

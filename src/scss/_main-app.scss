@@ -1,11 +1,7 @@
 .content-container-app {
     @extend %content-container;
-    @include pg-section($pg-100, 20px, 0, 20px);
+    @include pg-section($pg-100, $pg-20, 0, $pg-20);
     margin-bottom: 100px;
-}
-
-.bg-wrapper-app {
-    background-color: $bg-black; // надо ли указывать ??
 }
 
 .title-app {
@@ -15,10 +11,6 @@
 .col-app {
     flex: 0 1 50%;
 }
-
-// .text-app:last-of-type{
-//     margin-bottom: 0;
-// }
 
 .button-app {
     display: flex;
@@ -33,10 +25,10 @@
     background-color: $bg-orange;
     color: $color-white;
     cursor: pointer;
-    
+
     font-family: Roboto, sans-serif;
     font-size: 12.8px;
-    text-decoration: none;    
+    text-decoration: none;
 
     // margin-top: 16px;
 }
@@ -44,20 +36,15 @@
 .img-app {
     position: relative;
     top: 0;
-    right: -123px;     // 6 пикселей не идет по общей высоте - наверное картинка
+    right: -123px; // не получается сделать так чтобы картинка с позиционированием влезала при уменьшении - поэтому добавил брекйпоинт
     vertical-align: middle;
 }
 
-
-
-
-
-@media (max-width: 913px) {
+@media (width <=913px) {
     .content-container-app {
         max-width: 873px;
     }
 
-
     // .bg-wrapper-app {
     //     padding: 0 20px;
     // }
@@ -79,43 +66,21 @@
     .img-app {
         position: static;
         vertical-align: middle;
+
         // max-width: 100%;
         // display: block;
     }
-
-    // .button-app {
-    //     margin-top: 15px;
-    // }
-
-
 }
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 550px) {
+@media (width <=550px) {
     .content-container-app {
         max-width: 414px;
     }
 
-
-    // .bg-wrapper-app {
-    //     padding: 0 20px;
-    // }
-
     .fz-h2 {
         @include title-font($fz-title-mob-h2);
     }
+
     .wrapper-app {
         flex-direction: column-reverse;
     }
@@ -133,16 +98,8 @@
     .img-app {
         position: static;
         vertical-align: middle;
+
         // max-width: 100%;
         // display: block;
     }
-
-    // .button-app {
-    //     margin-top: 15px;
-    // }
-
-
 }
-    
-
-   

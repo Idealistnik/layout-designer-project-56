@@ -1,19 +1,14 @@
 .bg-wrapper-index {
     @include bg-wrapper($bg-banner);
 }
-.content-container {
-    @include pg-section($pg-200, 20px, $pg-200, 20px);
-}
 
-// .fz-h1 {
-//     @include title-font($fz-title-h1);
-// }
+.content-container {
+    @include pg-section($pg-200, $pg-20);
+}
 
 .fz-h2 {
     @include title-font($fz-title-h2);
 }
-
-
 
 .header-position {
     position: absolute;
@@ -26,14 +21,13 @@
         max-width: 1240px;
         padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
         box-sizing: border-box; // новое
-        // width: 83.333%;
-
+        
         .header-main {
             flex: 0 1 501px;
         }
 
         .header-search {
-            flex: 0 1 248px; 
+            flex: 0 1 248px;
         }
     }
 }
@@ -45,18 +39,20 @@
         align-items: center;
         flex: 0 1 98px;
         margin-right: 10px; //доп
+
         .logo-link {
             color: $color-white;
         }
     }
 
     .main-menu {
-        flex: 0 1 313px;        
+        flex: 0 1 313px;
 
         .menu-list {
             flex-wrap: wrap;
+
             .menu-item {
-                margin-right: 10px;  // Доп
+                margin-right: 10px; // Доп
             }
         }
     }
@@ -72,14 +68,12 @@
     width: 100%;
     border: none;
     padding: 5px 10px;
-    
+
 
     &:focus::placeholder {
         color: transparent;
     }
 }
-
-
 
 .banner-form {
     flex-wrap: wrap;
@@ -89,7 +83,7 @@
     .input-banner {
         flex: 0 1 270px;
         min-height: 50px;
-        padding: 0 0 0 $pg-20;   
+        padding: 0 0 0 $pg-20;
         border: 2px solid $color-gray-light;
         border-radius: 3px;
         margin-bottom: 1.5rem;
@@ -112,7 +106,7 @@
     .button-green {
         flex-grow: 1;
         max-height: 57px;
-        background-color: $bg-green;   
+        background-color: $bg-green;
         border: none;
         padding: 21px 30px;
         font-family: "Arial", sans-serif; //нужно будет проверить шрифт arial тк в общем поменял
@@ -120,12 +114,14 @@
 
 }
 
-@media (max-width: 545px) {
+@media (width <=545px) {
     .p-text-index {
         margin-left: 10px; //доп
-        margin-right: 10px;//доп
+        margin-right: 10px; //доп
     }
+
     .banner-form {
+
         // flex-direction: column;
         .input-banner,
         .button-green {
@@ -133,27 +129,13 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-        
+
     }
 }
 
-// @media (max-width: 415px) {
-//     .fz-h1 {
-//         @include title-font($fx-title-mob-h1);
-//     }
-
-//     .fz-h2 {
-//         @include title-font($fx-title-mob-h2);
-//     }
-// }
-
 @media (width <=584px) {
-    
-
-
     .bg-wrapper-index {
         padding: $pg-20;
-
 
         .header-position {
             max-height: 145px;
@@ -164,16 +146,12 @@
                 // padding: 0;
                 flex-direction: column;
                 align-items: flex-start;
-                font-weight: bold;
-                
-                // margin: 0 auto;
-                // width: 90.338%;
-               
+                font-weight: bold;              
                 min-height: 145px;
 
                 .header-main {
                     flex-direction: column;
-                    flex: 0 1 106px;   // ширину поменял
+                    flex: 0 1 106px; // ширину поменял
                     align-items: start;
 
                     .main-logo {
@@ -194,7 +172,7 @@
 
                 .header-search {
                     flex: 0 0 25px;
-                    margin-top: 16px;  // изменили
+                    margin-top: 16px; // изменили
                     width: 100%;
                 }
 
@@ -216,21 +194,23 @@
         @include pg-section(180px, 0, $pg-181, 0);
 
         .p-text-index {
-            margin: 16px 0 16px 0; 
+            margin: 16px 0 16px 0;
         }
 
         .banner-form {
             justify-content: center;
+
             .input-banner,
-        .button-green {
-            min-width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            
-        }
-        .button-green {
-            padding: 21px 30px;  // в макете 21 в задании 22 попробовал поменять
-        }
+            .button-green {
+                min-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+            }
+
+            .button-green {
+                padding: 21px 30px; // в макете 21 в задании 22 попробовал поменять
+            }
         }
 
         .input-banner {

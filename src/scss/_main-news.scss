@@ -1,10 +1,6 @@
 .content-container-news {
     @extend %content-container;
-    @include pg-section($pg-100, 20px, 0, 20px);
-}
-
-.bg-wrapper-news {
-    background-color: $bg-black; // надо ли указывать ??
+    @include pg-section($pg-100, $pg-20, 0, $pg-20);
 }
 
 .news-title {
@@ -38,8 +34,10 @@
 
 .news-img {
     max-width: 100%;
+
     // height: 286px;
     // height: auto;
+
     object-fit: cover;
 
 }
@@ -55,7 +53,7 @@
 //     }
 
 .news-item:last-child .news-text {
-    margin: 30px 0 15px 0;
+    margin: 30px 0 15px;
 }
 
 .news-author {
@@ -91,30 +89,22 @@
     margin-top: 83px;
 }
 
-
-//     border: 1px solid var(--White, #FFF); 
-//     color: $color-white;
-
 @media (width <=1000px) {
-
     .content-container-news {
         max-width: 960px;
-    } 
-
- 
+    }
 
     .news-wrapper .news-item:last-child .news-text {
         margin: 16px 0 16px 0;
     }
-    
-
 
     .news-item {
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
 
 
         &:last-child {
             flex-direction: column-reverse; // почему не рабоатет row Не понимаю
+
             .col {
                 margin: 0;
 
@@ -142,22 +132,15 @@
 
             }
 
-        } 
+        }
 
     }
 }
 
-
-
-@media (max-width: 550px) {
-
+@media (width <=550px) {
     .content-container-news {
         max-width: 414px;
     }
-
-    // .bg-wrapper-news {
-    //     padding: 0 20px;
-    // }
 
     .fz-h2-news {
         @include title-font($fz-title-mob-h2);
@@ -176,15 +159,14 @@
     .news-wrapper .news-item:last-child .news-text {
         margin: 16px 0 16px 0;
     }
-    
-
 
     .news-item {
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
 
 
         &:last-child {
             flex-direction: column-reverse; // почему не рабоатет row Не понимаю
+
             .col {
                 margin: 0;
 
@@ -212,7 +194,7 @@
 
             }
 
-        } 
+        }
 
     }
 }

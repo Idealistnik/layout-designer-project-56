@@ -95,6 +95,10 @@
     .news-item {
         flex-wrap: wrap;
 
+        &:last-child .news-text {
+            margin: 16px 0;
+        }
+
         .col {
             flex: 0 1 100%;
             margin: 0 0 50px;
@@ -129,9 +133,9 @@
 
     }
 
-    .news-wrapper .news-item:last-child .news-text {
-        margin: 16px 0;
-    }
+    // .news-wrapper .news-item:last-child .news-text {
+    //     margin: 16px 0;
+    // }
 }
 
 @media (width <=550px) {

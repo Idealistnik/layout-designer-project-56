@@ -218,8 +218,7 @@
 
 // сетка для artist-discography + artist-similar
 
-@media (width <=450px) {    
-
+@media (width <=450px) {
     .grid-content-artist-4col {
         grid-template-columns: repeat(2, 1fr);
 

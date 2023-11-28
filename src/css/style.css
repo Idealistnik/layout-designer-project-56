@@ -774,6 +774,9 @@
   .news-item {
     flex-wrap: wrap;
   }
+  .news-item:last-child .news-text {
+    margin: 16px 0;
+  }
   .news-item .col {
     flex: 0 1 100%;
     margin: 0 0 50px;
@@ -795,9 +798,6 @@
   }
   .news-item:last-child .col:last-child {
     margin: 0 0 50px;
-  }
-  .news-wrapper .news-item:last-child .news-text {
-    margin: 16px 0;
   }
 }
 .content-container-app {

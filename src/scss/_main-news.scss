@@ -4,7 +4,7 @@
 }
 
 .news-title {
-    margin-bottom: 48px;
+    margin-bottom: $mg-48;
 }
 
 .fz-h3-news {
@@ -44,7 +44,7 @@
 
 
 .news-text {
-    margin: 30px 0 24px 0;
+    margin: 30px 0 24px;
     font-size: 16px;
 }
 
@@ -59,9 +59,7 @@
 .news-author {
     max-width: 187px;
     font-size: 12.8px;
-}
 
-.news-author {
     & span:first-of-type {
         color: $color-orange;
     }
@@ -82,7 +80,7 @@
 
     box-sizing: border-box;
 
-    margin-top: 48px;
+    margin-top: $mg-48;
 }
 
 .news-img-bottom {
@@ -95,7 +93,7 @@
     }
 
     .news-wrapper .news-item:last-child .news-text {
-        margin: 16px 0 16px 0;
+        margin: 16px 0;
     }
 
     .news-item {
@@ -109,7 +107,7 @@
                 margin: 0;
 
                 &:last-child {
-                    margin: 0 0 50px 0;
+                    margin: 0 0 50px;
                 }
             }
 
@@ -124,10 +122,10 @@
             }
 
             .news-text {
-                margin: 16px 0 24px 0;
+                margin: 16px 0 24px;
 
                 .news-text:last-child {
-                    margin: 16px 0 16px 0;
+                    margin: 16px 0;
                 }
 
             }
@@ -157,12 +155,11 @@
     }
 
     .news-wrapper .news-item:last-child .news-text {
-        margin: 16px 0 16px 0;
+        margin: 16px 0;
     }
 
     .news-item {
         flex-wrap: wrap;
-
 
         &:last-child {
             flex-direction: column-reverse; // почему не рабоатет row Не понимаю
@@ -171,7 +168,7 @@
                 margin: 0;
 
                 &:last-child {
-                    margin: 0 0 50px 0;
+                    margin: 0 0 50px;
                 }
             }
 
@@ -179,17 +176,17 @@
 
         .col {
             flex: 0 1 100%;
-            margin: 0 0 50px 0;
+            margin: 0 0 50px;
 
             &:last-child {
                 margin-bottom: 0;
             }
 
             .news-text {
-                margin: 16px 0 24px 0;
+                margin: 16px 0 24px;
 
                 .news-text:last-child {
-                    margin: 16px 0 16px 0;
+                    margin: 16px 0;
                 }
 
             }

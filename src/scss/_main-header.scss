@@ -10,6 +10,32 @@
     @include title-font($fz-title-h2);
 }
 
+.header-main {
+    align-items: center;
+
+    .main-logo {
+        align-items: center;
+        flex: 0 1 98px;
+        margin-right: 10px; // доп
+
+        .logo-link {
+            color: $color-white;
+        }
+    }
+
+    .main-menu {
+        flex: 0 1 313px;
+
+        .menu-list {
+            flex-wrap: wrap;
+
+            .menu-item {
+                margin-right: 10px; // Доп
+            }
+        }
+    }
+}
+
 .header-position {
     position: absolute;
     width: 100%;
@@ -28,32 +54,6 @@
 
         .header-search {
             flex: 0 1 248px;
-        }
-    }
-}
-
-.header-main {
-    align-items: center;
-
-    .main-logo {
-        align-items: center;
-        flex: 0 1 98px;
-        margin-right: 10px; //доп
-
-        .logo-link {
-            color: $color-white;
-        }
-    }
-
-    .main-menu {
-        flex: 0 1 313px;
-
-        .menu-list {
-            flex-wrap: wrap;
-
-            .menu-item {
-                margin-right: 10px; // Доп
-            }
         }
     }
 }
@@ -90,16 +90,15 @@
         background-color: transparent;
         color: $color-white;
 
-        &:focus::placeholder {
-            color: transparent;
-        }
-
         &::placeholder {
             color: $color-white;
             font-size: 14px;
             font-family: Roboto, sans-serif;
             font-weight: bold;
+        }
 
+        &:focus::placeholder {
+            color: transparent;
         }
     }
 
@@ -109,20 +108,18 @@
         background-color: $bg-green;
         border: none;
         padding: 21px 30px;
-        font-family: "Arial", sans-serif; //нужно будет проверить шрифт arial тк в общем поменял
+        font-family: Arial, sans-serif;
     }
 
 }
 
 @media (width <=545px) {
     .p-text-index {
-        margin-left: 10px; //доп
-        margin-right: 10px; //доп
+        margin-left: 10px; // доп
+        margin-right: 10px; // доп
     }
 
     .banner-form {
-
-        // flex-direction: column;
         .input-banner,
         .button-green {
             flex: 0 1 100%;
@@ -143,7 +140,6 @@
 
 
             .header-content {
-                // padding: 0;
                 flex-direction: column;
                 align-items: flex-start;
                 font-weight: bold;              
@@ -185,7 +181,6 @@
         color: $color-white;
     }
 
-
     .bg-wrapper-mob .h1-mg {
         margin-top: 48px;
     }
@@ -194,7 +189,7 @@
         @include pg-section(180px, 0, $pg-181, 0);
 
         .p-text-index {
-            margin: 16px 0 16px 0;
+            margin: 16px 0;
         }
 
         .banner-form {
@@ -205,11 +200,10 @@
                 min-width: 100%;
                 margin-left: 0;
                 margin-right: 0;
-
             }
 
             .button-green {
-                padding: 21px 30px; // в макете 21 в задании 22 попробовал поменять
+                padding: 21px 30px;
             }
         }
 

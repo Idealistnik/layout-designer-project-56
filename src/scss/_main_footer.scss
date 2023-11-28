@@ -1,12 +1,11 @@
 .content-container-footer-top {
     @extend %content-container;
-    @include pg-section(0, 20px, 0, 20px);  
+    @include pg-section(0, 20px);
 }
 
 .content-container-footer-bottom {
     @extend %content-container;
-    @include pg-section(0, 20px, 0, 20px);
-
+    @include pg-section(0, 20px);
 }
 
 .bg-wrapper-footer {
@@ -17,8 +16,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
-    padding: 62px 0 72px 0;
-    // padding: 3rem 0; 3rem дает 48px 
+    padding: 62px 0 72px; // padding: 3rem 0; 3rem дает 48px  если по заданию
 }
 
 .fz-h2-footer {
@@ -45,7 +43,6 @@
 }
 
 // .content-container-footer-top {
-//     
 //     border-bottom: 2px solid $color-gray-light;  // как сделать чтобы линия шла на всю длину весте с отсупами без псевдоэлемента?
 // }
 
@@ -77,16 +74,11 @@
 
 .help-add {
     // padding: 2rem 0; 2rem дает 32px
-    padding: 42px 0 49px 0;
+    padding: 42px 0 49px;
 }
 
 
-@media (max-width: 650px) {
-    // .bg-wrapper-footer {
-    //     padding: 0 20px;
-    // }
-
-
+@media (width <=650px) {
     .content-container-footer-top,
     .content-container-footer-bottom {
         max-width: 414px;
@@ -94,11 +86,10 @@
 
     .footer-top {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr auto-fill; // послденаяя на 2 пикселя не идет
+        grid-template-rows: 1fr 1fr 1fr auto-fill;
         grid-template-columns: 1fr;
         row-gap: 30px;
-        padding: 62px 0 75px 0;
-
+        padding: 62px 0 75px;
     }
 
     .bg-wrapper-footer::after {
@@ -112,16 +103,17 @@
     }
 
     .fz-h2-footer {
-        margin-bottom: 16px; //.footer-list.list-item 
+        margin-bottom: 16px;
     }
 
     .help-add {
-        padding: 42px 0 47px 0;
+        padding: 42px 0 47px;
 
         .footer-list {
             flex-direction: column;
-            justify-content: space-between;            
+            justify-content: space-between;
             height: 184px;
+
             .list-item {
                 flex-grow: 1;
             }

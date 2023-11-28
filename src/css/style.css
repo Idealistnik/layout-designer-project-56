@@ -22,35 +22,19 @@
   margin: 0;
 }
 
-.title-h2-index {
+.title-h2 {
   font-size: 38px;
   line-height: 57px;
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  text-align: center;
 }
 
-@media (width <= 450px) {
-  .title-h1 {
-    font-size: 30px;
-    line-height: 45px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .title-h2-index {
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 48px;
-  }
+.mg-bot-48 {
+  margin-bottom: 48px;
 }
+
 .h2-footer {
   font-size: 18px;
   line-height: 27px;
@@ -62,6 +46,35 @@
   margin-bottom: 15px;
 }
 
+.title-h3-artist {
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+@media (width <= 450px) {
+  .title-h1 {
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .title-h2 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
 .button {
   border-radius: 5px;
   color: inherit;
@@ -165,26 +178,6 @@
   position: relative;
 }
 
-.title-h2-artist {
-  font-size: 38px;
-  line-height: 57px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 48px;
-}
-
-.title-h3-artist {
-  font-size: 18px;
-  line-height: 27px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  text-transform: capitalize;
-}
-
 .img-artist-big {
   max-width: 250px;
   max-height: 250px;
@@ -201,23 +194,6 @@
 }
 
 @media (width <= 450px) {
-  .title-h1 {
-    font-size: 30px;
-    line-height: 45px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .title-h2-artist {
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 48px;
-  }
   .grid-content-artist-4col {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -374,6 +350,9 @@
   }
   .content-container {
     padding: 180px 0 181px;
+  }
+  .content-container .title-h1-index {
+    margin-top: 78px;
   }
   .content-container .title-h2-index {
     margin-bottom: 0;
@@ -668,7 +647,7 @@
   padding: 100px 20px 0 20px;
 }
 
-.news-title {
+.title-h2-news {
   margin-bottom: 48px;
 }
 
@@ -820,7 +799,7 @@
   margin-bottom: 100px;
 }
 
-.title-app {
+.title-h2-app {
   margin-bottom: 48px;
 }
 
@@ -858,7 +837,7 @@
   .wrapper-app {
     flex-direction: column-reverse;
   }
-  .title-app {
+  .title-h2-app {
     margin-bottom: 48px;
   }
   .col-app {
@@ -877,7 +856,7 @@
   .wrapper-app {
     flex-direction: column-reverse;
   }
-  .title-app {
+  .title-h2-app {
     margin-bottom: 48px;
   }
   .col-app {

@@ -27,27 +27,18 @@
     margin: 0;
 }
 
-// Общее для двух страниц
+// Заголовки
 
 .title-h1 {
     @include title-font($fz-title-h1);
 }
 
-.title-h2-index {
+.title-h2 {
     @include title-font($fz-title-h2);
-    text-align: center;
 }
 
-
-@media (width <=450px) {
-    .title-h1 {
-        @include title-font($fz-title-mob-h1);
-    }
-
-    .title-h2-index {
-        @include title-font($fz-title-mob-h2);
-        margin-bottom: $mg-48;
-    }
+.mg-bot-48 {
+    margin-bottom: $mg-48; // ко всем заголовкам в артисте
 }
 
 .h2-footer {
@@ -56,12 +47,33 @@
     margin-bottom: 15px;
 }
 
-// .title-h3-artist {
-//     @include title-font($fz-title-h3-artist);
-//     text-transform: capitalize;
+.title-h3-artist {
+    @include title-font($fz-title-h3-artist);
+    text-transform: capitalize;
+}
 
-// margin-bottom: 48px;
-// }
+
+
+@media (width <=450px) {
+    .title-h1 {
+        @include title-font($fz-title-mob-h1);
+    }
+
+    .title-h2 {
+        @include title-font($fz-title-mob-h2);
+        margin-bottom: $mg-48;
+    }
+
+    // .title-h2-index {
+    //     @include title-font($fz-title-mob-h2);
+    //     margin-bottom: $mg-48;
+    // }
+
+}
+
+
+
+
 
 .button {
     border-radius: 5px;
@@ -181,15 +193,7 @@
 
 // ARTIST desktop======================================
 
-.title-h2-artist {
-    @include title-font($fz-title-h2);
-    margin-bottom: 48px;
-}
 
-.title-h3-artist {
-    @include title-font($fz-title-h3-artist);
-    text-transform: capitalize;
-}
 
 .img-artist-big {
     max-width: 250px;
@@ -225,15 +229,7 @@
 
 // сетка для artist-discography + artist-similar
 
-@media (width <=450px) {
-    .title-h1 {
-        @include title-font($fz-title-mob-h1);
-    }
-
-    .title-h2-artist {
-        @include title-font($fz-title-mob-h2);
-        margin-bottom: $mg-48;
-    }
+@media (width <=450px) {    
 
     .grid-content-artist-4col {
         grid-template-columns: repeat(2, 1fr);
@@ -245,4 +241,8 @@
     }
 
 }
+
+
+
+
 

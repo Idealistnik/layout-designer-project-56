@@ -80,7 +80,7 @@
 
     .footer-top {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr auto-fill;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
         row-gap: 30px;
         padding: 62px 0 75px;

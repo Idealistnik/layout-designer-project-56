@@ -37,8 +37,6 @@
     @include title-font($fz-title-h2);
 }
 
-
-
 .h2-footer {
     @include title-font($fz-title-mob-h2);
     text-transform: uppercase;

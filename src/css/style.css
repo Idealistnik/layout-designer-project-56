@@ -31,10 +31,6 @@
   margin: 0;
 }
 
-.mg-bot-48 {
-  margin-bottom: 48px;
-}
-
 .h2-footer {
   font-size: 18px;
   line-height: 27px;
@@ -96,16 +92,20 @@
   margin: 0;
 }
 
+.mg-bot-48 {
+  margin-bottom: 48px;
+}
+
 .mg-top-48 {
   margin-top: 48px;
 }
 
-.fz-11 {
-  font-size: 11px;
-}
-
 .mg-top-31 {
   margin-top: 31px;
+}
+
+.fz-11 {
+  font-size: 11px;
 }
 
 .uppercase {
@@ -611,7 +611,7 @@
   .content-container-pricing {
     max-width: 414px;
   }
-  .title-h2-index {
+  .title-h2-pricing {
     margin-bottom: 0;
   }
   .fz-h3 {

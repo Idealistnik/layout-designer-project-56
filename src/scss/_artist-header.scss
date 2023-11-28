@@ -15,11 +15,11 @@
     left: 0;
 
     .header-content-artist {
-        margin: 0 auto;
         max-width: 1240px;
+
+        box-sizing: border-box;
+        margin: 0 auto;
         padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
-        box-sizing: border-box; // новое
-        // width: 83.333%;
 
         .header-main-artist {
             flex: 0 1 501px;
@@ -37,7 +37,12 @@
     .main-logo-artist {
         align-items: center;
         flex: 0 1 98px;
-        margin-right: 10px; //доп
+        margin-right: 10px; // допом чтобы был отступ при уменьшении
+
+        .logo-img-artist {
+            width: 24px;
+            height: 24px;
+        }
 
         .logo-link-artist {
             color: $color-white;
@@ -51,14 +56,14 @@
             flex-wrap: wrap;
 
             .menu-item-artist {
-                margin-right: 10px; // Доп
+                margin-right: 10px; // допом чтобы был отступ при уменьшении
             }
         }
     }
 }
 
 .menu-link-artist:hover {
-    color: $color-white;
+    color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
 }
 
 .input-header-artist {
@@ -67,7 +72,6 @@
     width: 100%;
     border: none;
     padding: 5px 10px;
-
 
     &:focus::placeholder {
         color: transparent;
@@ -88,29 +92,22 @@
 
     font-size: 12.8px;
     color: $color-white;
-}
 
-.button-artist:hover {
-    outline: 1px solid $color-white; // просто добавил
-}
+    &:hover {
+        outline: 1px solid $color-white; // просто добавил
+    }
 
-.button-artist:first-child {
-    margin-right: 1.5rem;
-}
+    &:first-child {
+        margin-right: 1.5rem;
+    }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    filter: invert(1);
-    margin-right: 16px;
-}
+    .icon {
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+        margin-right: 16px;
+    }
 
-.bg-blue {
-    background-color: $bg-blue;
-}
-
-.bg-orange {
-    background-color: $bg-orange;
 }
 
 // если псевдоэлементом
@@ -138,27 +135,35 @@
 // }
 
 @media (max-width: 415px) {
-    
+    .content-container-description {
+        @include pg-section($pg-225, 20px, $pg-224, 20px);
+
+        .buttons-artist {
+            flex-direction: column;
+
+            .button-artist:first-child {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    }
 
     .header-position-artist {
         max-height: 145px;
         top: 25px;
 
         .header-content-artist {
-            // padding: 0;
+            min-height: 145px;
+
             flex-direction: column;
             align-items: flex-start;
+
             font-weight: bold;
-
-            // margin: 0 auto;
-            // width: 90.338%;
-
-            min-height: 145px;
 
             .header-main-artist {
                 flex-direction: column;
-                flex: 0 1 106px; // ширину поменял было 102
                 align-items: start;
+                flex: 0 1 106px; // ширину поменяли было 102                
 
                 .main-logo-artist {
                     min-width: 98px;
@@ -183,18 +188,6 @@
             }
 
         }
-    }
-
-    .buttons-artist {
-        flex-direction: column;
-
-        .button-artist:first-child {
-            margin-bottom: 1.5rem;
-        }
-    }
-
-    .content-container-description {
-        @include pg-section($pg-225, 20px, $pg-224, 20px);
     }
 
 }

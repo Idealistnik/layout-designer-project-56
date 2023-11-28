@@ -22,7 +22,7 @@
 }
 
 .fz-h2-footer {
-    @include title-font($fx-title-mob-h2);
+    @include title-font($fz-title-mob-h2);
     text-transform: uppercase;
     margin-bottom: 15px;
 }

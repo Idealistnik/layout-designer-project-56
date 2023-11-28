@@ -159,7 +159,7 @@
     // }
 
     .fz-h2-news {
-        @include title-font($fx-title-mob-h2);
+        @include title-font($fz-title-mob-h2);
     }
 
     .news-title {
@@ -167,7 +167,7 @@
     }
 
     .fz-h3-news {
-        @include title-font($fx-title-mob-h3);
+        @include title-font($fz-title-mob-h3);
         font-weight: 400;
         text-transform: capitalize;
     }

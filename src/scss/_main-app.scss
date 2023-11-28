@@ -114,7 +114,7 @@
     // }
 
     .fz-h2 {
-        @include title-font($fx-title-mob-h2);
+        @include title-font($fz-title-mob-h2);
     }
     .wrapper-app {
         flex-direction: column-reverse;

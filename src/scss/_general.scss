@@ -41,19 +41,11 @@
 }
 
 %content-container {
-    max-width: 1240px;  // было max
+    max-width: 1240px;
     margin: 0 auto;
     box-sizing: border-box;
-    // padding: 0 20px;
+    
 }
-
-// %content-container-mob {
-//     width: 414px;  // было max
-//     margin: 0 auto;
-//     box-sizing: border-box;
-//     // padding: 0 20px;
-// }
-
 
 @mixin bg-wrapper($bg-name) {
     background: url("../images/#{$bg-name}.png");
@@ -80,7 +72,7 @@
     font-size: $fz-title;
     line-height: $fz-title * 1.5;
     color: $color-white;
-    font-weight: bold; // убрать потом ? чтобы ставить отдельно болд если нужно?
+    font-weight: bold;
     text-transform: uppercase;
     margin: 0;
 }
@@ -99,7 +91,6 @@
 .text-left {
     text-align: left;
 }
-
 
 .text-center {
     text-align: center;
@@ -132,19 +123,12 @@
 }
 
 .input {
-    box-sizing: border-box;
+    box-sizing: border-box; //странное название
 }
 
 .relative {
     position: relative;
 }
-
-// For mobile===================================
-
-// @mixin padding-mobile {   // в общем задаем теперь падинг
-//     padding: 0 20px;
-// }
-
 
 // ARTIST desktop======================================
 
@@ -179,18 +163,7 @@
 
 // ARTIST mobile ======================================
 
-// @mixin button-artist-icon ($icon-name) {
-//     content: " ";
-//     background: url("../images/#{$icon-name}"), no-repeat;
-//     width: 20px;
-//     height: 20px;
-//     position: absolute;
-//     top: 21px;
-//     left: 31px;
-//     filter: invert(1);
-// }
-
-@mixin button-artist-icon ($icon-name) {
+@mixin button-artist-icon ($icon-name) { // если иконку не нужно ставить в html то псевдоэлемент
     content: " ";
     background: url("../images/#{$icon-name}"), no-repeat;
     width: 20px;
@@ -208,14 +181,12 @@
     .bg-wrapper-mob {
         // @include padding-mobile;
         .title-h1 {
-            @include title-font($fx-title-mob-h1);
+            @include title-font($fz-title-mob-h1);
         }
-    }
-
-    
+    }    
 
     .title-h2-artist {
-        @include title-font($fx-title-mob-h2);
+        @include title-font($fz-title-mob-h2);
         margin-bottom: $mg-48;
     }
 
@@ -223,10 +194,7 @@
         grid-template-columns: repeat(2, 1fr);
 
         .img-artist-big {
-            max-width: 100%;
-            // max-width: 137px;
-            // max-height: 137px;
-            
+            max-width: 100%;            
         }
 
     }
@@ -247,4 +215,12 @@
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     border: none;
+}
+
+.bg-blue {
+    background-color: $bg-blue;
+}
+
+.bg-orange {
+    background-color: $bg-orange;
 }

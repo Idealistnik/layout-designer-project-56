@@ -5,7 +5,7 @@
 }
 
 .title-app {
-    margin-bottom: 48px;
+    margin-bottom: $mg-48;
 }
 
 .col-app {
@@ -54,7 +54,7 @@
     }
 
     .title-app {
-        margin-bottom: 48px;
+        margin-bottom: $mg-48;
     }
 
     .col-app {
@@ -77,16 +77,12 @@
         max-width: 414px;
     }
 
-    .fz-h2 {
-        @include title-font($fz-title-mob-h2);
-    }
-
     .wrapper-app {
         flex-direction: column-reverse;
     }
 
     .title-app {
-        margin-bottom: 48px;
+        margin-bottom: $mg-48;
     }
 
     .col-app {

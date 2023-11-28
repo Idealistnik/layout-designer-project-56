@@ -6,10 +6,6 @@
     @include pg-section($pg-200, $pg-20);
 }
 
-.fz-h2 {
-    @include title-font($fz-title-h2);
-}
-
 .header-main {
     align-items: center;
 
@@ -181,12 +177,12 @@
         color: $color-white;
     }
 
-    .bg-wrapper-index .h1-mg {
-        margin-top: $mg-48;
-    }
-
     .content-container {
         @include pg-section($pg-180, 0, $pg-181);
+
+        .title-h2-index {
+            margin-bottom: 0;
+        }
 
         .p-text-index {
             margin: 16px 0;

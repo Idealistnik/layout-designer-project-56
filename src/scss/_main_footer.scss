@@ -19,12 +19,6 @@
     padding: 62px 0 72px; // padding: 3rem 0; 3rem дает 48px  если по заданию
 }
 
-.h2-footer {
-    @include title-font($fz-title-mob-h2);
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
 .mg-b-20 {
     margin-bottom: 20px; // не получилось с помощью комбинирования селекторов обратиться
 }
@@ -102,7 +96,7 @@
         left: 0;
     }
 
-    .fz-h2-footer {
+    .h2-footer {
         margin-bottom: 16px;
     }
 

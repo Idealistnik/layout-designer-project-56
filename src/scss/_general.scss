@@ -33,6 +33,36 @@
     @include title-font($fz-title-h1);
 }
 
+.title-h2-index {
+    @include title-font($fz-title-h2);
+    text-align: center;
+}
+
+
+@media (width <=450px) {
+    .title-h1 {
+        @include title-font($fz-title-mob-h1);
+    }
+
+    .title-h2-index {
+        @include title-font($fz-title-mob-h2);
+        margin-bottom: $mg-48;
+    }
+}
+
+.h2-footer {
+    @include title-font($fz-title-mob-h2);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+// .title-h3-artist {
+//     @include title-font($fz-title-h3-artist);
+//     text-transform: capitalize;
+
+// margin-bottom: 48px;
+// }
+
 .button {
     border-radius: 5px;
     color: inherit;
@@ -57,8 +87,6 @@
 .mg-top-48 {
     margin-top: 48px;
 }
-
-
 
 .fz-11 {
     font-size: 11px;
@@ -99,8 +127,6 @@
     margin: 0;
 }
 
-
-
 .p-text {
     text-align: center;
     color: $color-white;
@@ -110,7 +136,6 @@
     text-align: left;
     color: $color-white;
 }
-
 
 .text-left {
     text-align: left;
@@ -174,8 +199,6 @@
     // object-fit: none;
 }
 
-
-
 .grid-content-artist-4col {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 250px)); // ???
@@ -206,7 +229,6 @@
     .title-h1 {
         @include title-font($fz-title-mob-h1);
     }
-
 
     .title-h2-artist {
         @include title-font($fz-title-mob-h2);

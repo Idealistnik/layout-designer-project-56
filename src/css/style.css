@@ -22,6 +22,46 @@
   margin: 0;
 }
 
+.title-h2-index {
+  font-size: 38px;
+  line-height: 57px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+@media (width <= 450px) {
+  .title-h1 {
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .title-h2-index {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+.h2-footer {
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
 .button {
   border-radius: 5px;
   color: inherit;
@@ -195,15 +235,6 @@
   padding: 200px 20px;
 }
 
-.fz-h2 {
-  font-size: 38px;
-  line-height: 57px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 .header-main {
   align-items: center;
 }
@@ -341,11 +372,11 @@
   .logo-link {
     color: #FFF;
   }
-  .bg-wrapper-index .h1-mg {
-    margin-top: 48px;
-  }
   .content-container {
-    padding: 180px 0 181px 0;
+    padding: 180px 0 181px;
+  }
+  .content-container .title-h2-index {
+    margin-bottom: 0;
   }
   .content-container .p-text-index {
     margin: 16px 0;
@@ -601,13 +632,8 @@
   .content-container-pricing {
     max-width: 414px;
   }
-  .fz-h2 {
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
+  .title-h2-index {
+    margin-bottom: 0;
   }
   .fz-h3 {
     font-size: 16px;
@@ -750,17 +776,6 @@
   .content-container-news {
     max-width: 414px;
   }
-  .fz-h2-news {
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .news-title {
-    margin-bottom: 48px;
-  }
   .fz-h3-news {
     font-size: 16px;
     line-height: 24px;
@@ -859,14 +874,6 @@
   .content-container-app {
     max-width: 414px;
   }
-  .fz-h2 {
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
   .wrapper-app {
     flex-direction: column-reverse;
   }
@@ -899,17 +906,6 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   padding: 62px 0 72px;
-}
-
-.h2-footer {
-  font-size: 18px;
-  line-height: 27px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  text-transform: uppercase;
-  margin-bottom: 15px;
 }
 
 .mg-b-20 {
@@ -980,7 +976,7 @@
     top: 686px;
     left: 0;
   }
-  .fz-h2-footer {
+  .h2-footer {
     margin-bottom: 16px;
   }
   .help-add {

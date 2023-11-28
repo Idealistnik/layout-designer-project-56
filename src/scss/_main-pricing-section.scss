@@ -116,8 +116,8 @@
         max-width: 414px;
     }
 
-    .fz-h2 {
-        @include title-font($fz-title-mob-h2);
+    .title-h2-index {
+        margin-bottom: 0;
     }
 
     .fz-h3 {

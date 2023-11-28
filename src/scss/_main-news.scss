@@ -143,14 +143,6 @@
         max-width: 414px;
     }
 
-    .fz-h2-news {
-        @include title-font($fz-title-mob-h2);
-    }
-
-    .news-title {
-        margin-bottom: 48px;
-    }
-
     .fz-h3-news {
         @include title-font($fz-title-mob-h3);
         font-weight: 400;

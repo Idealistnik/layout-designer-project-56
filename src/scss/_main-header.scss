@@ -186,7 +186,7 @@
     }
 
     .content-container {
-        @include pg-section(180px, 0, $pg-181, 0);
+        @include pg-section($pg-180, 0, $pg-181);
 
         .p-text-index {
             margin: 16px 0;

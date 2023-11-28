@@ -1066,7 +1066,7 @@
   padding: 100px 20px 0 20px;
 }
 
-@media (max-width: 550px) {
+@media (width: 550px) {
   .content-container-disc {
     max-width: 414px;
   }

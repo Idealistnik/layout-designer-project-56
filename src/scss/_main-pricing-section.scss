@@ -119,16 +119,6 @@
 
 
 @media (max-width: 650px) {
-
-
-    // %content-container-mob {
-    //     width: 414px;  // было max
-    //     margin: 0 auto;
-    //     box-sizing: border-box;
-    //     // padding: 0 20px;
-    // }
-
-
     .content-container-pricing {
         max-width: 414px;
     }
@@ -142,10 +132,6 @@
     .pricing-title {
         margin: 16px 0 200px 0;
     }
-
-    // .bg-wrapper-pricing {
-    //     padding: 0 $pg-20;
-    // }
 
     .pricing {
         flex-direction: column;
@@ -161,10 +147,6 @@
         }
     }
 
-    // .p-text-pricing {
-    //     margin: 40px 0 0 0;
-    // }
-
     .pricing-value span:first-child {
         font-size: 64px;
        
@@ -174,6 +156,5 @@
         font-size: 32px;
       
     }
-
 
 }

@@ -1,16 +1,16 @@
 @font-face {
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.woff2");
 }
 @font-face {
   font-weight: 700;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Bold.woff2");
 }
 @font-face {
   font-weight: 400;
-  font-family: "Arial";
+  font-family: Arial;
   src: url("../fonts/arial-narrow.woff2");
 }
 .title-h1 {
@@ -27,7 +27,7 @@
   color: inherit;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   border: none;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .main-styles {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   font-size: 16px;
   color: #CACACA;
@@ -154,14 +154,13 @@
 .grid-content-artist-4col {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 250px));
-  column-gap: 50px;
-  row-gap: 25px;
+  gap: 25px 50px;
   margin-right: 49px;
   justify-content: space-between;
   justify-items: center;
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
   .title-h1 {
     font-size: 30px;
     line-height: 45px;
@@ -281,7 +280,7 @@
 .banner-form .input-banner::placeholder {
   color: #FFFFFF;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
 }
 .banner-form .button-green {
@@ -305,7 +304,7 @@
     margin-right: 10px;
   }
 }
-@media (max-width: 584px) {
+@media (width <= 584px) {
   .bg-wrapper-index {
     padding: 20px;
   }
@@ -472,32 +471,32 @@
   .content-container-description .buttons-artist .button-artist:first-child {
     margin-bottom: 1.5rem;
   }
-  .bg-wrapper-description .header-position-artist {
+  .header-position-artist {
     max-height: 145px;
     top: 25px;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist {
+  .header-position-artist .header-content-artist {
     min-height: 145px;
     flex-direction: column;
     align-items: flex-start;
     font-weight: bold;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist .header-main-artist {
+  .header-position-artist .header-content-artist .header-main-artist {
     flex-direction: column;
     align-items: start;
     flex: 0 1 106px;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist .header-main-artist .main-logo-artist {
+  .header-position-artist .header-content-artist .header-main-artist .main-logo-artist {
     min-width: 98px;
     flex: 0 0 24px;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist .header-main-artist .main-menu-artist {
+  .header-position-artist .header-content-artist .header-main-artist .main-menu-artist {
     flex: 0 0 61px;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist .header-main-artist .main-menu-artist .menu-list-artist {
+  .header-position-artist .header-content-artist .header-main-artist .main-menu-artist .menu-list-artist {
     flex-direction: column;
   }
-  .bg-wrapper-description .header-position-artist .header-content-artist .header-search-artist {
+  .header-position-artist .header-content-artist .header-search-artist {
     flex: 0 0 25px;
     margin-top: 16px;
     width: 100%;
@@ -726,7 +725,7 @@
   margin-top: 83px;
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .content-container-news {
     max-width: 960px;
   }
@@ -841,7 +840,7 @@
   background-color: #95390C;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 12.8px;
   text-decoration: none;
 }
@@ -1074,7 +1073,7 @@
   padding: 100px 20px 100px 20px;
 }
 
-@media (max-width: 550px) {
+@media (width <= 550px) {
   .content-container-similar {
     max-width: 414px;
   }

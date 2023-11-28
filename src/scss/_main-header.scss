@@ -103,7 +103,7 @@
         &::placeholder {
             color: $color-white;
             font-size: 14px;
-            font-family: "Roboto", sans-serif;
+            font-family: Roboto, sans-serif;
             font-weight: bold;
 
         }
@@ -147,10 +147,7 @@
 //     }
 // }
 
-
-
-
-@media (max-width: 584px) {
+@media (width <=584px) {
     
 
 

@@ -1,20 +1,20 @@
-@import "./variables.scss";
+@import "./variables";
 
 @font-face {
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: Roboto;
     src: url("../fonts/Roboto-Regular.woff2");
 }
 
 @font-face {
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: Roboto;
     src: url("../fonts/Roboto-Bold.woff2");
 }
 
 @font-face {
     font-weight: 400;
-    font-family: "Arial";
+    font-family: Arial;
     src: url("../fonts/arial-narrow.woff2");
 }
 
@@ -39,7 +39,7 @@
     color: inherit;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     border: none;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .main-styles {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: $lh;
     font-size: $fz;
 
@@ -149,7 +149,7 @@
 }
 
 .input {
-    box-sizing: border-box; //странное название
+    box-sizing: border-box; // странное название
 }
 
 .relative {
@@ -172,6 +172,7 @@
     max-width: 250px;
     max-height: 250px;
     margin-bottom: 18px;
+
     // object-fit: none;
 }
 
@@ -180,8 +181,7 @@
 .grid-content-artist-4col {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 250px)); // ???
-    column-gap: 50px;
-    row-gap: 25px;
+    gap: 25px 50px;
     margin-right: 49px; // при 50 не помещался заголовок
     justify-content: space-between;
     justify-items: center;
@@ -189,7 +189,7 @@
 
 // ARTIST mobile ======================================
 
-@mixin button-artist-icon ($icon-name) {
+@mixin button-artist-icon($icon-name) {
     // если иконку не нужно ставить в html то псевдоэлемент
     content: " ";
     background: url("../images/#{$icon-name}"),
@@ -204,9 +204,7 @@
 
 // сетка для artist-discography + artist-similar
 
-@media (max-width: 450px) {
-
-
+@media (width <=450px) {
     .title-h1 {
         @include title-font($fz-title-mob-h1);
     }

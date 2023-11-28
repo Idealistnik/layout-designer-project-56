@@ -1,9 +1,9 @@
 .content-container-similar {
     @extend %content-container;
-    @include pg-section($pg-100, 20px, $pg-100, 20px);
+    @include pg-section($pg-100, $pg-20, $pg-100, $pg-20);
 }   
 
-@media (max-width: 550px) {
+@media (width <=550px) {
     .content-container-similar {
         max-width: 414px;
     }

@@ -86,7 +86,7 @@
     background-size: cover;
 }
 
-@mixin pg-section($pg-top, $pg-right, $pg-bottom, $pg-left) {
+@mixin pg-section($pg-top: null, $pg-right: null, $pg-bottom: null, $pg-left: null) {
     padding: $pg-top $pg-right $pg-bottom $pg-left;
 }
 

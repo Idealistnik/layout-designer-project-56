@@ -33,7 +33,6 @@
     @include title-font($fz-title-h1);
 }
 
-
 .button {
     border-radius: 5px;
     color: inherit;
@@ -77,7 +76,6 @@
     max-width: 1240px;
     margin: 0 auto;
     box-sizing: border-box;
-
 }
 
 @mixin bg-wrapper($bg-name) {

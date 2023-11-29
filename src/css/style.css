@@ -201,14 +201,11 @@
     max-width: 100%;
   }
 }
-.bg-wrapper-index {
+.content-container {
+  padding: 200px 20px;
   background: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-}
-
-.content-container {
-  padding: 200px 20px;
 }
 
 .header-main {
@@ -312,70 +309,69 @@
   }
 }
 @media (width <= 584px) {
-  .bg-wrapper-index {
-    padding: 20px;
-  }
-  .bg-wrapper-index .header-position {
+  .header-position {
     max-height: 145px;
     top: 25px;
   }
-  .bg-wrapper-index .header-position .header-content {
+  .header-position .header-content {
     flex-direction: column;
     align-items: flex-start;
     font-weight: bold;
     min-height: 145px;
   }
-  .bg-wrapper-index .header-position .header-content .header-main {
+  .header-position .header-content .header-main {
     flex-direction: column;
     flex: 0 1 106px;
     align-items: start;
   }
-  .bg-wrapper-index .header-position .header-content .header-main .main-logo {
+  .header-position .header-content .header-main .main-logo {
     min-width: 98px;
     flex: 0 0 24px;
   }
-  .bg-wrapper-index .header-position .header-content .header-main .main-menu {
+  .header-position .header-content .header-main .main-menu {
     flex: 0 0 61px;
   }
-  .bg-wrapper-index .header-position .header-content .header-main .main-menu .menu-list {
+  .header-position .header-content .header-main .main-menu .menu-list {
     flex-direction: column;
   }
-  .bg-wrapper-index .header-position .header-content .header-search {
+  .header-position .header-content .header-search {
     flex: 0 0 25px;
     margin-top: 16px;
     width: 100%;
   }
-  .logo-link {
-    color: #FFF;
-  }
-  .content-container {
-    padding: 180px 0 181px;
-  }
-  .content-container .title-h1-index {
-    margin-top: 48px;
-  }
-  .content-container .title-h2-index {
-    margin-bottom: 0;
-  }
-  .content-container .p-text-index {
-    margin: 16px 0;
-  }
-  .content-container .input-banner {
-    flex: 0 1 100%;
-  }
-  .content-container .banner-form {
-    justify-content: center;
-  }
-  .content-container .banner-form .input-banner,
-  .content-container .banner-form .button-green {
-    min-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .content-container .banner-form .button-green {
-    padding: 21px 30px;
-  }
 }
+.logo-link {
+  color: #FFF;
+}
+
+.content-container {
+  padding: 180px 20px 181px 20px;
+}
+.content-container .title-h1-index {
+  margin-top: 48px;
+}
+.content-container .title-h2-index {
+  margin-bottom: 0;
+}
+.content-container .p-text-index {
+  margin: 16px 0;
+}
+.content-container .input-banner {
+  flex: 0 1 100%;
+}
+.content-container .banner-form {
+  justify-content: center;
+}
+.content-container .banner-form .input-banner,
+.content-container .banner-form .button-green {
+  min-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.content-container .banner-form .button-green {
+  padding: 21px 30px;
+}
+
 .bg-wrapper-description {
   background: url("../images/Morten Harket.png");
   background-position: center;

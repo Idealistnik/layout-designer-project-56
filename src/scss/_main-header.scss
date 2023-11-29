@@ -1,9 +1,10 @@
-.bg-wrapper-index {
-    @include bg-wrapper($bg-banner);
-}
+// .bg-wrapper-index {
+    
+// }
 
 .content-container {
     @include pg-section($pg-200, $pg-20);
+    @include bg-wrapper($bg-banner);
 }
 
 .header-main {
@@ -127,8 +128,8 @@
 }
 
 @media (width <=584px) {
-    .bg-wrapper-index {
-        padding: $pg-20;
+    // .bg-wrapper-index {
+    //     padding: $pg-20;
 
         .header-position {
             max-height: 145px;
@@ -178,7 +179,7 @@
     }
 
     .content-container {
-        @include pg-section($pg-180, 0, $pg-181);
+        @include pg-section($pg-180, $pg-20, $pg-181, $pg-20);
 
         .title-h1-index {
             margin-top: $mg-48;
@@ -211,4 +212,4 @@
             }
         }
     }
-}
+// }

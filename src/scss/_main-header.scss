@@ -42,8 +42,14 @@
 
     .header-content {
         max-width: 1240px;
-        margin: 0 auto;        
+        margin: 0 auto;
         padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+        box-sizing: border-box;
+    }
+
+    .header-content-style {
+        text-transform: uppercase;
+        font-size: 11px;
     }
 }
 
@@ -51,30 +57,38 @@
     flex: 0 1 248px;
 }
 
-.input-header {
+.input-header-style {
     border-radius: 50px;
-    background-color: $bg-gray;
-    width: 100%;
     border: none;
-    padding: 5px 10px;
+    background-color: $bg-gray;
 
     &:focus::placeholder {
         color: transparent;
     }
 }
 
+.input-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.input-banner {
+    min-height: 50px;
+    flex: 0 1 270px;
+    box-sizing: border-box;
+    padding: 0 0 0 $pg-20;
+    margin-bottom: 1.5rem;
+}
+
 .banner-form {
-    flex-wrap: wrap;
     max-width: 570px;
     margin: 0 auto;
+    flex-wrap: wrap;
 
-    .input-banner {
-        flex: 0 1 270px;
-        min-height: 50px;
-        padding: 0 0 0 $pg-20;
+    .input-banner-style {
         border: 2px solid $color-gray-light;
         border-radius: 3px;
-        margin-bottom: 1.5rem;
         background-color: transparent;
         color: $color-white;
 
@@ -89,16 +103,18 @@
             color: transparent;
         }
     }
+}
 
-    .button-green {
-        flex-grow: 1;
-        max-height: 57px;
-        background-color: $bg-green;
-        border: none;
-        padding: 21px 30px;
-        font-family: Arial, sans-serif;
-    }
+.button-header-index {
+    max-height: 57px;
+    flex-grow: 1;
+    padding: 21px 30px;
+}
 
+.button-green {
+    background-color: $bg-green;
+    border: none;
+    font-family: Arial, sans-serif;
 }
 
 @media (width <=545px) {
@@ -110,7 +126,7 @@
     .banner-form {
 
         .input-banner,
-        .button-green {
+        .button-header-index {
             flex: 0 1 100%;
             margin-left: 10px;
             margin-right: 10px;
@@ -139,13 +155,13 @@
             justify-content: center;
 
             .input-banner,
-            .button-green {
+            .button-header-index {
                 min-width: 100%;
                 margin-left: 0;
                 margin-right: 0;
             }
 
-            .button-green {
+            .button-header-index {
                 padding: 21px 30px;
             }
         }

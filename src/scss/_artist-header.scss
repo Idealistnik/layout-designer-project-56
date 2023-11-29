@@ -1,5 +1,4 @@
 .content-container-description {
-    // @extend %content-container;
     @include pg-section ($pg-250, $pg-20, $pg-223);
     @include bg-wrapper($bg-artist);
 }
@@ -36,6 +35,8 @@
     }
 }
 
+
+
 .header-position-artist {
     position: absolute;
     width: 100%;
@@ -43,9 +44,15 @@
     left: 0;
 
     .header-content-artist {
-        max-width: 1240px;        
+        max-width: 1240px;
         margin: 0 auto;
         padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+        box-sizing: border-box;
+    }
+
+    .header-content-artist-style {
+        text-transform: uppercase;
+        font-size: 11px;
     }
 }
 
@@ -53,20 +60,34 @@
     flex: 0 1 248px;
 }
 
-.input-header-artist {
+.input-header-artist-style {
     border-radius: 50px;
     background-color: $bg-gray;
-    width: 100%;
     border: none;
-    padding: 5px 10px;
 
     &:focus::placeholder {
         color: transparent;
     }
 }
 
+.input-header-artist {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
 .buttons-artist {
     margin-top: $mg-48;
+}
+
+.button-artist-style {
+    font-size: 12.8px;
+    color: $color-white;
+    background-color: $bg-blue;
+
+    &:hover {
+        outline: 1px solid $color-white; // просто добавил
+    }
 }
 
 .button-artist {
@@ -74,15 +95,7 @@
     padding: $pg-20 30px;
 
     display: flex;
-    align-items: center;
-    text-align: left;
-
-    font-size: 12.8px;
-    color: $color-white;
-
-    &:hover {
-        outline: 1px solid $color-white; // просто добавил
-    }
+    align-items: center; 
 
     &:first-child {
         margin-right: 1.5rem;
@@ -90,9 +103,9 @@
 
     .icon {
         width: 20px;
-        height: 20px;
-        filter: invert(1);
+        height: 20px;        
         margin-right: 16px;
+        filter: invert(1);
     }
 
 }

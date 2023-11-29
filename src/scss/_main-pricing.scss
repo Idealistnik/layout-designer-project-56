@@ -1,6 +1,6 @@
 .content-container-pricing {
     @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0, $pg-20);
+    @include pg-section($pg-100, $pg-20, 0);
 }
 
 .pricing {
@@ -39,35 +39,62 @@
     border-radius: 1rem;
 }
 
-.fz-h3 {
+.title-h3-pricing {
     @include title-font($fz-title-h3);
+    margin: $mg-24 0 $pg-200;
+}
+
+.title-h3-pricing-style {
     @extend %title-styles;
     font-weight: 400;
-    margin: $mg-24 0 200px;
 }
 
 .pricing-value {
-    margin: 0 0 40px;
-    line-height: 1em;
     display: flex;
     align-items: start;
+    margin: 0 0 40px;
+}
 
+.pricing-value-style {
+    line-height: 1em;
     text-transform: uppercase;
     color: $color-white;
 }
 
-.pricing-value span:first-child {
+.pricing-value-style .mg-r-16 {
     font-size: 64px;
     line-height: 64px;
     font-weight: 400;
-    margin-right: 16px;
 }
 
-.pricing-value span:last-child {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 400;
+.pricing-value-style span {
+    &:last-child {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 400;
+    }
 }
+
+.link-price-style {
+    text-decoration: none;
+    border: 1px solid $color-white;
+    color: $color-white;
+}
+
+.link-price {
+    width: 100%;
+    height: 66px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.p-pricing-footer {
+    margin: 64px 0;
+}
+
 
 .p-text-pricing {
     font-size: 16px;
@@ -76,26 +103,6 @@
     line-height: 150%;
 
     text-align: center;
-}
-
-.link-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 66px;
-
-    text-decoration: none;
-    border: 1px solid $color-white;
-    color: $color-white;
-}
-
-.p-pricing-footer {
-    margin: 64px 0;
-    font-size: 12.8px;
-    font-weight: 400;
 }
 
 // @media (max-width: 610px) {
@@ -111,7 +118,6 @@
 //     }
 // }
 
-
 @media (width <=650px) {
     .content-container-pricing {
         max-width: 414px;
@@ -121,13 +127,13 @@
         margin-bottom: 0;
     }
 
-    .fz-h3 {
+    .title-h3-pricing-style {
         @include title-font($fz-title-mob-h3);
         @extend %title-styles;
     }
 
-    .pricing-title {
-        margin: 16px 0 200px;
+    .title-h3-pricing {
+        margin: 16px 0 $pg-200;
     }
 
     .pricing {
@@ -144,14 +150,14 @@
         }
     }
 
-    .pricing-value span:first-child {
+    .pricing-value-style .mg-r-16 {
         font-size: 64px;
-
     }
 
-    .pricing-value span:last-child {
-        font-size: 32px;
-
+    .pricing-value-style span {
+        &:last-child {
+            font-size: 32px;
+        }
     }
 
 }

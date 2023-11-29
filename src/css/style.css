@@ -13,7 +13,7 @@
   font-family: Arial;
   src: url("../fonts/arial-narrow.woff2");
 }
-.fz-h3-news, .fz-h3, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
+.fz-h3-news, .title-h3-pricing-style, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
@@ -83,12 +83,20 @@
   margin-top: 48px;
 }
 
+.mg-r-16 {
+  margin-right: 16px;
+}
+
 .mg-top-31 {
   margin-top: 31px;
 }
 
 .fz-11 {
   font-size: 11px;
+}
+
+.fz-12 {
+  font-size: 12.8px;
 }
 
 .uppercase {
@@ -292,7 +300,6 @@
 
 .button-green {
   background-color: #34C176;
-  border: none;
   font-family: Arial, sans-serif;
 }
 
@@ -509,7 +516,7 @@
   }
 }
 .content-container-pricing {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
 }
 
 .pricing {
@@ -544,33 +551,57 @@
   border-radius: 1rem;
 }
 
-.fz-h3 {
+.title-h3-pricing {
   font-size: 24px;
   line-height: 36px;
-  font-weight: 400;
   margin: 24px 0 200px;
 }
 
+.title-h3-pricing-style {
+  font-weight: 400;
+}
+
 .pricing-value {
-  margin: 0 0 40px;
-  line-height: 1em;
   display: flex;
   align-items: start;
+  margin: 0 0 40px;
+}
+
+.pricing-value-style {
+  line-height: 1em;
   text-transform: uppercase;
   color: #FFF;
 }
 
-.pricing-value span:first-child {
+.pricing-value-style .mg-r-16 {
   font-size: 64px;
   line-height: 64px;
   font-weight: 400;
-  margin-right: 16px;
 }
 
-.pricing-value span:last-child {
+.pricing-value-style span:last-child {
   font-size: 32px;
   line-height: 32px;
   font-weight: 400;
+}
+
+.link-price-style {
+  text-decoration: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.link-price {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.p-pricing-footer {
+  margin: 64px 0;
 }
 
 .p-text-pricing {
@@ -581,24 +612,6 @@
   text-align: center;
 }
 
-.link-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 66px;
-  text-decoration: none;
-  border: 1px solid #FFF;
-  color: #FFF;
-}
-
-.p-pricing-footer {
-  margin: 64px 0;
-  font-size: 12.8px;
-  font-weight: 400;
-}
-
 @media (width <= 650px) {
   .content-container-pricing {
     max-width: 414px;
@@ -606,11 +619,11 @@
   .title-h2-pricing {
     margin-bottom: 0;
   }
-  .fz-h3 {
+  .title-h3-pricing-style {
     font-size: 16px;
     line-height: 24px;
   }
-  .pricing-title {
+  .title-h3-pricing {
     margin: 16px 0 200px;
   }
   .pricing {
@@ -624,10 +637,10 @@
   .pricing-item:last-child {
     margin-bottom: 0;
   }
-  .pricing-value span:first-child {
+  .pricing-value-style .mg-r-16 {
     font-size: 64px;
   }
-  .pricing-value span:last-child {
+  .pricing-value-style span:last-child {
     font-size: 32px;
   }
 }

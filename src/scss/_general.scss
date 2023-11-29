@@ -20,7 +20,7 @@
 
 @mixin title-font($fz-title) {
     font-size: $fz-title;
-    line-height: $fz-title * 1.5; 
+    line-height: $fz-title * 1.5;
 }
 
 %title-styles {
@@ -98,6 +98,10 @@
     margin-top: 48px;
 }
 
+.mg-r-16 {
+    margin-right: 16px;
+}
+
 .mg-top-31 {
     margin-top: 31px;
 }
@@ -105,6 +109,12 @@
 .fz-11 {
     font-size: 11px;
 }
+
+.fz-12 {
+    font-size: 12.8px;
+}
+
+
 
 .uppercase {
     text-transform: uppercase;
@@ -238,8 +248,3 @@
     }
 
 }
-
-
-
-
-

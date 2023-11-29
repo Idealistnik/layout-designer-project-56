@@ -310,10 +310,10 @@
 }
 @media (width <= 584px) {
   .content-container {
-    padding: 220px 20px 181px 20px;
+    padding: 170px 20px 201px 20px;
   }
   .content-container .title-h1-index {
-    margin-top: 48px;
+    margin-top: 78px;
   }
   .content-container .title-h2-index {
     margin-bottom: 0;

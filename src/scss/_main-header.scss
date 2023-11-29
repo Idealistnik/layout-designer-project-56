@@ -126,12 +126,12 @@
 
 @media (width <=584px) {
     .content-container {
-        @include pg-section(170px, $pg-20, 201px, $pg-20);
+        @include pg-section(248px, $pg-20, 201px, $pg-20);
         // @include pg-section(180px, $pg-20, $pg-181, $pg-20);
 
         .title-h1-index {
             // margin-top: $mg-48;
-            margin-top: 78px;
+            // margin-top: 78px;
             
         }
 

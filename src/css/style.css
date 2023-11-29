@@ -310,7 +310,7 @@
 }
 @media (width <= 584px) {
   .content-container {
-    padding: 210px 20px 181px 20px;
+    padding: 220px 20px 181px 20px;
   }
   .content-container .title-h1-index {
     margin-top: 48px;
@@ -372,7 +372,7 @@
 }
 
 .bg-wrapper-description {
-  background: url("../images/Morten Harket.png");
+  background: url("../images/MortenHarket.png");
   background-position: center;
   background-size: cover;
 }

@@ -1,12 +1,7 @@
-// .bg-wrapper-description {
-    
-// }
-
 .content-container-description {
     // @extend %content-container;
     @include pg-section ($pg-250, $pg-20, $pg-223);
     @include bg-wrapper($bg-artist);
-
 }
 
 .header-main-artist {
@@ -26,16 +21,16 @@
         flex: 0 1 313px;
 
         .menu-list-artist {
-            flex-wrap: wrap;
-
-            .menu-item-artist {
-                margin-right: 10px; // допом чтобы был отступ при уменьшении
-
-                &:hover {
-                    color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
-                }
-            }
+            flex-wrap: wrap;           
         }
+    }
+}
+
+.menu-item-artist {
+    margin-right: 10px; // допом чтобы был отступ при уменьшении
+
+    &:hover {
+        color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
     }
 }
 

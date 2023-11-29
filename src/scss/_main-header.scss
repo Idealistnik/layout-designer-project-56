@@ -5,32 +5,34 @@
 
 .header-main {
     align-items: center;
+}
 
-    .main-logo {
-        align-items: center;
-        flex: 0 1 98px;
-        margin-right: 10px; // доп
+.main-logo {
+    align-items: center;
+    flex: 0 1 98px;
+    margin-right: 10px; // доп
 
-        .logo-link {
-            color: $color-white;
-        }
-    }
-
-    .main-menu {
-        flex: 0 1 313px;
-
-        .menu-list {
-            flex-wrap: wrap;
-
-            .menu-item {
-                margin-right: 10px; // Доп
-                &:hover {
-                    color: $color-white;
-                }
-            }
-        }
+    .logo-link {
+        color: $color-white;
     }
 }
+
+.main-menu {
+    flex: 0 1 313px;
+
+    .menu-list {
+        flex-wrap: wrap;
+    }
+}
+
+.menu-item {
+    margin-right: 10px; // Доп
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
 
 .header-position {
     position: absolute;
@@ -43,16 +45,17 @@
         max-width: 1240px;
         padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
         box-sizing: border-box; // новое
-
-        .header-main {
-            flex: 0 1 501px;
-        }
-
-        .header-search {
-            flex: 0 1 248px;
-        }
-    }
 }
+}
+
+.header-main {
+    flex: 0 1 501px;
+}
+
+.header-search {
+    flex: 0 1 248px;
+}
+
 
 .input-header {
     border-radius: 50px;

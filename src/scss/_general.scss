@@ -91,7 +91,7 @@
 }
 
 .mg-bot-48 {
-    margin-bottom: $mg-48; // ко всем заголовкам в артисте
+    margin-bottom: $mg-48;
 }
 
 .mg-top-48 {
@@ -114,11 +114,9 @@
     font-size: 12.8px;
 }
 
-
-
-.uppercase {
-    text-transform: uppercase;
-}
+// .uppercase {
+//     text-transform: uppercase;
+// }
 
 %content-container {
     max-width: 1240px;

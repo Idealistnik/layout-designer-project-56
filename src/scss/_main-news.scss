@@ -1,21 +1,20 @@
 .content-container-news {
     @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0, $pg-20);
+    @include pg-section($pg-100, $pg-20, 0);
 }
 
-.title-h2-news {
-    margin-bottom: $mg-48;
-}
-
-.fz-h3-news {
+.title-h3-news {
     @include title-font($fz-title-h3-news);
     @extend %title-styles;
     font-weight: 400;
     text-transform: capitalize;
 }
 
-.news-item {
+.news-item-style {
     color: $color-gray-light;
+}
+
+.news-item {
     margin-bottom: 65px;
 
     &:last-child {
@@ -40,13 +39,12 @@
     // height: auto;
 
     object-fit: cover;
-
 }
 
 
 .news-text {
     margin: 30px 0 24px;
-    font-size: 16px;
+    // font-size: 16px; ПРОВЕРКА
 }
 
 // .news-text ~ .news-text {
@@ -59,29 +57,26 @@
 
 .news-author {
     max-width: 187px;
-    font-size: 12.8px;
 
     & span:first-of-type {
         color: $color-orange;
     }
 }
 
-.link-news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.link-news-style {
+    border: 1px solid $color-gray-light;
+    text-decoration: none;
+    padding: 16px 30px;
+}
 
+.link-news {
     width: 135px;
     height: 53px;
 
-    border: 1px solid $color-gray-light;
-    text-decoration: none;
-    font-size: 12.8px;
-    padding: 16px 30px;
-
     box-sizing: border-box;
-
-    margin-top: $mg-48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .news-img-bottom {
@@ -133,10 +128,6 @@
         }
 
     }
-
-    // .news-wrapper .news-item:last-child .news-text {
-    //     margin: 16px 0;
-    // }
 }
 
 @media (width <=550px) {
@@ -144,11 +135,11 @@
         max-width: 414px;
     }
 
-    .fz-h3-news {
+    .title-h3-news {
         @include title-font($fz-title-mob-h3);
-        @extend %title-styles;
-        font-weight: 400;
-        text-transform: capitalize;
+        // @extend %title-styles;
+        // font-weight: 400;
+        // text-transform: capitalize;
     }
 
     .news-item {
@@ -172,9 +163,7 @@
                 .news-text:last-child {
                     margin: 16px 0;
                 }
-
             }
-
         }
 
         &:last-child {
@@ -187,8 +176,6 @@
                     margin: 0 0 50px;
                 }
             }
-
         }
-
     }
 }

@@ -5,6 +5,7 @@
 
 .header-main {
     align-items: center;
+    flex: 0 1 501px;
 }
 
 .main-logo {
@@ -33,7 +34,6 @@
     }
 }
 
-
 .header-position {
     position: absolute;
     width: 100%;
@@ -41,21 +41,15 @@
     left: 0;
 
     .header-content {
-        margin: 0 auto;
         max-width: 1240px;
-        padding: 0 20px; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
-        box-sizing: border-box; // новое
-}
-}
-
-.header-main {
-    flex: 0 1 501px;
+        margin: 0 auto;        
+        padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+    }
 }
 
 .header-search {
     flex: 0 1 248px;
 }
-
 
 .input-header {
     border-radius: 50px;
@@ -63,7 +57,6 @@
     width: 100%;
     border: none;
     padding: 5px 10px;
-
 
     &:focus::placeholder {
         color: transparent;

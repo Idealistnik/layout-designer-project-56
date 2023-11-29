@@ -13,31 +13,26 @@
   font-family: Arial;
   src: url("../fonts/arial-narrow.woff2");
 }
-.title-h1 {
-  font-size: 60px;
-  line-height: 90px;
+.fz-h3-news, .fz-h3, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+}
+
+.title-h1 {
+  font-size: 60px;
+  line-height: 90px;
 }
 
 .title-h2 {
   font-size: 38px;
   line-height: 57px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 .h2-footer {
   font-size: 18px;
   line-height: 27px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -45,10 +40,6 @@
 .title-h3-artist {
   font-size: 18px;
   line-height: 27px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
   text-transform: capitalize;
 }
 
@@ -56,18 +47,10 @@
   .title-h1 {
     font-size: 30px;
     line-height: 45px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
   }
   .title-h2 {
     font-size: 18px;
     line-height: 27px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
     margin-bottom: 48px;
   }
 }
@@ -210,6 +193,7 @@
 
 .header-main {
   align-items: center;
+  flex: 0 1 501px;
 }
 
 .main-logo {
@@ -242,14 +226,9 @@
   left: 0;
 }
 .header-position .header-content {
-  margin: 0 auto;
   max-width: 1240px;
+  margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.header-main {
-  flex: 0 1 501px;
 }
 
 .header-search {
@@ -380,19 +359,22 @@
 
 .header-main-artist {
   align-items: center;
+  flex: 0 1 501px;
 }
-.header-main-artist .main-logo-artist {
+
+.main-logo-artist {
   align-items: center;
   flex: 0 1 98px;
   margin-right: 10px;
 }
-.header-main-artist .main-logo-artist .logo-link-artist {
+.main-logo-artist .logo-link-artist {
   color: #FFF;
 }
-.header-main-artist .main-menu-artist {
+
+.main-menu-artist {
   flex: 0 1 313px;
 }
-.header-main-artist .main-menu-artist .menu-list-artist {
+.main-menu-artist .menu-list-artist {
   flex-wrap: wrap;
 }
 
@@ -411,14 +393,11 @@
 }
 .header-position-artist .header-content-artist {
   max-width: 1240px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
 }
-.header-position-artist .header-content-artist .header-main-artist {
-  flex: 0 1 501px;
-}
-.header-position-artist .header-content-artist .header-search-artist {
+
+.header-search-artist {
   flex: 0 1 248px;
 }
 
@@ -539,10 +518,6 @@
 .fz-h3 {
   font-size: 24px;
   line-height: 36px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
   font-weight: 400;
   margin: 24px 0 200px;
 }
@@ -605,10 +580,6 @@
   .fz-h3 {
     font-size: 16px;
     line-height: 24px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
   }
   .pricing-title {
     margin: 16px 0 200px;
@@ -642,10 +613,6 @@
 .fz-h3-news {
   font-size: 30px;
   line-height: 45px;
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -746,10 +713,6 @@
   .fz-h3-news {
     font-size: 16px;
     line-height: 24px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
     font-weight: 400;
     text-transform: capitalize;
   }

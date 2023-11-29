@@ -41,6 +41,7 @@
 
 .fz-h3 {
     @include title-font($fz-title-h3);
+    @extend %title-styles;
     font-weight: 400;
     margin: $mg-24 0 200px;
 }
@@ -122,6 +123,7 @@
 
     .fz-h3 {
         @include title-font($fz-title-mob-h3);
+        @extend %title-styles;
     }
 
     .pricing-title {

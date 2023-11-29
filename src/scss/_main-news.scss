@@ -9,6 +9,7 @@
 
 .fz-h3-news {
     @include title-font($fz-title-h3-news);
+    @extend %title-styles;
     font-weight: 400;
     text-transform: capitalize;
 }
@@ -145,6 +146,7 @@
 
     .fz-h3-news {
         @include title-font($fz-title-mob-h3);
+        @extend %title-styles;
         font-weight: 400;
         text-transform: capitalize;
     }

@@ -112,7 +112,7 @@
   text-transform: uppercase;
 }
 
-.content-container-similar, .content-container-disc, .content-container-pop, .content-container-footer-bottom, .content-container-footer-top, .content-container-app, .content-container-news, .content-container-pricing, .content-container-description {
+.content-container-similar, .content-container-disc, .content-container-pop, .content-container-footer-bottom, .content-container-footer-top, .content-container-app, .content-container-news, .content-container-pricing {
   max-width: 1240px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -228,6 +228,9 @@
 .header-main .main-menu .menu-list .menu-item {
   margin-right: 10px;
 }
+.header-main .main-menu .menu-list .menu-item:hover {
+  color: #FFF;
+}
 
 .header-position {
   position: absolute;
@@ -246,10 +249,6 @@
 }
 .header-position .header-content .header-search {
   flex: 0 1 248px;
-}
-
-.menu-link:hover {
-  color: #FFF;
 }
 
 .input-header {
@@ -310,7 +309,7 @@
 }
 @media (width <= 584px) {
   .content-container {
-    padding: 248px 20px 201px 20px;
+    padding: 248px 20px 201px;
   }
   .content-container .title-h2-index {
     margin-bottom: 0;
@@ -352,6 +351,9 @@
     min-width: 98px;
     flex: 0 0 24px;
   }
+  .header-position .header-content .header-main .main-logo .logo-link {
+    color: #FFF;
+  }
   .header-position .header-content .header-main .main-menu {
     flex: 0 0 61px;
   }
@@ -364,18 +366,11 @@
     width: 100%;
   }
 }
-.logo-link {
-  color: #FFF;
-}
-
-.bg-wrapper-description {
+.content-container-description {
+  padding: 250px 20px 223px;
   background: url("../images/MortenHarket.png");
   background-position: center;
   background-size: cover;
-}
-
-.content-container-description {
-  padding: 250px 20px 223px 20px;
 }
 
 .header-main-artist {
@@ -385,10 +380,6 @@
   align-items: center;
   flex: 0 1 98px;
   margin-right: 10px;
-}
-.header-main-artist .main-logo-artist .logo-img-artist {
-  width: 24px;
-  height: 24px;
 }
 .header-main-artist .main-logo-artist .logo-link-artist {
   color: #FFF;
@@ -401,6 +392,9 @@
 }
 .header-main-artist .main-menu-artist .menu-list-artist .menu-item-artist {
   margin-right: 10px;
+}
+.header-main-artist .main-menu-artist .menu-list-artist .menu-item-artist:hover {
+  color: #FFF;
 }
 
 .header-position-artist {
@@ -420,10 +414,6 @@
 }
 .header-position-artist .header-content-artist .header-search-artist {
   flex: 0 1 248px;
-}
-
-.menu-link-artist:hover {
-  color: #FFF;
 }
 
 .input-header-artist {
@@ -465,7 +455,7 @@
 
 @media (width <= 415px) {
   .content-container-description {
-    padding: 225px 20px 224px 20px;
+    padding: 225px 20px 224px;
   }
   .content-container-description .buttons-artist {
     flex-direction: column;

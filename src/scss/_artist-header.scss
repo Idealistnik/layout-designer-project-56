@@ -1,10 +1,12 @@
-.bg-wrapper-description {
-    @include bg-wrapper($bg-artist);
-}
+// .bg-wrapper-description {
+    
+// }
 
 .content-container-description {
-    @extend %content-container;
-    @include pg-section ($pg-250, 20px, $pg-223, 20px); // в задании указано по 200
+    // @extend %content-container;
+    @include pg-section ($pg-250, $pg-20, $pg-223);
+    @include bg-wrapper($bg-artist);
+
 }
 
 .header-main-artist {
@@ -14,11 +16,6 @@
         align-items: center;
         flex: 0 1 98px;
         margin-right: 10px; // допом чтобы был отступ при уменьшении
-
-        .logo-img-artist {
-            width: 24px;
-            height: 24px;
-        }
 
         .logo-link-artist {
             color: $color-white;
@@ -33,6 +30,10 @@
 
             .menu-item-artist {
                 margin-right: 10px; // допом чтобы был отступ при уменьшении
+
+                &:hover {
+                    color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
+                }
             }
         }
     }
@@ -61,9 +62,7 @@
     }
 }
 
-.menu-link-artist:hover {
-    color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
-}
+
 
 .input-header-artist {
     border-radius: 50px;
@@ -135,7 +134,7 @@
 
 @media (width <= 415px) {
     .content-container-description {
-        @include pg-section($pg-225, 20px, $pg-224, 20px);
+        @include pg-section($pg-225, $pg-20, $pg-224);
 
         .buttons-artist {
             flex-direction: column;

@@ -24,6 +24,9 @@
 
             .menu-item {
                 margin-right: 10px; // Доп
+                &:hover {
+                    color: $color-white;
+                }
             }
         }
     }
@@ -49,10 +52,6 @@
             flex: 0 1 248px;
         }
     }
-}
-
-.menu-link:hover {
-    color: $color-white;
 }
 
 .input-header {
@@ -126,14 +125,7 @@
 
 @media (width <=584px) {
     .content-container {
-        @include pg-section(248px, $pg-20, 201px, $pg-20);
-        // @include pg-section(180px, $pg-20, $pg-181, $pg-20);
-
-        .title-h1-index {
-            // margin-top: $mg-48;
-            // margin-top: 78px;
-            
-        }
+        @include pg-section($pg-248, $pg-20, $pg-201);
 
         .title-h2-index {
             margin-bottom: 0;
@@ -181,6 +173,10 @@
                 .main-logo {
                     min-width: 98px;
                     flex: 0 0 24px;
+
+                    .logo-link {
+                        color: $color-white;
+                    }
                 }
 
                 .main-menu {
@@ -203,8 +199,4 @@
         }
     }
 
-}
-
-.logo-link {
-    color: $color-white;
 }

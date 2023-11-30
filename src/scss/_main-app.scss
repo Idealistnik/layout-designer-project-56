@@ -1,36 +1,26 @@
 .content-container-app {
     @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0, $pg-20);
+    @include pg-section($pg-100, $pg-20, 0);
     margin-bottom: 100px;
-}
-
-.title-h2-app {
-    margin-bottom: $mg-48;
 }
 
 .col-app {
     flex: 0 1 50%;
 }
 
-.button-app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 131px;
-    height: 53px;
-
-    border: none;
+.button-app-style {
     border-radius: 32px;
     background-color: $bg-orange;
     color: $color-white;
-    cursor: pointer;
+}
 
-    font-family: Roboto, sans-serif;
-    font-size: 12.8px;
-    text-decoration: none;
+.button-app {
+    width: 131px;
+    height: 53px;
 
-    // margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-app {
@@ -49,14 +39,9 @@
         flex-direction: column-reverse;
     }
 
-    .title-h2-app {
-        margin-bottom: $mg-48;
-    }
-
     .col-app {
-        margin: 0 auto;
         max-width: 100%;
-
+        margin: 0 auto;
     }
 
     .img-app {
@@ -77,14 +62,9 @@
         flex-direction: column-reverse;
     }
 
-    .title-h2-app {
-        margin-bottom: $mg-48;
-    }
-
     .col-app {
         margin: 0 auto;
         max-width: 100%;
-
     }
 
     .img-app {

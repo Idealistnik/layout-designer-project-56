@@ -1,6 +1,6 @@
 .content-container-disc {
     @extend %content-container;
-    @include pg-section($pg-100, 20px, 0, 20px);
+    @include pg-section($pg-100, $pg-20, 0);
 }
 
 @media (width <= 550px) {

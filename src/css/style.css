@@ -998,7 +998,7 @@
   }
 }
 .content-container-similar {
-  padding: 100px 20px 100px 20px;
+  padding: 100px 20px;
 }
 
 @media (width <= 550px) {

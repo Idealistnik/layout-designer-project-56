@@ -113,10 +113,6 @@
 // }
 
 @media (width <=830px) {
-    .page-news {
-        // max-width: 414px;
-    }
-
     .title-h3-news {
         @include title-font($fz-title-mob-h3);
     }

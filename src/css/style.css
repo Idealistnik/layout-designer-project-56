@@ -610,9 +610,6 @@
 }
 
 @media (width <= 650px) {
-  .page-pricing {
-    max-width: 414px;
-  }
   .title-h3-pricing-style {
     font-size: 16px;
     line-height: 24px;
@@ -750,6 +747,7 @@
 }
 
 .img-app {
+  max-width: 100%;
   position: relative;
   top: 0;
   right: -123px;
@@ -757,9 +755,6 @@
 }
 
 @media (width <= 913px) {
-  .page-app {
-    max-width: 873px;
-  }
   .wrapper-app {
     flex-direction: column-reverse;
   }
@@ -773,9 +768,6 @@
   }
 }
 @media (width <= 550px) {
-  .page-app {
-    max-width: 414px;
-  }
   .wrapper-app {
     flex-direction: column-reverse;
   }
@@ -855,10 +847,6 @@
 }
 
 @media (width <= 650px) {
-  .content-container-footer-top,
-  .content-container-footer-bottom {
-    max-width: 414px;
-  }
   .footer-top {
     display: grid;
     grid-template-rows: 1fr 1fr auto auto;

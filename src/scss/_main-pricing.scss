@@ -100,28 +100,7 @@
     text-align: center;
 }
 
-// @media (max-width: 610px) {
-//     .fz-h3 {
-//         @include title-font($fx-title-mob-h3);
-//         margin-top: 16px;
-//     }
-//     .pricing-value span:first-child {
-//         font-size: 48px;
-//     }
-//     .pricing-value span:last-child {
-//         font-size: 24px;
-//     }
-// }
-
 @media (width <=650px) {
-    .page-pricing {
-        max-width: 414px;
-    }
-
-    // .title-h2-pricing {
-    //     margin-bottom: 0;
-    // }
-
     .title-h3-pricing-style {
         @include title-font($fz-title-mob-h3);
     }

@@ -72,13 +72,7 @@
     padding: 42px 0 49px;
 }
 
-
 @media (width <=650px) {
-    .content-container-footer-top,
-    .content-container-footer-bottom {
-        max-width: 414px;
-    }
-
     .footer-top {
         display: grid;
         grid-template-rows: 1fr 1fr auto auto;

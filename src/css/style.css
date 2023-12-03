@@ -918,20 +918,5 @@
     width: 81.283%;
   }
 }
-@media (width <= 414px) {
-  .page-popular-track {
-    max-width: 414px;
-  }
-}
-@media (width <= 550px) {
-  .page-discography {
-    max-width: 414px;
-  }
-}
-@media (width <= 550px) {
-  .content-container-similar {
-    max-width: 414px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

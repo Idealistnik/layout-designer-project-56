@@ -14,10 +14,10 @@
   src: url("../fonts/arial-narrow.woff2");
 }
 .title-h3-news, .title-h3-pricing-style, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
+  font-weight: 400;
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .title-h1 {
@@ -549,10 +549,6 @@
   margin: 24px 0 200px;
 }
 
-.title-h3-pricing-style {
-  font-weight: 400;
-}
-
 .pricing-value {
   display: flex;
   align-items: start;
@@ -643,7 +639,6 @@
 .title-h3-news {
   font-size: 30px;
   line-height: 45px;
-  font-weight: 400;
   text-transform: capitalize;
 }
 

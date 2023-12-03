@@ -5,8 +5,7 @@
 
 .title-h3-news {
     @include title-font($fz-title-h3-news);
-    @extend %title-styles;
-    font-weight: 400;
+    @extend %title-styles;    
     text-transform: capitalize;
 }
 

@@ -27,7 +27,6 @@
     color: $color-white;
     font-weight: bold;
     text-transform: uppercase;
-    // margin: 0;
 }
 
 // ЗАГОЛОВКИ
@@ -46,7 +45,6 @@
     @include title-font($fz-title-mob-h2);
     @extend %title-styles;
     text-transform: uppercase;
-    // margin-bottom: 15px;
 }
 
 .title-h3-artist {

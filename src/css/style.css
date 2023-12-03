@@ -661,7 +661,6 @@
 }
 .news-item .col {
   flex: 0 1 50%;
-  max-height: 286px;
   margin-right: 50px;
 }
 .news-item .col:last-child {

@@ -683,7 +683,7 @@
 .news-author {
   max-width: 187px;
 }
-.news-author span:first-of-type {
+.news-author .news-author-theme {
   color: #F89202;
 }
 

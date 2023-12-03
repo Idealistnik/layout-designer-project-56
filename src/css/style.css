@@ -14,7 +14,6 @@
   src: url("../fonts/arial-narrow.woff2");
 }
 .title-h3-news, .title-h3-pricing-style, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
-  font-weight: 400;
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
@@ -34,7 +33,6 @@
   font-size: 18px;
   line-height: 27px;
   text-transform: uppercase;
-  margin-bottom: 15px;
 }
 
 .title-h3-artist {
@@ -76,11 +74,15 @@
 }
 
 .mg-bot-48 {
-  margin-bottom: 48px;
+  margin: 0 0 48px;
 }
 
 .mg-top-48 {
   margin-top: 48px;
+}
+
+.mg-bot-15 {
+  margin: 0 0 15px;
 }
 
 .mg-r-16 {
@@ -444,7 +446,6 @@
 .button-artist-style {
   font-size: 12.8px;
   color: #FFF;
-  background-color: #5328A1;
 }
 .button-artist-style:hover {
   outline: 1px solid #FFF;
@@ -549,6 +550,10 @@
   margin: 24px 0 200px;
 }
 
+.title-h3-pricing-style {
+  font-weight: 400;
+}
+
 .pricing-value {
   display: flex;
   align-items: start;
@@ -604,9 +609,6 @@
   .content-container-pricing {
     max-width: 414px;
   }
-  .title-h2-pricing {
-    margin-bottom: 0;
-  }
   .title-h3-pricing-style {
     font-size: 16px;
     line-height: 24px;
@@ -640,6 +642,7 @@
   font-size: 30px;
   line-height: 45px;
   text-transform: capitalize;
+  font-weight: 400;
 }
 
 .news-item-style {
@@ -851,8 +854,8 @@
   padding: 62px 0 72px;
 }
 
-.mg-b-20 {
-  margin-bottom: 20px;
+.mg-bot-20 {
+  margin: 0 0 20px;
 }
 
 .footer-list {

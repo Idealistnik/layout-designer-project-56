@@ -24,7 +24,6 @@
 }
 
 %title-styles {
-    font-weight: 400;
     color: $color-white;
     font-weight: bold;
     text-transform: uppercase;
@@ -47,7 +46,7 @@
     @include title-font($fz-title-mob-h2);
     @extend %title-styles;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 }
 
 .title-h3-artist {
@@ -92,11 +91,15 @@
 }
 
 .mg-bot-48 {
-    margin-bottom: $mg-48;
+    margin: 0 0 $mg-48;
 }
 
 .mg-top-48 {
     margin-top: 48px;
+}
+
+.mg-bot-15 {
+    margin: 0 0 15px;
 }
 
 .mg-r-16 {

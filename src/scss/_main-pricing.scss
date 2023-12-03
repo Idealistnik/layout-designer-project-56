@@ -46,6 +46,7 @@
 
 .title-h3-pricing-style {
     @extend %title-styles;
+    font-weight: 400;
 }
 
 .pricing-value {
@@ -122,9 +123,9 @@
         max-width: 414px;
     }
 
-    .title-h2-pricing {
-        margin-bottom: 0;
-    }
+    // .title-h2-pricing {
+    //     margin-bottom: 0;
+    // }
 
     .title-h3-pricing-style {
         @include title-font($fz-title-mob-h3);

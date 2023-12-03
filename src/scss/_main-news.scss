@@ -63,13 +63,15 @@
 }
 
 .link-news {
-    width: 135px;
-    height: 53px;
+    // width: 135px;
+    // height: 53px;
+
+    display: inline-block;
 
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .news-img-bottom {

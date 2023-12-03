@@ -1,7 +1,7 @@
-.content-container-news {
-    @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0);
-}
+// .content-container {
+//     @extend %content-container;
+//     @include pg-section($pg-100, $pg-20, 0);
+// }
 
 .title-h3-news {
     @include title-font($fz-title-h3-news);
@@ -83,7 +83,7 @@
 }
 
 @media (width <=1000px) {
-    .content-container-news {
+    .page-news {
         max-width: 960px;
     }
 
@@ -130,7 +130,7 @@
 }
 
 @media (width <=550px) {
-    .content-container-news {
+    .page-news {
         max-width: 414px;
     }
 

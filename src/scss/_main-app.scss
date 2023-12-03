@@ -1,8 +1,8 @@
-.content-container-app {
-    @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0);
-    margin-bottom: 100px;
-}
+// .content-container {
+//     @extend %content-container;
+//     @include pg-section($pg-100, $pg-20, 0);
+//     margin-bottom: 100px;
+// }
 
 .col-app {
     flex: 0 1 50%;
@@ -31,7 +31,7 @@
 }
 
 @media (width <=913px) {
-    .content-container-app {
+    .page-app {
         max-width: 873px;
     }
 
@@ -54,7 +54,7 @@
 }
 
 @media (width <=550px) {
-    .content-container-app {
+    .page-app {
         max-width: 414px;
     }
 

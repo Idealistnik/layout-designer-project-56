@@ -143,6 +143,15 @@
     margin: 0;
 }
 
+.content-container {
+    @extend %content-container;
+    @include pg-section($pg-100, $pg-20, 0);
+}
+
+.mg-bot-100 {
+    margin-bottom: 100px;
+}
+
 .p-text {
     text-align: center;
     color: $color-white;

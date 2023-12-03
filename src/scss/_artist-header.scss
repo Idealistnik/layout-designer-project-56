@@ -1,4 +1,4 @@
-.content-container-description {
+.content-container-description-artist {
     @include pg-section ($pg-250, $pg-20, $pg-223);
     @include bg-wrapper($bg-artist);
 }
@@ -126,7 +126,7 @@
 // }
 
 @media (width <=415px) {
-    .content-container-description {
+    .content-container-description-artist {
         @include pg-section($pg-225, $pg-20, $pg-224);
 
         .buttons-artist {

@@ -1,4 +1,4 @@
-.content-container-header {
+.content-container-description {
     @include pg-section($pg-200, $pg-20);
     @include bg-wrapper($bg-banner);
 }
@@ -134,7 +134,7 @@
 }
 
 @media (width <=584px) {
-    .content-container-header {
+    .content-container-description{
         @include pg-section($pg-248, $pg-20, $pg-201);
 
         .title-h2-index {

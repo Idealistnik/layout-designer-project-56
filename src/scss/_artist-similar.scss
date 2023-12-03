@@ -1,7 +1,7 @@
-.content-container-similar {
-    @extend %content-container;
-    @include pg-section($pg-100, $pg-20);
-}   
+// .content-container-similar {
+//     @extend %content-container;
+//     @include pg-section($pg-100, $pg-20);
+// }   
 
 @media (width <=550px) {
     .content-container-similar {

@@ -1,7 +1,7 @@
-.content-container-pop {
-    @extend %content-container;
-    @include pg-section($pg-100, $pg-20, 0);
-}
+// .content-container-pop {
+//     @extend %content-container;
+//     @include pg-section($pg-100, $pg-20, 0);
+// }
 
 .img-pop {
     width: 55px;
@@ -51,7 +51,7 @@
 }
 
 @media (width <=414px) {
-    .content-container-pop {
+    .page-popular-track {
         max-width: 414px;
     }
 }

@@ -664,7 +664,7 @@
   margin: 30px 0 24px;
 }
 
-.mg-b-15 {
+.news-text-last {
   margin-bottom: 15px;
 }
 
@@ -686,20 +686,30 @@
   box-sizing: border-box;
 }
 
-@media (width <= 450px) {
+@media (width <= 650px) {
   .title-h3-news {
     font-size: 16px;
     line-height: 24px;
   }
   .news-item {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: 1fr;
-    column-gap: 50px;
+    row-gap: 50px;
     margin-bottom: 65px;
+    justify-items: stretch;
+  }
+  .news-item-row {
+    grid-row: 2/span 1;
+  }
+  .news-item-row-img {
+    grid-row: 1/span 1;
   }
   .news-text {
     margin: 16px 0 24px;
+  }
+  .news-text-last {
+    margin-bottom: 16px;
   }
 }
 .col-app {

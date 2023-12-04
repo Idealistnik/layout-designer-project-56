@@ -28,7 +28,7 @@
     margin: 30px 0 24px;
 }
 
-.mg-b-15 {
+.news-text-last {
     margin-bottom: 15px;
 }
 
@@ -51,70 +51,33 @@
     box-sizing: border-box;
 }
 
-// .news-img-bottom {
-//     margin-top: 83px;
-// }
-
-@media (width <=450px) {   // 830px
+@media (width <=650px) { 
     .title-h3-news {
         @include title-font($fz-title-mob-h3);
     }
 
     .news-item {  
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr;
-        column-gap: 50px;
+        row-gap: 50px;
         margin-bottom: 65px;
-    
-        // &:last-child {
-        //     margin-bottom: 0;
-        // }
+        justify-items: stretch;
+    }
+
+    .news-item-row {
+        grid-row: 2/ span 1;
+    }
+
+    .news-item-row-img {
+        grid-row: 1 / span 1;
     }
 
     .news-text {
     margin: 16px 0 24px;
-
-
-
     }
 
+    .news-text-last {
+        margin-bottom: 16px;
+    }
 };
-
-//     .news-item {
-//         flex-wrap: wrap;
-
-//         &:last-child .news-text {
-//             margin: 16px 0;
-//         }
-
-//         .col {
-//             flex: 0 1 100%;
-//             margin: 0 0 50px;
-
-//             &:last-child {
-//                 margin-bottom: 0;
-//             }
-
-//             .news-text {
-//                 margin: 16px 0 24px;
-
-//                 .news-text:last-child {
-//                     margin: 16px 0;
-//                 }
-//             }
-//         }
-
-//         &:last-child {
-//             flex-direction: column-reverse; // почему не рабоатет row Не понимаю
-
-//             .col {
-//                 margin: 0;
-
-//                 &:last-child {
-//                     margin: 0 0 50px;
-//                 }
-//             }
-//         }
-//     }
-// }

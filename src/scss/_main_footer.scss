@@ -1,9 +1,9 @@
-.content-container-footer-top {
-    @extend %content-container;
-    @include pg-section(0, $pg-20);
-}
+// .content-container-footer-top {
+//     @extend %content-container;
+//     @include pg-section(0, $pg-20);
+// }
 
-.content-container-footer-bottom {
+.content-container-footer {
     @extend %content-container;
     @include pg-section(0, $pg-20);
 }

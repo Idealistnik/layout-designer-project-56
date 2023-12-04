@@ -101,7 +101,7 @@
   font-size: 12.8px;
 }
 
-.content-container-footer-bottom, .content-container-footer-top, .content-container {
+.content-container-footer, .content-container {
   max-width: 1240px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -780,11 +780,7 @@
     vertical-align: middle;
   }
 }
-.content-container-footer-top {
-  padding: 0 20px;
-}
-
-.content-container-footer-bottom {
+.content-container-footer {
   padding: 0 20px;
 }
 

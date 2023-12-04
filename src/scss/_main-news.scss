@@ -9,20 +9,14 @@
     color: $color-gray-light;
 }
 
-.news-item {
+.news-item {  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
     margin-bottom: 65px;
 
     &:last-child {
         margin-bottom: 0;
-    }
-
-    .col {
-        flex: 0 1 50%;
-        margin-right: 50px;
-    }
-
-    .col:last-child {
-        margin-right: 0;
     }
 }
 
@@ -34,12 +28,8 @@
     margin: 30px 0 24px;
 }
 
-// .news-text ~ .news-text {
-//     margin: 30px 0 15px 0;    // не работает  - может потому в первом блоке вналаче картинка а во втором наоброт
-//     }
-
-.news-item:last-child .news-text {
-    margin: 30px 0 15px;
+.mg-b-15 {
+    margin-bottom: 15px;
 }
 
 .news-author {
@@ -61,49 +51,70 @@
     box-sizing: border-box;
 }
 
-.news-img-bottom {
-    margin-top: 83px;
-}
+// .news-img-bottom {
+//     margin-top: 83px;
+// }
 
-@media (width <=830px) {
+@media (width <=450px) {   // 830px
     .title-h3-news {
         @include title-font($fz-title-mob-h3);
     }
 
-    .news-item {
-        flex-wrap: wrap;
-
-        &:last-child .news-text {
-            margin: 16px 0;
-        }
-
-        .col {
-            flex: 0 1 100%;
-            margin: 0 0 50px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            .news-text {
-                margin: 16px 0 24px;
-
-                .news-text:last-child {
-                    margin: 16px 0;
-                }
-            }
-        }
-
-        &:last-child {
-            flex-direction: column-reverse; // почему не рабоатет row Не понимаю
-
-            .col {
-                margin: 0;
-
-                &:last-child {
-                    margin: 0 0 50px;
-                }
-            }
-        }
+    .news-item {  
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        margin-bottom: 65px;
+    
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
     }
-}
+
+    .news-text {
+    margin: 16px 0 24px;
+
+
+
+    }
+
+};
+
+//     .news-item {
+//         flex-wrap: wrap;
+
+//         &:last-child .news-text {
+//             margin: 16px 0;
+//         }
+
+//         .col {
+//             flex: 0 1 100%;
+//             margin: 0 0 50px;
+
+//             &:last-child {
+//                 margin-bottom: 0;
+//             }
+
+//             .news-text {
+//                 margin: 16px 0 24px;
+
+//                 .news-text:last-child {
+//                     margin: 16px 0;
+//                 }
+//             }
+//         }
+
+//         &:last-child {
+//             flex-direction: column-reverse; // почему не рабоатет row Не понимаю
+
+//             .col {
+//                 margin: 0;
+
+//                 &:last-child {
+//                     margin: 0 0 50px;
+//                 }
+//             }
+//         }
+//     }
+// }

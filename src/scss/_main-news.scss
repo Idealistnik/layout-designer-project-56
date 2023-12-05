@@ -9,9 +9,7 @@
     color: $color-gray-light;
 }
 
-.news-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.news-item {    
     column-gap: 50px;
     margin-bottom: 65px;
 
@@ -58,8 +56,6 @@
     }
 
     .news-item {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr;
         row-gap: 50px;
         margin-bottom: 65px;

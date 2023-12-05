@@ -156,6 +156,11 @@
     @include pg-section($pg-100, $pg-20, 0);
 }
 
+.grid-content-index-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .mg-bot-100 {
     margin-bottom: 100px;
 }

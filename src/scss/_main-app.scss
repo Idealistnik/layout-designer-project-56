@@ -1,14 +1,12 @@
-// .col-app {
-//     flex: 0 1 50%;
+// .content-app {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
 // }
-.content-app {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-}
 .img-app {
-    vertical-align: middle;
     max-width: 100%;
+    vertical-align: middle;
+    
     justify-self: center;
 }
 
@@ -24,7 +22,7 @@
 }
 
 @media (width <=650px) {
-    .content-app{
+    .grid-content-index-2col {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr;
     }

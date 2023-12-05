@@ -849,12 +849,12 @@
   .help-add {
     padding: 42px 0 47px;
   }
-  .footer-list-down {
+  .footer-list-bottom {
     flex-direction: column;
     justify-content: space-between;
     height: 184px;
   }
-  .footer-list-down .list-item {
+  .footer-list-bottom .list-item {
     flex-grow: 1;
   }
 }

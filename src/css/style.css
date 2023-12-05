@@ -103,10 +103,12 @@
 
 .fz-32 {
   font-size: 32px;
+  line-height: 32px;
 }
 
 .fz-64 {
   font-size: 64px;
+  line-height: 64px;
 }
 
 .content-container-footer, .content-container {

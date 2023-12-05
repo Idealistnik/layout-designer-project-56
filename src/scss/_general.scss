@@ -29,8 +29,6 @@
     text-transform: uppercase;
 }
 
-// ЗАГОЛОВКИ
-
 .title-h1 {
     @include title-font($fz-title-h1);
     @extend %title-styles;
@@ -156,9 +154,18 @@
     @include pg-section($pg-100, $pg-20, 0);
 }
 
+// сетка для main-app и main-news
+
 .grid-content-index-2col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (width <=650px) {
+    .grid-content-index-2col {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+    }
 }
 
 .mg-bot-100 {

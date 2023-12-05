@@ -729,12 +729,8 @@
   align-items: center;
 }
 
-.img-app {
-  max-width: 100%;
-  position: relative;
-  top: 0;
-  right: -123px;
-  vertical-align: middle;
+.col-app2 {
+  text-align: center;
 }
 
 @media (width <= 913px) {

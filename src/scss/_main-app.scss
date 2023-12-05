@@ -17,12 +17,20 @@
     align-items: center;
 }
 
-.img-app {
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    right: -123px; // не получается сделать так чтобы картинка с позиционированием влезала при уменьшении - поэтому добавил брекйпоинт
-    vertical-align: middle;
+// .img-app {
+//     max-width: 100%;
+//     position: relative;
+//     top: 0;
+//     right: -123px; // не получается сделать так чтобы картинка с позиционированием влезала при уменьшении - поэтому добавил брекйпоинт
+//     vertical-align: middle;
+// }
+
+// .img-app {
+   
+// }
+
+.col-app2 {
+    text-align: center;
 }
 
 @media (width <=913px) {

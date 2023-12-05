@@ -729,34 +729,13 @@
   align-items: center;
 }
 
-.col-app2 {
-  text-align: center;
-}
-
-@media (width <= 913px) {
-  .wrapper-app {
-    flex-direction: column-reverse;
-  }
-  .col-app {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .img-app {
-    position: static;
-    vertical-align: middle;
-  }
-}
-@media (width <= 550px) {
+@media (width <= 650px) {
   .wrapper-app {
     flex-direction: column-reverse;
   }
   .col-app {
     margin: 0 auto;
     max-width: 100%;
-  }
-  .img-app {
-    position: static;
-    vertical-align: middle;
   }
 }
 .content-container-footer {

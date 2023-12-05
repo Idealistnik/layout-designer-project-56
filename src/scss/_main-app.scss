@@ -17,42 +17,7 @@
     align-items: center;
 }
 
-// .img-app {
-//     max-width: 100%;
-//     position: relative;
-//     top: 0;
-//     right: -123px; // не получается сделать так чтобы картинка с позиционированием влезала при уменьшении - поэтому добавил брекйпоинт
-//     vertical-align: middle;
-// }
-
-// .img-app {
-   
-// }
-
-.col-app2 {
-    text-align: center;
-}
-
-@media (width <=913px) {
-    .wrapper-app {
-        flex-direction: column-reverse;
-    }
-
-    .col-app {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .img-app {
-        position: static;
-        vertical-align: middle;
-
-        // max-width: 100%;
-        // display: block;
-    }
-}
-
-@media (width <=550px) {
+@media (width <=650px) {
     .wrapper-app {
         flex-direction: column-reverse;
     }
@@ -60,13 +25,5 @@
     .col-app {
         margin: 0 auto;
         max-width: 100%;
-    }
-
-    .img-app {
-        position: static;
-        vertical-align: middle;
-
-        // max-width: 100%;
-        // display: block;
     }
 }

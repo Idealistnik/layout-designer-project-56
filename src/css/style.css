@@ -32,7 +32,6 @@
 .h2-footer {
   font-size: 18px;
   line-height: 27px;
-  text-transform: uppercase;
 }
 
 .title-h3-artist {
@@ -186,8 +185,6 @@
 }
 
 .img-artist-big {
-  max-width: 250px;
-  max-height: 250px;
   margin-bottom: 18px;
 }
 
@@ -204,7 +201,7 @@
   .grid-content-artist-4col {
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid-content-artist-4col .img-artist-big {
+  .img-artist-big {
     max-width: 100%;
   }
 }
@@ -787,14 +784,13 @@
 
 .footer-list {
   color: #E0E0E0;
-  font-weight: 400;
 }
 
 .list-link:hover {
   color: #FFF;
 }
 
-.mg-left-24 {
+.mg-r-24 {
   margin-right: 24px;
 }
 
@@ -874,14 +870,9 @@
   margin-right: 50px;
 }
 
-.popular-track {
-  max-width: 551px;
-}
-
 .track-info {
-  flex: 0 1 481px;
+  width: 100%;
   align-items: center;
-  font-size: 12.8px;
 }
 
 .title-pop-track {
@@ -895,12 +886,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin-right: 0;
-  }
-  .popular-track {
-    width: 100%;
-  }
-  .track-info {
-    width: 81.283%;
   }
 }
 

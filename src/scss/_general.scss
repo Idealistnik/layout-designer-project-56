@@ -44,7 +44,6 @@
 .h2-footer {
     @include title-font($fz-title-mob-h2);
     @extend %title-styles;
-    text-transform: uppercase;
 }
 
 .title-h3-artist {
@@ -64,7 +63,6 @@
         @extend %title-styles;
         margin-bottom: $mg-48;
     }
-
 }
 
 .button {
@@ -117,15 +115,13 @@
 }
 
 .fz-32 {
-font-size: 32px;
-// font-weight: 400;
-line-height: 32px;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .fz-64 {
-font-size: 64px;
-// font-weight: 400;
-line-height: 64px;
+    font-size: 64px;
+    line-height: 64px;
 }
 
 %content-container {
@@ -219,11 +215,7 @@ line-height: 64px;
 // ARTIST desktop======================================
 
 .img-artist-big {
-    max-width: 250px;
-    max-height: 250px;
     margin-bottom: 18px;
-
-    // object-fit: none;
 }
 
 .grid-content-artist-4col {
@@ -255,11 +247,10 @@ line-height: 64px;
 @media (width <=450px) {
     .grid-content-artist-4col {
         grid-template-columns: repeat(2, 1fr);
+    }
 
-        .img-artist-big {
-            max-width: 100%;
-        }
-
+    .img-artist-big {
+        max-width: 100%;
     }
 
 }

@@ -12,14 +12,15 @@
     margin-right: 50px;
 }
 
-.popular-track {
-    max-width: 551px;
-}
+// .popular-track {
+//     max-width: 551px;
+// }
 
 .track-info {
-    flex: 0 1 481px;
+    // flex: 0 1 481px;
+    width: 100%;
     align-items: center;
-    font-size: 12.8px;
+    // font-size: 12.8px;
 }
 
 .title-pop-track {
@@ -34,12 +35,12 @@
         grid-template-rows: repeat(3, 1fr);
         margin-right: 0;
     }
-
-    .popular-track {
-        width: 100%;
-    }
-
-    .track-info {
-        width: 81.283%;
-    }
 }
+
+// .popular-track {
+    //     width: 100%;
+    // }
+
+    // .track-info {
+    //     width: 81.283%;
+    // }

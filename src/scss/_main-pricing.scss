@@ -54,19 +54,19 @@
     color: $color-white;
 }
 
-.pricing-value-style .mg-r-16 {
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 400;
-}
+// .pricing-value-style .mg-r-16 {
+//     font-size: 64px;
+//     line-height: 64px;
+//     font-weight: 400;
+// }
 
-.pricing-value-style span {
-    &:last-child {
-        font-size: 32px;
-        line-height: 32px;
-        font-weight: 400;
-    }
-}
+// .pricing-value-style span {
+//     &:last-child {
+//         font-size: 32px;
+//         line-height: 32px;
+//         font-weight: 400;
+//     }
+// }
 
 .link-price-style {
     text-decoration: none;
@@ -120,14 +120,14 @@
         }
     }
 
-    .pricing-value-style .mg-r-16 {
-        font-size: 64px;
-    }
+    // .pricing-value-style .mg-r-16 {
+    //     font-size: 64px;
+    // }
 
-    .pricing-value-style span {
-        &:last-child {
-            font-size: 32px;
-        }
-    }
+    // .pricing-value-style span {
+    //     &:last-child {
+    //         font-size: 32px;
+    //     }
+    // }
 
 }

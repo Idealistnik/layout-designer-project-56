@@ -123,8 +123,6 @@
         margin-right: 10px; // доп
     }
 
-    // .banner-form 
-
     .input-banner,
     .button-header-index {
         flex: 0 1 100%;
@@ -192,14 +190,12 @@
         color: $color-white;
     }
 
-
     .main-menu {
         flex: 0 0 61px;
     }
 
     .menu-list {
         flex-direction: column;
-
     }
 
     .header-search {
@@ -207,5 +203,4 @@
         margin-top: 16px; // изменили
         width: 100%;
     }
-
 }

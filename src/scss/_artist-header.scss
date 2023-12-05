@@ -12,18 +12,18 @@
     align-items: center;
     flex: 0 1 98px;
     margin-right: 10px; // допом чтобы был отступ при уменьшении
+}
 
-    .logo-link-artist {
-        color: $color-white;
-    }
+.logo-link-artist {
+    color: $color-white;
 }
 
 .main-menu-artist {
     flex: 0 1 313px;
+}
 
-    .menu-list-artist {
-        flex-wrap: wrap;
-    }
+.menu-list-artist {
+    flex-wrap: wrap;
 }
 
 .menu-item-artist {
@@ -39,18 +39,18 @@
     width: 100%;
     top: 25px;
     left: 0;
+}
 
-    .header-content-artist {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
-        box-sizing: border-box;
-    }
+.header-content-artist {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+    box-sizing: border-box;
+}
 
-    .header-content-artist-style {
-        text-transform: uppercase;
-        font-size: 11px;
-    }
+.header-content-artist-style {
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
 .header-search-artist {
@@ -87,18 +87,18 @@
     padding: $pg-20 30px;
 
     display: flex;
-    align-items: center; 
+    align-items: center;
 
     &:first-child {
         margin-right: 1.5rem;
     }
+}
 
-    .icon {
-        width: 20px;
-        height: 20px;        
-        margin-right: 16px;
-        filter: invert(1);
-    }
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    filter: invert(1);
 }
 
 // если псевдоэлементом
@@ -126,6 +126,10 @@
 // }
 
 @media (width <=415px) {
+    .wrapper-main-content {
+        padding-left: 0;
+    }
+
     .content-container-description-artist {
         @include pg-section($pg-225, $pg-20, $pg-224);
 

@@ -702,12 +702,15 @@
     margin-bottom: 16px;
   }
 }
-.col-app {
-  flex: 0 1 50%;
+.content-app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .img-app {
   vertical-align: middle;
+  max-width: 100%;
+  justify-self: center;
 }
 
 .button-app-style {
@@ -722,8 +725,15 @@
 }
 
 @media (width <= 650px) {
-  .wrapper-app {
-    flex-direction: column-reverse;
+  .content-app {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
+  }
+  .content-app-text {
+    grid-row: 2/span 1;
+  }
+  .content-app-img {
+    grid-row: 1/span 1;
   }
 }
 .content-container-footer {

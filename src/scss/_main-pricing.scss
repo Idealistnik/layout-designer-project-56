@@ -70,15 +70,6 @@
     margin: 64px 0;
 }
 
-// .p-text-pricing {
-//     font-size: 16px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 150%;
-
-//     text-align: center;
-// }
-
 @media (width <=650px) {
     .title-h3-pricing-style {
         @include title-font($fz-title-mob-h3);

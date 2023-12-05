@@ -730,6 +730,9 @@
   .wrapper-app {
     flex-direction: column-reverse;
   }
+  .img-app {
+    vertical-align: middle;
+  }
 }
 .content-container-footer {
   padding: 0 20px;

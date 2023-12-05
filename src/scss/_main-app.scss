@@ -2,6 +2,10 @@
     flex: 0 1 50%;
 }
 
+.img-app {
+    vertical-align: middle;
+}
+
 .button-app-style {
     border-radius: 32px;
     background-color: $bg-orange;
@@ -17,13 +21,4 @@
     .wrapper-app {
         flex-direction: column-reverse;
     }
-
-    .img-app {
-        vertical-align: middle;
-    }
-
-    // .col-app {
-    //     margin: 0 auto;
-    //     max-width: 100%;
-    // }
 }

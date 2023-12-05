@@ -715,6 +715,10 @@
   flex: 0 1 50%;
 }
 
+.img-app {
+  vertical-align: middle;
+}
+
 .button-app-style {
   border-radius: 32px;
   background-color: #95390C;
@@ -729,9 +733,6 @@
 @media (width <= 650px) {
   .wrapper-app {
     flex-direction: column-reverse;
-  }
-  .img-app {
-    vertical-align: middle;
   }
 }
 .content-container-footer {

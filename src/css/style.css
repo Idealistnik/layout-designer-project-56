@@ -849,12 +849,12 @@
   .help-add {
     padding: 42px 0 47px;
   }
-  .help-add .footer-list {
+  .footer-list {
     flex-direction: column;
     justify-content: space-between;
     height: 184px;
   }
-  .help-add .footer-list .list-item {
+  .footer-list .list-item {
     flex-grow: 1;
   }
 }
@@ -871,15 +871,18 @@
   gap: 25px 50px;
   margin-right: 50px;
 }
-.pop-content-wrapper .popular-track {
+
+.popular-track {
   max-width: 551px;
 }
-.pop-content-wrapper .popular-track .track-info {
+
+.track-info {
   flex: 0 1 481px;
   align-items: center;
   font-size: 12.8px;
 }
-.pop-content-wrapper .popular-track .track-info .title-pop-track {
+
+.title-pop-track {
   font-size: 12.8px;
   text-transform: uppercase;
 }
@@ -891,10 +894,10 @@
     grid-template-rows: repeat(3, 1fr);
     margin-right: 0;
   }
-  .pop-content-wrapper .popular-track {
+  .popular-track {
     width: 100%;
   }
-  .pop-content-wrapper .popular-track .track-info {
+  .track-info {
     width: 81.283%;
   }
 }

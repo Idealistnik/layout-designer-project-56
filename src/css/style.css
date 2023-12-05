@@ -719,6 +719,7 @@
   border-radius: 32px;
   background-color: #95390C;
   color: #FFF;
+  text-transform: none;
 }
 
 .button-app {

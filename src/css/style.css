@@ -722,20 +722,12 @@
 }
 
 .button-app {
-  width: 131px;
-  height: 53px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 16px 40px;
 }
 
 @media (width <= 650px) {
   .wrapper-app {
     flex-direction: column-reverse;
-  }
-  .col-app {
-    margin: 0 auto;
-    max-width: 100%;
   }
 }
 .content-container-footer {

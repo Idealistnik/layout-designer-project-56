@@ -50,7 +50,7 @@
     text-transform: capitalize;
 }
 
-@media (width <=450px) {
+@media (width <=650px) {
     .title-h1 {
         @include title-font($fz-title-mob-h1);
         @extend %title-styles;

@@ -116,21 +116,23 @@
     font-family: Arial, sans-serif;
 }
 
-@media (width <=545px) {
-    .p-text-index {
-        margin-left: 10px; // доп
-        margin-right: 10px; // доп
-    }
+// @media (width <=545px) {
+//     .p-text-index {
+//         margin-left: 10px; // доп
+//         margin-right: 10px; // доп
+//     }
 
-    .input-banner,
-    .button-header-index {
-        flex: 0 1 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
+//     .input-banner,
+//     .button-header-index {
+//         flex: 0 1 100%;
+//         margin-left: 10px;
+//         margin-right: 10px;
+//     }
+// }
 
-@media (width <=584px) {
+// Было 584
+
+@media (width <=650px) {
     .content-container-description {
         @include pg-section($pg-248, $pg-20, $pg-201);
     }

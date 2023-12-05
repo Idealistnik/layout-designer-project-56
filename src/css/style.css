@@ -40,7 +40,7 @@
   text-transform: capitalize;
 }
 
-@media (width <= 450px) {
+@media (width <= 650px) {
   .title-h1 {
     font-size: 30px;
     line-height: 45px;
@@ -332,19 +332,7 @@
   font-family: Arial, sans-serif;
 }
 
-@media (width <= 545px) {
-  .p-text-index {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .input-banner,
-  .button-header-index {
-    flex: 0 1 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-@media (width <= 584px) {
+@media (width <= 650px) {
   .content-container-description {
     padding: 248px 20px 201px;
   }
@@ -503,7 +491,7 @@
   filter: invert(1);
 }
 
-@media (width <= 415px) {
+@media (width <= 650px) {
   .content-container-description-artist {
     padding: 225px 20px 224px;
   }

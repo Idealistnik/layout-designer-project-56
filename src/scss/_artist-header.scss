@@ -125,7 +125,7 @@
 //     margin-right: $mg-24;   убрал класс
 // }
 
-@media (width <=415px) {
+@media (width <=650px) {
     .content-container-description-artist {
         @include pg-section($pg-225, $pg-20, $pg-224);
     }
@@ -155,7 +155,7 @@
     .header-main-artist {
         flex-direction: column;
         align-items: start;
-        flex: 0 1 106px; // ширину поменяли было 102 
+        flex: 0 1 106px;
     }
 
     .main-logo-artist {
@@ -173,7 +173,7 @@
 
     .header-search-artist {
         flex: 0 0 25px;
-        margin-top: 16px; // изменили было 18
+        margin-top: 16px; 
         width: 100%;
     }
 }

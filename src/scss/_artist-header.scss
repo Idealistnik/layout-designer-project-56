@@ -126,61 +126,54 @@
 // }
 
 @media (width <=415px) {
-    .wrapper-main-content {
-        padding-left: 0;
-    }
-
     .content-container-description-artist {
         @include pg-section($pg-225, $pg-20, $pg-224);
+    }
 
-        .buttons-artist {
-            flex-direction: column;
+    .buttons-artist {
+        flex-direction: column;
+    }
 
-            .button-artist:first-child {
-                margin-bottom: 1.5rem;
-            }
-        }
-
+    .button-artist:first-child {
+        margin-bottom: 1.5rem;
     }
 
     .header-position-artist {
         max-height: 145px;
         top: 25px;
+    }
 
-        .header-content-artist {
-            min-height: 145px;
+    .header-content-artist {
+        min-height: 145px;
 
-            flex-direction: column;
-            align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
 
-            font-weight: bold;
+        font-weight: bold;
+    }
 
-            .header-main-artist {
-                flex-direction: column;
-                align-items: start;
-                flex: 0 1 106px; // ширину поменяли было 102                
+    .header-main-artist {
+        flex-direction: column;
+        align-items: start;
+        flex: 0 1 106px; // ширину поменяли было 102 
+    }
 
-                .main-logo-artist {
-                    min-width: 98px;
-                    flex: 0 0 24px;
-                }
+    .main-logo-artist {
+        min-width: 98px;
+        flex: 0 0 24px;
+    }
 
-                .main-menu-artist {
-                    flex: 0 0 61px;
+    .main-menu-artist {
+        flex: 0 0 61px;
+    }
 
-                    .menu-list-artist {
-                        flex-direction: column;
+    .menu-list-artist {
+        flex-direction: column;
+    }
 
-                    }
-                }
-
-            }
-
-            .header-search-artist {
-                flex: 0 0 25px;
-                margin-top: 16px; // изменили было 18
-                width: 100%;
-            }
-        }
+    .header-search-artist {
+        flex: 0 0 25px;
+        margin-top: 16px; // изменили было 18
+        width: 100%;
     }
 }

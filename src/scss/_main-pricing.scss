@@ -61,8 +61,10 @@
 }
 
 .link-price {   
-    padding: 21px 0;
+    padding: 20px 0;
     width: 100%;
+    box-sizing: border-box;
+    // display: inline-block;
 }
 
 .p-pricing-footer {

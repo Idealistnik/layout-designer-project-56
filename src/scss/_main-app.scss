@@ -10,13 +10,17 @@
 }
 
 .button-app {
-    padding: 16px 40px;
+    padding: 17px 40px;
 }
 
 @media (width <=650px) {
     .wrapper-app {
         flex-direction: column-reverse;
     }
+
+    // .img-app {
+    //     vertical-align: middle;
+    // }
 
     // .col-app {
     //     margin: 0 auto;

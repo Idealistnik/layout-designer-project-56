@@ -12,19 +12,20 @@
     align-items: center;
     flex: 0 1 98px;
     margin-right: 10px; // доп
+}
 
-    .logo-link {
-        color: $color-white;
-    }
+.logo-link {
+    color: $color-white;
 }
 
 .main-menu {
     flex: 0 1 313px;
-
-    .menu-list {
-        flex-wrap: wrap;
-    }
 }
+
+.menu-list {
+    flex-wrap: wrap;
+}
+
 
 .menu-item {
     margin-right: 10px; // Доп
@@ -39,18 +40,18 @@
     width: 100%;
     top: 25px;
     left: 0;
+}
 
-    .header-content {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
-        box-sizing: border-box;
-    }
+.header-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+    box-sizing: border-box;
+}
 
-    .header-content-style {
-        text-transform: uppercase;
-        font-size: 11px;
-    }
+.header-content-style {
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
 .header-search {
@@ -85,23 +86,23 @@
     max-width: 570px;
     margin: 0 auto;
     flex-wrap: wrap;
+}
 
-    .input-banner-style {
-        border: 2px solid $color-gray-light;
-        border-radius: 3px;
-        background-color: transparent;
+.input-banner-style {
+    border: 2px solid $color-gray-light;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $color-white;
+
+    &::placeholder {
         color: $color-white;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+    }
 
-        &::placeholder {
-            color: $color-white;
-            font-size: 14px;
-            font-family: Roboto, sans-serif;
-            font-weight: bold;
-        }
-
-        &:focus::placeholder {
-            color: transparent;
-        }
+    &:focus::placeholder {
+        color: transparent;
     }
 }
 
@@ -122,91 +123,89 @@
         margin-right: 10px; // доп
     }
 
-    .banner-form {
-        .input-banner,
-        .button-header-index {
-            flex: 0 1 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
+    // .banner-form 
 
+    .input-banner,
+    .button-header-index {
+        flex: 0 1 100%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 @media (width <=584px) {
-    .content-container-description{
+    .content-container-description {
         @include pg-section($pg-248, $pg-20, $pg-201);
+    }
 
-        .title-h2-index {
-            margin-bottom: 0;
-        }
+    .title-h2-index {
+        margin-bottom: 0;
+    }
 
-        .p-text-index {
-            margin: 16px 0;
-        }
+    .p-text-index {
+        margin: 16px 0;
+    }
 
-        .input-banner {
-            flex: 0 1 100%;
-        }
+    .input-banner {
+        flex: 0 1 100%;
+    }
 
-        .banner-form {
-            justify-content: center;
+    .banner-form {
+        justify-content: center;
+    }
 
-            .input-banner,
-            .button-header-index {
-                min-width: 100%;
-                margin-left: 0;
-                margin-right: 0;
-            }
+    .input-banner,
+    .button-header-index {
+        min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-            .button-header-index {
-                padding: 21px 30px;
-            }
-        }
+    .button-header-index {
+        padding: 21px 30px;
     }
 
     .header-position {
         max-height: 145px;
         top: 25px;
+    }
 
-        .header-content {
-            flex-direction: column;
-            align-items: flex-start;
-            font-weight: bold;
-            min-height: 145px;
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: bold;
+        min-height: 145px;
+    }
 
-            .header-main {
-                flex-direction: column;
-                flex: 0 1 106px; // ширину поменял
-                align-items: start;
+    .header-main {
+        flex-direction: column;
+        flex: 0 1 106px; // ширину поменял
+        align-items: start;
+    }
 
-                .main-logo {
-                    min-width: 98px;
-                    flex: 0 0 24px;
+    .main-logo {
+        min-width: 98px;
+        flex: 0 0 24px;
+    }
 
-                    .logo-link {
-                        color: $color-white;
-                    }
-                }
+    .logo-link {
+        color: $color-white;
+    }
 
-                .main-menu {
-                    flex: 0 0 61px;
 
-                    .menu-list {
-                        flex-direction: column;
+    .main-menu {
+        flex: 0 0 61px;
+    }
 
-                    }
-                }
+    .menu-list {
+        flex-direction: column;
 
-            }
+    }
 
-            .header-search {
-                flex: 0 0 25px;
-                margin-top: 16px; // изменили
-                width: 100%;
-            }
-
-        }
+    .header-search {
+        flex: 0 0 25px;
+        margin-top: 16px; // изменили
+        width: 100%;
     }
 
 }

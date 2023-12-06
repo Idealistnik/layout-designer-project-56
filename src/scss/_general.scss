@@ -12,12 +12,6 @@
     src: url("../fonts/Roboto-Bold.woff2");
 }
 
-// @font-face {
-//     font-weight: 400;
-//     font-family: Arial;
-//     src: url("../fonts/arial-narrow.woff2");
-// }
-
 @mixin title-font($fz-title) {
     font-size: $fz-title;
     line-height: $fz-title * 1.5;

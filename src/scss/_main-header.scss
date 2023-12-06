@@ -11,7 +11,7 @@
 .main-logo {
     align-items: center;
     flex: 0 1 98px;
-    margin-right: 10px; // доп
+    margin-right: 10px;
 }
 
 .logo-link {
@@ -27,7 +27,7 @@
 }
 
 .menu-item {
-    margin-right: 10px; // Доп
+    margin-right: 10px;
 
     &:hover {
         color: $color-white;
@@ -44,7 +44,7 @@
 .header-content {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+    padding: 0 $pg-20;
     box-sizing: border-box;
 }
 
@@ -116,22 +116,6 @@
     font-family: Arial, sans-serif;
 }
 
-// @media (width <=545px) {
-//     .p-text-index {
-//         margin-left: 10px; // доп
-//         margin-right: 10px; // доп
-//     }
-
-//     .input-banner,
-//     .button-header-index {
-//         flex: 0 1 100%;
-//         margin-left: 10px;
-//         margin-right: 10px;
-//     }
-// }
-
-// Было 584
-
 @media (width <=650px) {
     .content-container-description {
         @include pg-section($pg-248, $pg-20, $pg-201);
@@ -147,13 +131,6 @@
 
     .banner-form {
         justify-content: center;
-    }
-
-    .input-banner,
-    .button-header-index {
-        min-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .button-header-index {

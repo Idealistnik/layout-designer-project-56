@@ -340,12 +340,6 @@
   .banner-form {
     justify-content: center;
   }
-  .input-banner,
-  .button-header-index {
-    min-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
   .button-header-index {
     padding: 21px 30px;
   }
@@ -496,6 +490,8 @@
     min-height: 145px;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .header-content-artist-style {
     font-weight: bold;
   }
   .header-main-artist {
@@ -796,8 +792,7 @@
   }
   .footer-list-bottom {
     flex-direction: column;
-    justify-content: space-between;
-    height: 184px;
+    min-height: 184px;
   }
   .footer-list-bottom .list-item {
     flex-grow: 1;

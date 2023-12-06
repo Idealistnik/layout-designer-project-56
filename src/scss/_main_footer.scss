@@ -11,11 +11,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
-    padding: 62px 0 72px; // padding: 3rem 0; 3rem дает 48px  если по заданию
+    padding: 62px 0 72px;
 }
 
 .mg-bot-20 {
-    margin: 0 0 20px; // не получилось с помощью комбинирования селекторов обратиться
+    margin: 0 0 20px; 
 }
 
 .footer-list {
@@ -29,10 +29,6 @@
 .mg-r-24 {
     margin-right: 24px;
 }
-
-// .content-container-footer-top {
-//     border-bottom: 2px solid $color-gray-light;  // как сделать чтобы линия шла на всю длину весте с отсупами без псевдоэлемента?
-// }
 
 .bg-wrapper-footer::after {
     position: absolute;
@@ -62,7 +58,6 @@
 }
 
 .help-add {
-    // padding: 2rem 0; 2rem дает 32px
     padding: 42px 0 49px;
 }
 
@@ -96,8 +91,7 @@
 
     .footer-list-bottom  {
         flex-direction: column;
-        justify-content: space-between;
-        height: 184px;
+        min-height: 184px;
 
         .list-item {
             flex-grow: 1;

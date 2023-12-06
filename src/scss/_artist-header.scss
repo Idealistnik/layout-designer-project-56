@@ -11,7 +11,7 @@
 .main-logo-artist {
     align-items: center;
     flex: 0 1 98px;
-    margin-right: 10px; // допом чтобы был отступ при уменьшении
+    margin-right: 10px;
 }
 
 .logo-link-artist {
@@ -27,10 +27,10 @@
 }
 
 .menu-item-artist {
-    margin-right: 10px; // допом чтобы был отступ при уменьшении
+    margin-right: 10px;
 
     &:hover {
-        color: $color-white; // из макета непонятно, но наверное при нажатии должен меняться цвет на белый
+        color: $color-white;
     }
 }
 
@@ -44,7 +44,7 @@
 .header-content-artist {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 $pg-20; // новое - поставил чтобы не прижимался хедер к краям - а в мобилке потом убрал вообще
+    padding: 0 $pg-20;
     box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@
     color: $color-white;
 
     &:hover {
-        outline: 1px solid $color-white; // просто добавил
+        outline: 1px solid $color-white;
     }
 }
 
@@ -101,30 +101,6 @@
     filter: invert(1);
 }
 
-// если псевдоэлементом
-// .button-artist.bg-blue {
-//     padding: 21px 96px 22px 67px;  
-// }
-
-// .button-artist.bg-orange {
-//     padding: 21px 47px 22px 67px;  
-// }
-// .button-artist.bg-blue:before {
-//     @include button-artist-icon ($button-icon-play);
-// }
-
-// .button-artist.bg-orange:before {
-//     @include button-artist-icon ($button-icon-heart);
-// }
-
-// .icon {
-//     @include button-artist-icon ($button-icon-play);
-// }
-
-// .mg-right-24 {
-//     margin-right: $mg-24;   убрал класс
-// }
-
 @media (width <=650px) {
     .content-container-description-artist {
         @include pg-section($pg-225, $pg-20, $pg-224);
@@ -144,10 +120,11 @@
 
     .header-content-artist {
         min-height: 145px;
-
         flex-direction: column;
         align-items: flex-start;
+    }
 
+    .header-content-artist-style {
         font-weight: bold;
     }
 

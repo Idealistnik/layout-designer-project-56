@@ -8,11 +8,6 @@
   font-family: Roboto;
   src: url("../fonts/Roboto-Bold.woff2");
 }
-@font-face {
-  font-weight: 400;
-  font-family: Arial;
-  src: url("../fonts/arial-narrow.woff2");
-}
 .title-h3-news, .title-h3-pricing-style, .title-h3-artist, .h2-footer, .title-h2, .title-h1 {
   color: #FFF;
   font-weight: bold;
@@ -837,7 +832,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    margin: 48px 0 0 0;
+    margin: 48px 0 0;
   }
 }
 

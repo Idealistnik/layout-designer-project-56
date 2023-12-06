@@ -137,10 +137,6 @@
         @include pg-section($pg-248, $pg-20, $pg-201);
     }
 
-    .title-h2-index {
-        margin-bottom: 0;
-    }
-
     .p-text-index {
         margin: 16px 0;
     }
@@ -166,7 +162,6 @@
 
     .header-position {
         max-height: 145px;
-        top: 25px;
     }
 
     .header-content {
@@ -185,10 +180,6 @@
     .main-logo {
         min-width: 98px;
         flex: 0 0 24px;
-    }
-
-    .logo-link {
-        color: $color-white;
     }
 
     .main-menu {

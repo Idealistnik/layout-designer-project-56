@@ -68,7 +68,6 @@
 
 @media (width <=650px) {
     .footer-top {
-        display: grid;
         grid-template-rows: 1fr 1fr auto auto;
         grid-template-columns: 1fr;
         row-gap: 30px;
